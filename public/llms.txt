@@ -19,5 +19,6 @@ Looponics combines full-stack software engineering, business process automation,
 4. Deploy: Production launch, performance monitoring, continuous integration, and ongoing support.
 
 ## Contact & Links
-- Website: https://looponics.com
-- Contact: https://looponics.com/#contact
+- Website: https://looponics.tech
+- Contact: support@looponics.tech
+- URL: https://looponics.tech/#contact

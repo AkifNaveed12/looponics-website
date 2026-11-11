@@ -68,6 +68,39 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
+/* Contact Us Section */
+.contactSection {
+  margin-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contactLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.contactEmail {
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.25s ease, opacity 0.25s ease;
+  width: fit-content;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 2px;
+}
+
+.contactEmail:hover {
+  color: #FF4D00;
+  border-bottom-color: #FF4D00;
+}
+
 /* Right Column: Looponics Title aligned right of CTA */
 .rightCol {
   display: flex;

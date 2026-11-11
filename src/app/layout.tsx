@@ -4,7 +4,7 @@ import HydrationFix from "@/components/HydrationFix";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://looponics.com"),
+  metadataBase: new URL("https://looponics.tech"),
   title: {
     default: "Looponics | Technology & Engineering Agency",
     template: "%s | Looponics",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Looponics | Technology & Engineering Agency",
     description:
       "We design, develop, and engineer digital products, intelligent systems, and custom software solutions that help businesses scale.",
-    url: "https://looponics.com",
+    url: "https://looponics.tech",
     siteName: "Looponics",
     locale: "en_US",
     type: "website",

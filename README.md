@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://looponics.com"><strong>Website</strong></a> ·
+  <a href="https://looponics.tech"><strong>Website</strong></a> ·
   <a href="#core-services"><strong>Services</strong></a> ·
   <a href="#architecture--design-system"><strong>Architecture</strong></a> ·
   <a href="#getting-started"><strong>Getting Started</strong></a> ·

@@ -11,6 +11,7 @@ const bottomLinks = [
   { label: "CAPABILITIES", href: "#capabilities", isExternal: false },
   { label: "PROCESS", href: "#process", isExternal: false },
   { label: "FAQS", href: "#faq", isExternal: false },
+  { label: "support@looponics.tech", href: "mailto:support@looponics.tech", isExternal: true },
   { label: "TWITTER", href: "https://twitter.com", isExternal: true },
   { label: "LINKEDIN", href: "https://linkedin.com", isExternal: true },
 ];
@@ -72,6 +73,18 @@ export default function Footer() {
                 ))}
               </motion.a>
             </nav>
+
+            {/* Contact Us Section with official business email */}
+            <div className={styles.contactSection}>
+              <span className={styles.contactLabel}>CONTACT US</span>
+              <a
+                href="mailto:support@looponics.tech"
+                className={styles.contactEmail}
+                aria-label="Email Looponics at support@looponics.tech"
+              >
+                support@looponics.tech
+              </a>
+            </div>
           </div>
 
           {/* Right Column: Looponics Title aligned right of CTA */}
