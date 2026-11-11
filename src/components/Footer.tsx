@@ -74,7 +74,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Right Column: Olema Title aligned right of CTA */}
+          {/* Right Column: Looponics Title aligned right of CTA */}
           <div className={styles.rightCol}>
             <div className={styles.brandBanner}>
               <motion.h2
@@ -84,7 +84,7 @@ export default function Footer() {
                 viewport={{ once: true, amount: 0.4 }}
                 transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.25 }}
               >
-                Olema
+                Looponics
               </motion.h2>
             </div>
           </div>

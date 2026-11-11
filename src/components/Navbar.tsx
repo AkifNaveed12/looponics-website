@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className={styles.container}>
           <div className={styles.logoContainer}>
             <Link href="/" className={styles.logoText}>
-              Olema
+              Looponics
             </Link>
           </div>
           

@@ -44,7 +44,7 @@ export default function WhoWeAreSection() {
             <p className={styles.body}>
               We design, develop, and engineer digital products, intelligent
               systems, and custom solutions that help businesses move forward.
-              Olema combines software engineering, automation, and AI to solve
+              Looponics combines software engineering, automation, and AI to solve
               real business problems — from web and mobile applications to
               autonomous AI workflows.
             </p>

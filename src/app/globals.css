@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #181818;
@@ -18,13 +20,13 @@
   --border-2: #e4e4e7;
   --border-color: #e4e4e7;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
   --glass-bg: rgba(255, 255, 255, 0.85);
 
-  /* Hero palette tokens */
-  --hero-bg: #FF4D00;
-  --hero-text: #ffffff;
-  --hero-shape-1: #000000;
-  --hero-shape-2: #0066FF;
+  /* Hero palette tokens (Copula-inspired) */
+  --hero-bg: #fc5100;
+  --hero-text: #f4efe9;
+  --hero-shape-blue: #0501de;
 }
 
 html {

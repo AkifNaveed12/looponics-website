@@ -44,7 +44,7 @@ const differentiators = [
 
 export default function WhyOlemaSection() {
   return (
-    <section className={styles.section} id="why-olema">
+    <section className={styles.section} id="why-looponics">
       <div className={styles.container}>
         <motion.p
           className={styles.eyebrow}
@@ -53,7 +53,7 @@ export default function WhyOlemaSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          • WHY OLEMA
+          • WHY LOOPONICS
         </motion.p>
         <motion.h2
           className={styles.headline}

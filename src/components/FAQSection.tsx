@@ -67,7 +67,7 @@ export default function FAQSection() {
             Common questions. <em>Direct answers.</em>
           </h2>
           <p className={styles.subtitle}>
-            Everything you need to know about working with Olema.
+            Everything you need to know about working with Looponics.
           </p>
         </motion.div>
 

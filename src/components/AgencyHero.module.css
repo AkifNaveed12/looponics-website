@@ -1,223 +1,260 @@
-/* ─── Hero palette tokens ─────────────────────────────────────── */
-/* Override these to retheme without touching the component.       */
+/* ─── Hero Palette Tokens & Layout ───────────────────────────── */
 .hero {
-  --hero-bg: #ff4d00;
-  --hero-text: #ffffff;
-  --hero-shape-1: #000000; /* starburst */
-  --hero-shape-2: #0066ff; /* blob      */
-}
+  --hero-bg: #fc5100;
+  --hero-text: #f4efe9;
+  --hero-shape-blue: #0501de;
 
-/* ─── Layout ─────────────────────────────────────────────────── */
-.hero {
   position: relative;
   min-height: 100svh;
+  width: 100%;
   background-color: var(--hero-bg);
   color: var(--hero-text);
-  font-family: var(--font-sans);
   overflow: hidden;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-start;
+  padding: 0 clamp(1.5rem, 4.5vw, 4.5rem) clamp(2rem, 4.5vw, 3.75rem) clamp(1.5rem, 4.5vw, 4.5rem);
+  box-sizing: border-box;
 }
 
-.inner {
+/* ─── Top Micro Tagline (Copula Agency Header Placement) ─────── */
+.topBar {
+  position: absolute;
+  top: 5.5rem;
+  left: clamp(1.5rem, 4.5vw, 4.5rem);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.tagline {
+  font-family: var(--font-sans);
+  font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--hero-text);
+  opacity: 0.95;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Bottom-Anchored Headline Composition ──────────────────── */
+.headlineWrapper {
   width: 100%;
   max-width: 100%;
-  padding: clamp(5rem, 10vw, 8rem) clamp(1.5rem, 6vw, 5rem) clamp(3rem, 6vw, 5rem);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2rem;
+  z-index: 5;
 }
 
-/* ─── Headline ───────────────────────────────────────────────── */
-.headline {
+.heroTitle {
+  font-family: var(--font-bebas, "Bebas Neue", sans-serif);
+  font-weight: 400;
+  font-size: clamp(4.2rem, 11.2vw, 11.3rem); /* 181px at 1600px desktop */
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  color: var(--hero-text);
+  text-transform: uppercase;
+  user-select: none;
   display: flex;
   flex-direction: column;
-  gap: 0;
-  user-select: none;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .lineWrap {
-  overflow: hidden; /* clips the y-entrance animation */
-}
-
-.headlineLine {
   display: block;
-  font-size: clamp(5rem, 12vw, 11rem);
-  font-weight: 900;
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: var(--hero-text);
-  white-space: nowrap;
+  overflow: hidden;
+  line-height: 0.85;
 }
 
-/* The last (cycling) line keeps its height stable */
-.cyclingLine {
+.staticLine {
+  display: block;
+  line-height: 0.85;
+}
+
+/* ─── Dynamic Centered Line ──────────────────────────────────── */
+.dynamicLineWrap {
+  display: block;
+  overflow: hidden;
   position: relative;
-  height: clamp(4.5rem, 10.8vw, 9.9rem); /* ≈ font-size × line-height */
+  line-height: 0.85;
+  height: clamp(3.6rem, 9.6vw, 9.8rem); /* Strictly locks height to prevent layout shift */
+}
+
+.dynamicLineBox {
+  position: relative;
+  height: 100%;
   display: flex;
   align-items: flex-start;
 }
 
-.cyclingLine .headlineLine {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* "AGENCY." in a slightly different weight to visually anchor it */
-.agencyWord {
-  font-style: italic;
-}
-
-/* ─── Secondary CTA ──────────────────────────────────────────── */
-.secondaryCta {
-  margin-top: 0.5rem;
-}
-
-.secondaryLink {
-  color: var(--hero-text);
-  opacity: 0.8;
-  font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+.wordContainer {
   display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: opacity 0.2s ease;
+  white-space: nowrap;
 }
 
-.secondaryLink:hover {
-  opacity: 1;
-}
-
-.arrow {
+.charSpan {
   display: inline-block;
-  transition: transform 0.2s ease;
+  line-height: 0.85;
 }
 
-.secondaryLink:hover .arrow {
-  transform: translateX(5px);
-}
-
-/* ─── Shapes row ─────────────────────────────────────────────── */
-.shapesRow {
+/* ─── Line 3: AGENCY + Both Animated Shapes Side-by-Side ─────── */
+.agencyRow {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-/* ─── Starburst ──────────────────────────────────────────────── */
-.starburstWrap {
-  flex-shrink: 0;
-  width: 200px;
-  height: 200px;
-  color: var(--hero-shape-1);
-}
-
-.starburstInner {
+  flex-wrap: nowrap;
+  line-height: 0.85;
+  margin-top: 0;
   width: 100%;
-  height: 100%;
+}
+
+.shapesSideBySide {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(1rem, 1.8vw, 2rem);
+  margin-left: clamp(1rem, 2vw, 2.5rem);
+  flex-shrink: 0;
+}
+
+/* ─── Shape 1: 16-point Starburst (Continuous Spin) ─────────── */
+.starburstContainer {
+  width: clamp(52px, 7.2vw, 118px);
+  height: clamp(52px, 7.2vw, 119px);
+  color: var(--hero-shape-blue, #0501de);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .starburstSvg {
   width: 100%;
   height: 100%;
+  animation: spin 10s linear infinite;
+  transform-origin: center center;
 }
 
-/* ─── Blob / CTA ──────────────────────────────────────────────── */
-.blob {
-  flex-shrink: 0;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background-color: var(--hero-shape-2);
-  display: flex;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ─── Shape 2: Scalloped Cloud Badge CTA Button ──────────────── */
+.badgeLink {
+  position: relative;
+  width: clamp(62px, 8.2vw, 125px);
+  height: clamp(62px, 8.2vw, 125px);
+  color: var(--hero-shape-blue, #0501de);
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   text-decoration: none;
-  /* organic shape via asymmetric border-radius */
-  border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
-  transition: border-radius 0.4s ease, filter 0.2s ease;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-.blob:hover {
-  filter: brightness(1.1);
-  border-radius: 50%;
+.badgeSvgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center center;
 }
 
-.blobText {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.badgeSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.badgeLink:hover .badgeSvgWrapper {
+  transform: scale(1.08) rotate(45deg);
+}
+
+.badgeText {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-bebas, "Bebas Neue", sans-serif);
+  font-size: clamp(0.95rem, 1.35vw, 1.35rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--hero-text);
+  line-height: 1;
   text-align: center;
-  line-height: 1.4;
+  white-space: nowrap;
   pointer-events: none;
+  transition: transform 0.3s ease;
 }
 
-/* ─── Responsive ─────────────────────────────────────────────── */
-@media (max-width: 768px) {
-  .headlineLine {
-    font-size: clamp(3.5rem, 14vw, 5rem);
+.badgeLink:hover .badgeText {
+  transform: scale(1.04);
+}
+
+/* ─── Responsive Adjustments ─────────────────────────────────── */
+@media (max-width: 900px) {
+  .heroTitle {
+    font-size: clamp(3.8rem, 12.5vw, 6.5rem);
   }
 
-  .cyclingLine {
-    height: clamp(3.15rem, 12.6vw, 4.5rem);
+  .dynamicLineWrap {
+    height: clamp(3.2rem, 10.6vw, 5.6rem);
   }
 
-  .starburstWrap {
-    width: 120px;
-    height: 120px;
-  }
-
-  .blob {
-    width: 120px;
-    height: 120px;
-  }
-
-  .blobText {
-    font-size: 0.72rem;
+  .shapesSideBySide {
+    gap: 0.85rem;
+    margin-left: 1rem;
   }
 }
 
-@media (max-width: 480px) {
-  .headlineLine {
-    font-size: clamp(2.75rem, 15vw, 4rem);
-    white-space: normal;
-    word-break: break-word;
+@media (max-width: 640px) {
+  .hero {
+    padding-bottom: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
-  .cyclingLine {
-    height: auto;
-    min-height: 2.5rem;
-    position: relative;
+  .topBar {
+    top: 4.8rem;
+    left: 1.25rem;
   }
 
-  .shapesRow {
-    gap: 1rem;
+  .heroTitle {
+    font-size: clamp(3.2rem, 15vw, 4.5rem);
+    line-height: 0.88;
+  }
+
+  .dynamicLineWrap {
+    height: clamp(2.8rem, 13.2vw, 4rem);
+  }
+
+  .agencyRow {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
+  .shapesSideBySide {
+    margin-left: 0.75rem;
   }
 }
 
-/* ─── Reduced motion ─────────────────────────────────────────── */
+/* ─── Accessibility: Reduced Motion ──────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  .arrow {
+  .starburstSvg {
+    animation: none;
+  }
+
+  .badgeSvgWrapper {
     transition: none;
   }
 
-  .secondaryLink {
-    transition: none;
-  }
-
-  .blob {
-    transition: none;
+  .badgeLink:hover .badgeSvgWrapper {
+    transform: none;
   }
 }
