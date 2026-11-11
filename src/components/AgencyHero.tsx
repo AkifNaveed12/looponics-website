@@ -1,44 +1,58 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence, useMotionValue, useSpring } from "motion/react";
 import styles from "./AgencyHero.module.css";
 
 const DYNAMIC_WORDS = ["DIGITAL", "CREATIVE", "ALL-IN-ONE", "TECHNOLOGY"];
-const SHIFT_INTERVAL_MS = 2800;
+const SHIFT_INTERVAL_MS = 3200;
 
 export default function AgencyHero() {
   const [wordIndex, setWordIndex] = useState(0);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [isHoveringHero, setIsHoveringHero] = useState(false);
+  const heroRef = useRef<HTMLElement>(null);
+
+  // Smooth custom trailing cursor inside hero
+  const mouseX = useMotionValue(-100);
+  const mouseY = useMotionValue(-100);
+  const springConfig = { damping: 26, stiffness: 240, mass: 0.45 };
+  const smoothX = useSpring(mouseX, springConfig);
+  const smoothY = useSpring(mouseY, springConfig);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    if (!heroRef.current) return;
+    const rect = heroRef.current.getBoundingClientRect();
+    mouseX.set(e.clientX - rect.left);
+    mouseY.set(e.clientY - rect.top);
+  };
 
   useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setPrefersReducedMotion(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
-
-  useEffect(() => {
-    if (prefersReducedMotion) return;
     const interval = setInterval(() => {
       setWordIndex((prev) => (prev + 1) % DYNAMIC_WORDS.length);
     }, SHIFT_INTERVAL_MS);
     return () => clearInterval(interval);
-  }, [prefersReducedMotion]);
+  }, []);
 
   const currentWord = DYNAMIC_WORDS[wordIndex];
 
   return (
-    <section className={styles.hero}>
-      {/* ── Top Micro Tagline (Copula Agency layout style) ── */}
-      <div className={styles.topBar}>
-        <p className={styles.tagline}>
-          New generation, same
-          <br />
-          Engineering DNA
-        </p>
-      </div>
+    <section
+      ref={heroRef}
+      className={styles.hero}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHoveringHero(true)}
+      onMouseLeave={() => setIsHoveringHero(false)}
+    >
+      {/* ── Custom Lavender Trailing Pointer (Scoped strictly to hero) ── */}
+      <motion.div
+        className={styles.customPointer}
+        style={{
+          x: smoothX,
+          y: smoothY,
+          opacity: isHoveringHero ? 1 : 0,
+        }}
+        aria-hidden="true"
+      />
 
       {/* ── Bottom-Anchored Oversized Headline Composition ── */}
       <div className={styles.headlineWrapper}>
@@ -62,30 +76,34 @@ export default function AgencyHero() {
                 <motion.div
                   key={currentWord}
                   className={styles.wordContainer}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.15 }}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
                 >
                   {currentWord.split("").map((char, index) => (
                     <motion.span
                       key={`${currentWord}-${index}`}
                       className={styles.charSpan}
-                      initial={
-                        prefersReducedMotion
-                          ? { opacity: 1, y: 0 }
-                          : { opacity: 0, y: 50 }
-                      }
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={
-                        prefersReducedMotion
-                          ? { opacity: 1, y: 0 }
-                          : { opacity: 0, y: -50 }
-                      }
-                      transition={{
-                        duration: 0.4,
-                        ease: [0.16, 1, 0.3, 1],
-                        delay: index * 0.03,
+                      variants={{
+                        initial: { opacity: 0, y: 55 },
+                        animate: {
+                          opacity: 1,
+                          y: 0,
+                          transition: {
+                            duration: 0.45,
+                            ease: [0.16, 1, 0.3, 1],
+                            delay: index * 0.035,
+                          },
+                        },
+                        exit: {
+                          opacity: 0,
+                          y: -55,
+                          transition: {
+                            duration: 0.35,
+                            ease: [0.16, 1, 0.3, 1],
+                            delay: index * 0.02,
+                          },
+                        },
                       }}
                     >
                       {char}
@@ -109,12 +127,19 @@ export default function AgencyHero() {
 
             {/* Two Animated Shapes Placed Side-by-Side */}
             <div className={styles.shapesSideBySide}>
-              {/* Shape 1: 16-point Faceted Cross Starburst (Continuous Spin) */}
+              {/* Shape 1: 16-point Faceted Cross Starburst (Continuous Slow Spin) */}
               <motion.div
                 className={styles.starburstContainer}
+                animate={{ rotate: 360 }}
+                transition={{
+                  duration: 12,
+                  ease: "linear",
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
                 initial={{ opacity: 0, scale: 0.6 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -135,11 +160,20 @@ export default function AgencyHero() {
                 href="#contact"
                 className={styles.badgeLink}
                 aria-label="Let's bond - Contact Looponics"
-                initial={{ opacity: 0, scale: 0.6 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
+                whileHover="hovered"
+                initial="idle"
               >
-                <div className={styles.badgeSvgWrapper}>
+                <motion.div
+                  className={styles.badgeSvgWrapper}
+                  variants={{
+                    idle: { rotate: 0, scale: 1 },
+                    hovered: { rotate: 45, scale: 1.08 },
+                  }}
+                  transition={{
+                    duration: 0.65,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 125 125"
@@ -149,7 +183,7 @@ export default function AgencyHero() {
                   >
                     <path d="M11.4576 83.9274C9.91978 102.544 22.9721 115.601 41.583 114.063C53.6527 128.312 72.1136 128.312 84.1908 114.063C102.802 115.601 115.854 102.544 114.316 83.9274C128.561 71.8537 128.561 53.3868 114.316 41.3056C115.854 22.6886 102.802 9.63195 84.1908 11.1702C72.1211 -3.07953 53.6602 -3.07953 41.583 11.1702C22.9721 9.63195 9.91978 22.6886 11.4576 41.3056C-2.78753 53.3793 -2.78753 71.8462 11.4576 83.9274Z" />
                   </svg>
-                </div>
+                </motion.div>
                 <span className={styles.badgeText}>LET&apos;S BOND</span>
               </motion.a>
             </div>

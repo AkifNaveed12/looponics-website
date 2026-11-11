@@ -19,29 +19,45 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""} ${isMobileMenuOpen ? styles.menuOpenNav : ""}`}>
+      <header
+        className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""} ${
+          isMobileMenuOpen ? styles.menuOpenNav : ""
+        }`}
+      >
         <div className={styles.container}>
           <div className={styles.logoContainer}>
-            <Link href="/" className={styles.logoText}>
-              Looponics
-            </Link>
+            <div className={styles.logoGroup}>
+              <Link href="/" className={styles.logoText}>
+                Looponics
+              </Link>
+              <p
+                className={`${styles.tagline} ${
+                  isScrolled ? styles.taglineHidden : ""
+                }`}
+              >
+                New generation, same
+                <br />
+                Engineering DNA
+              </p>
+            </div>
           </div>
-          
+
           <nav className={styles.navLinks}>
             <Link href="#services">Services</Link>
-            <Link href="#projects">Work</Link>
             <Link href="#process">Process</Link>
             <Link href="#faq">FAQs</Link>
           </nav>
-          
+
           <div className={styles.actions}>
             <div className={styles.desktopContact}>
               <Link href="#contact" className={styles.contactBtn}>
                 Contact Us
               </Link>
             </div>
-            <button 
-              className={`${styles.mobileMenuBtn} ${isMobileMenuOpen ? styles.menuOpen : ""}`}
+            <button
+              className={`${styles.mobileMenuBtn} ${
+                isMobileMenuOpen ? styles.menuOpen : ""
+              }`}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -52,18 +68,35 @@ export default function Navbar() {
           </div>
         </div>
       </header>
-      
-      <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ""}`}>
+
+      <div
+        className={`${styles.mobileMenu} ${
+          isMobileMenuOpen ? styles.mobileMenuOpen : ""
+        }`}
+      >
         <div className={styles.mobileMenuContent}>
           <nav className={styles.mobileNavLinks}>
-            <Link href="/" className={styles.mobileNavLinkGray} onClick={() => setIsMobileMenuOpen(false)}>HOME</Link>
-            <Link href="#services" onClick={() => setIsMobileMenuOpen(false)}>SERVICES</Link>
-            <Link href="#projects" onClick={() => setIsMobileMenuOpen(false)}>WORK</Link>
-            <Link href="#process" onClick={() => setIsMobileMenuOpen(false)}>PROCESS</Link>
-            <Link href="#faq" onClick={() => setIsMobileMenuOpen(false)}>FAQS</Link>
-            <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>CONTACT</Link>
+            <Link
+              href="/"
+              className={styles.mobileNavLinkGray}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              HOME
+            </Link>
+            <Link href="#services" onClick={() => setIsMobileMenuOpen(false)}>
+              SERVICES
+            </Link>
+            <Link href="#process" onClick={() => setIsMobileMenuOpen(false)}>
+              PROCESS
+            </Link>
+            <Link href="#faq" onClick={() => setIsMobileMenuOpen(false)}>
+              FAQS
+            </Link>
+            <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              CONTACT
+            </Link>
           </nav>
-          
+
           <div className={styles.mobileSocials}>
             <div className={styles.socialsLabel}>FOLLOW US</div>
             <div className={styles.socialsList}>

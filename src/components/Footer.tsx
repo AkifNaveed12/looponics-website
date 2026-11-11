@@ -8,7 +8,7 @@ const words = ["HAVE AN", "IDEA?", "LET'S", "BUILD IT →"];
 
 const bottomLinks = [
   { label: "SERVICES", href: "#services", isExternal: false },
-  { label: "OUR WORK", href: "#projects", isExternal: false },
+  { label: "CAPABILITIES", href: "#capabilities", isExternal: false },
   { label: "PROCESS", href: "#process", isExternal: false },
   { label: "FAQS", href: "#faq", isExternal: false },
   { label: "TWITTER", href: "https://twitter.com", isExternal: true },

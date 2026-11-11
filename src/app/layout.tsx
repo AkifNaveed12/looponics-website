@@ -3,22 +3,47 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Looponics | Technology Agency",
+  metadataBase: new URL("https://looponics.com"),
+  title: {
+    default: "Looponics | Technology & Engineering Agency",
+    template: "%s | Looponics",
+  },
   description:
-    "We design, develop, and engineer digital products, intelligent systems, and custom solutions. Web development, mobile apps, AI-powered SaaS, automations, and agentic AI systems.",
+    "Looponics is a modern technology services agency engineering web applications, cross-platform mobile apps, AI-powered SaaS platforms, custom automations, and agentic AI systems.",
+  keywords: [
+    "technology agency",
+    "software engineering",
+    "web development",
+    "mobile app development",
+    "AI SaaS",
+    "business automation",
+    "agentic AI",
+    "Next.js agency",
+  ],
+  authors: [{ name: "Looponics" }],
+  creator: "Looponics",
+  publisher: "Looponics",
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Looponics | Technology Agency",
+    title: "Looponics | Technology & Engineering Agency",
     description:
-      "We engineer digital products, intelligent systems, and custom solutions that help businesses move forward.",
+      "We design, develop, and engineer digital products, intelligent systems, and custom software solutions that help businesses scale.",
     url: "https://looponics.com",
     siteName: "Looponics",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Looponics | Technology Agency",
+    title: "Looponics | Technology & Engineering Agency",
     description:
-      "We engineer digital products, intelligent systems, and custom solutions.",
+      "We design, develop, and engineer digital products, intelligent systems, and custom software solutions.",
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -28,20 +53,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <Navbar />
         {children}
       </body>

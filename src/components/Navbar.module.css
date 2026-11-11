@@ -10,7 +10,7 @@
 }
 
 .navbar.scrolled {
-  padding: 1rem 0;
+  padding: 0.85rem 0;
   background: var(--glass-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -26,17 +26,26 @@
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 clamp(1.5rem, 5vw, 4.5rem);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .logoContainer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.logoGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
 }
 
 .logoText {
@@ -45,11 +54,34 @@
   letter-spacing: -0.03em;
   color: var(--foreground);
   text-decoration: none;
+  line-height: 1;
+}
+
+.tagline {
+  font-family: var(--font-sans);
+  font-size: clamp(0.78rem, 0.9vw, 0.88rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: #f4efe9;
+  opacity: 0.95;
+  letter-spacing: -0.01em;
+  transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease;
+  max-height: 50px;
+  margin: 0;
+  pointer-events: none;
+}
+
+.taglineHidden {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-4px);
+  overflow: hidden;
 }
 
 .navLinks {
   display: none;
   opacity: 1;
+  padding-top: 0.15rem;
 }
 
 @media (min-width: 768px) {
@@ -76,7 +108,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 2rem;
   gap: 1rem;
 }
 
@@ -91,7 +122,7 @@
 }
 
 .contactBtn {
-  background-color: var(--primary, #1077d7);
+  background-color: var(--primary, #181818);
   color: #ffffff;
   padding: 0.6rem 1.5rem;
   border-radius: 8px;
@@ -100,22 +131,22 @@
   transition: all 0.2s ease;
   border: 1px solid transparent;
   opacity: 0;
-  animation: fadeIn 0.6s ease 1.5s forwards;
+  animation: fadeIn 0.6s ease 0.5s forwards;
 }
 
 .contactBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(16, 119, 215, 0.35);
-  background-color: var(--primary-hover, #0d62b3);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-hover, #333333);
 }
 
 /* Contrast over hero when at page top */
 .navbar:not(.scrolled) .logoText {
-  color: #ffffff;
+  color: #f4efe9;
 }
 
 .navbar:not(.scrolled) .navLinks a {
-  color: #ffffff;
+  color: #f4efe9;
   opacity: 0.85;
 }
 
@@ -124,7 +155,7 @@
 }
 
 .navbar:not(.scrolled) .mobileMenuBtn span {
-  background-color: #ffffff;
+  background-color: #f4efe9;
 }
 
 .navbar:not(.scrolled) .contactBtn {
@@ -189,13 +220,13 @@
   left: 0;
   width: 100%;
   height: 100dvh;
-  background: #f2f2f2; /* Off-white matching reference */
+  background: #f2f2f2;
   display: flex;
   flex-direction: column;
   z-index: 105;
   transform: translateY(-100%);
   transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  padding: 8rem 2rem 4rem; /* Top padding clears the close button */
+  padding: 8rem 2rem 4rem;
 }
 
 .mobileMenu.mobileMenuOpen {
@@ -213,12 +244,12 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0;
-  margin-top: 2rem; /* Move down slightly */
+  margin-top: 2rem;
 }
 
 .mobileNavLinks a {
   font-size: clamp(2.5rem, 11vw, 3.5rem);
-  font-weight: 400; /* Regular thin look */
+  font-weight: 400;
   letter-spacing: -0.04em;
   color: var(--foreground);
   text-transform: uppercase;
