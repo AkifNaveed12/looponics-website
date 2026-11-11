@@ -56,13 +56,13 @@ const SERVICES = [
 ] as const;
 
 /* ─── Orbital arc positions (SVG viewBox 0 0 100 400) ─── */
-// 5 points along a slight left-curve arc
+// 5 points along an inward-curving arc bowing toward the content
 const ARC_POINTS: [number, number][] = [
-  [52, 40],
-  [45, 110],
-  [42, 200],
-  [45, 290],
-  [52, 360],
+  [26, 42],
+  [54, 115],
+  [65, 200],
+  [54, 285],
+  [26, 358],
 ];
 
 /* ─── OrbitalNav ─── */
@@ -75,9 +75,9 @@ function OrbitalNav({ activeIndex }: { activeIndex: number }) {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
       >
-        {/* Decorative curved arc — parenthesis shape */}
+        {/* Decorative curved arc — inward bowing parenthesis towards content */}
         <path
-          d="M 55 20 C 20 100, 15 300, 55 380"
+          d="M 12 15 C 82 105, 82 295, 12 385"
           stroke="#e4e4e7"
           strokeWidth="1"
           fill="none"
@@ -95,7 +95,7 @@ function OrbitalNav({ activeIndex }: { activeIndex: number }) {
               style={{
                 left: `${lx}%`,
                 top: `${(ly / 400) * 100}%`,
-                transform: "translate(-50%, -50%)",
+                transform: "translate(-20%, -50%)",
               }}
             >
               {isActive && <span className={styles.arcDot}>●</span>}

@@ -13,10 +13,10 @@
    DESKTOP  ≥1024px
 ═══════════════════════════════ */
 
-/* Scroll container – 500vh so each service gets 100vh */
+/* Scroll container – 280vh for responsive, smooth service transitions */
 .scrollContainer {
   display: none; /* hidden on mobile, shown on desktop */
-  height: 500vh;
+  height: 280vh;
   position: relative;
 }
 
