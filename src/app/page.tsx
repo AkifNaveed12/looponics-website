@@ -1,11 +1,10 @@
-import Hero from "@/components/Hero";
-import ProblemSection from "@/components/ProblemSection";
-import ComparisonSection from "@/components/ComparisonSection";
-import ArsenalSection from "@/components/ArsenalSection";
+import AgencyHero from "@/components/AgencyHero";
+import WhoWeAreSection from "@/components/WhoWeAreSection";
+import ServicesSection from "@/components/ServicesSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import WhyOlemaSection from "@/components/WhyOlemaSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
-import TrustSection from "@/components/TrustSection";
-import EnterpriseSection from "@/components/EnterpriseSection";
-import ProofSection from "@/components/ProofSection";
+import CapabilitiesSection from "@/components/CapabilitiesSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -13,14 +12,15 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <ProblemSection />
-      <ArsenalSection />
-      <TrustSection />
-      <EnterpriseSection />
-      <ComparisonSection />
-      <ProofSection />
-      <HowItWorksSection />
+      <AgencyHero />
+      <WhoWeAreSection />
+      <ServicesSection />
+      <ProjectsSection />
+      <WhyOlemaSection />
+      <div id="process">
+        <HowItWorksSection />
+      </div>
+      <CapabilitiesSection />
       <FAQSection />
       <CTASection />
       <Footer />

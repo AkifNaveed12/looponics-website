@@ -6,10 +6,10 @@ import { motion } from "motion/react";
 const steps = [
   {
     id: "step-1",
-    tab: "WEEK 1",
+    tab: "STAGE 01",
     num: "1",
     title: "Discover",
-    description: "Workshops, market and user research, technical scoping — ending in a costed roadmap.",
+    description: "Understand the business, requirements, users, and objectives. We ask the right questions before writing a single line of code.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
         <circle cx="11" cy="11" r="7" />
@@ -21,10 +21,10 @@ const steps = [
   },
   {
     id: "step-2",
-    tab: "WEEK 2–4",
+    tab: "STAGE 02",
     num: "2",
-    title: "Design",
-    description: "Flows, prototypes and a reusable design system — tested with real users before build.",
+    title: "Strategize",
+    description: "Define the technical approach, architecture, project scope, and delivery roadmap.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
         <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -37,10 +37,10 @@ const steps = [
   },
   {
     id: "step-3",
-    tab: "WEEK 5–11",
+    tab: "STAGE 03",
     num: "3",
-    title: "Build",
-    description: "Weekly releases with demos every Friday. Multi-tenant architecture, billing, admin.",
+    title: "Design & Build",
+    description: "Engineer, integrate, test, and refine. Weekly deliverables with continuous feedback loops.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
         <path d="m8 8-4 4 4 4" />
@@ -52,10 +52,10 @@ const steps = [
   },
   {
     id: "step-4",
-    tab: "ONGOING",
+    tab: "STAGE 04",
     num: "4",
-    title: "Launch & grow",
-    description: "CI/CD, monitoring, SEO and growth programs tied to your revenue numbers.",
+    title: "Deploy",
+    description: "Launch, monitor, and support the delivered product. We don't disappear after go-live.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
         <path d="M3 17l6-6 4 4 8-8" />
@@ -78,7 +78,7 @@ export default function HowItWorksSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          • How we work
+          • OUR PROCESS
         </motion.div>
         
         <motion.h2 
@@ -88,7 +88,7 @@ export default function HowItWorksSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          From brief <em>to launch.</em>
+          From First Conversation <em>to Production.</em>
         </motion.h2>
 
         <div className={styles.zig}>

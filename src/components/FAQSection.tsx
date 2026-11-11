@@ -14,33 +14,33 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     id: "faq-1",
-    question: "Will this replace my staff?",
+    question: "What types of projects do you typically work on?",
     answer:
-      "No. Your agent takes the repetitive, mind-numbing work off their plate — the data entry, the follow-ups, the copy-pasting — so your team can spend their time on the work that actually needs a human. It's built to make your people faster, not to make them unnecessary.",
+      "We work on web applications, mobile apps, AI-powered SaaS platforms, business automation systems, and agentic AI workflows. Projects range from early-stage products to improving existing systems at growing companies.",
   },
   {
     id: "faq-2",
-    question: "What happens to my data if I cancel?",
+    question: "Do you work with early-stage startups or established businesses?",
     answer:
-      "It's handed back to you, and then deleted from our systems. Nothing lingers, nothing gets reused. Your data was never ours to keep.",
+      "Both. We've worked with early-stage founders building their first product and with established teams looking to add AI capabilities or modernize existing infrastructure. What matters is a clear problem and a willingness to build it right.",
   },
   {
     id: "faq-3",
-    question: "What if the agent gets something wrong?",
+    question: "How does the engagement typically start?",
     answer:
-      "If it hits a situation it's not confident about, it hands the conversation straight to a human on your team — instantly, with full context. Our team also reviews what happened and retrains the agent within 24 hours, so the same mistake doesn't happen twice.",
+      "It starts with a conversation. We discuss your goals, the problem you're solving, your current setup, and your timeline. From there, we scope the work, define the architecture, and agree on how we'll work together before any code is written.",
   },
   {
     id: "faq-4",
-    question: "Is support really available 24/7?",
+    question: "Do you use AI in everything you build?",
     answer:
-      "Yes. Whenever you need us, someone's there — not just during business hours.",
+      "No — only where it genuinely adds value. We're not in the business of adding AI features because they sound impressive. If your problem is better solved with traditional software engineering, that's what we'll recommend.",
   },
   {
     id: "faq-5",
-    question: "Do I have to sign a contract?",
+    question: "What happens after the project is delivered?",
     answer:
-      "After your free 7-day trial, yes — but you'll have already seen exactly what the agent does for your business before you commit to anything.",
+      "We don't disappear after launch. We offer ongoing support, maintenance, and iteration. Whether you need a quick bug fix or want to continue building new features, we're available.",
   },
 ];
 
@@ -64,10 +64,10 @@ export default function FAQSection() {
         >
           <span className={styles.eyebrow}>• FREQUENTLY ASKED QUESTIONS</span>
           <h2 className={styles.title}>
-            Real questions. <em>Straight answers.</em>
+            Common questions. <em>Direct answers.</em>
           </h2>
           <p className={styles.subtitle}>
-            Everything you need to know about how Olema agents work, security, and onboarding.
+            Everything you need to know about working with Olema.
           </p>
         </motion.div>
 

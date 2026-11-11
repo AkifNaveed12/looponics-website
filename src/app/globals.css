@@ -19,6 +19,12 @@
   --border-color: #e4e4e7;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --glass-bg: rgba(255, 255, 255, 0.85);
+
+  /* Hero palette tokens */
+  --hero-bg: #FF4D00;
+  --hero-text: #ffffff;
+  --hero-shape-1: #000000;
+  --hero-shape-2: #0066FF;
 }
 
 html {

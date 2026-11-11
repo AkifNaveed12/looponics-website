@@ -3,19 +3,19 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Olema | Agentic AI Done For You",
-  description: "Stop firefighting and start scaling with Olema. We build AI agents that handle leads, tickets, and orders from day one. No tech skills needed.",
+  title: "Olema | Technology Agency",
+  description: "We design, develop, and engineer digital products, intelligent systems, and custom solutions. Web development, mobile apps, AI-powered SaaS, automations, and agentic AI systems.",
   openGraph: {
-    title: "Olema | Agentic AI Done For You",
-    description: "Stop firefighting and start scaling with Olema. We build AI agents that handle leads, tickets, and orders from day one.",
+    title: "Olema | Technology Agency",
+    description: "We engineer digital products, intelligent systems, and custom solutions that help businesses move forward.",
     url: "https://olema.com",
     siteName: "Olema",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Olema | Agentic AI Done For You",
-    description: "Stop firefighting and start scaling with Olema. We build AI agents that handle leads, tickets, and orders from day one.",
+    title: "Olema | Technology Agency",
+    description: "We engineer digital products, intelligent systems, and custom solutions.",
   }
 };
 

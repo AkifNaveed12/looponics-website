@@ -4,13 +4,13 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import styles from "./Footer.module.css";
 
-const words = ["SHOW", "ME", "WHAT'S", "POSSIBLE →"];
+const words = ["HAVE AN", "IDEA?", "LET'S", "BUILD IT →"];
 
 const bottomLinks = [
-  { label: "AGENTS", href: "#agents", isExternal: false },
-  { label: "ENTERPRISE", href: "#enterprise", isExternal: false },
-  { label: "SECURITY & PRIVACY", href: "#security", isExternal: false },
-  { label: "FAQS", href: "#faqs", isExternal: false },
+  { label: "SERVICES", href: "#services", isExternal: false },
+  { label: "OUR WORK", href: "#projects", isExternal: false },
+  { label: "PROCESS", href: "#process", isExternal: false },
+  { label: "FAQS", href: "#faq", isExternal: false },
   { label: "TWITTER", href: "https://twitter.com", isExternal: true },
   { label: "LINKEDIN", href: "https://linkedin.com", isExternal: true },
 ];
@@ -18,7 +18,7 @@ const bottomLinks = [
 export default function Footer() {
   const handleBookCall = (e: React.MouseEvent) => {
     e.preventDefault();
-    window.open("https://cal.com/jatin-yadav05/15min", "_blank");
+    window.location.href = "#contact";
   };
 
   return (
@@ -32,7 +32,7 @@ export default function Footer() {
           <div className={styles.leftCol}>
             <nav className={styles.primaryNav}>
               <motion.a
-                href="https://cal.com/jatin-yadav05/15min"
+                href="#contact"
                 onClick={handleBookCall}
                 className={styles.bigCtaLink}
                 initial="initial"

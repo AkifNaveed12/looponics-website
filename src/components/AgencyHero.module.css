@@ -1,0 +1,223 @@
+/* ─── Hero palette tokens ─────────────────────────────────────── */
+/* Override these to retheme without touching the component.       */
+.hero {
+  --hero-bg: #ff4d00;
+  --hero-text: #ffffff;
+  --hero-shape-1: #000000; /* starburst */
+  --hero-shape-2: #0066ff; /* blob      */
+}
+
+/* ─── Layout ─────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  background-color: var(--hero-bg);
+  color: var(--hero-text);
+  font-family: var(--font-sans);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+
+.inner {
+  width: 100%;
+  max-width: 100%;
+  padding: clamp(5rem, 10vw, 8rem) clamp(1.5rem, 6vw, 5rem) clamp(3rem, 6vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* ─── Headline ───────────────────────────────────────────────── */
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  user-select: none;
+}
+
+.lineWrap {
+  overflow: hidden; /* clips the y-entrance animation */
+}
+
+.headlineLine {
+  display: block;
+  font-size: clamp(5rem, 12vw, 11rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--hero-text);
+  white-space: nowrap;
+}
+
+/* The last (cycling) line keeps its height stable */
+.cyclingLine {
+  position: relative;
+  height: clamp(4.5rem, 10.8vw, 9.9rem); /* ≈ font-size × line-height */
+  display: flex;
+  align-items: flex-start;
+}
+
+.cyclingLine .headlineLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* "AGENCY." in a slightly different weight to visually anchor it */
+.agencyWord {
+  font-style: italic;
+}
+
+/* ─── Secondary CTA ──────────────────────────────────────────── */
+.secondaryCta {
+  margin-top: 0.5rem;
+}
+
+.secondaryLink {
+  color: var(--hero-text);
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: opacity 0.2s ease;
+}
+
+.secondaryLink:hover {
+  opacity: 1;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.secondaryLink:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* ─── Shapes row ─────────────────────────────────────────────── */
+.shapesRow {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/* ─── Starburst ──────────────────────────────────────────────── */
+.starburstWrap {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  color: var(--hero-shape-1);
+}
+
+.starburstInner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starburstSvg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ─── Blob / CTA ──────────────────────────────────────────────── */
+.blob {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: var(--hero-shape-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  /* organic shape via asymmetric border-radius */
+  border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+  transition: border-radius 0.4s ease, filter 0.2s ease;
+}
+
+.blob:hover {
+  filter: brightness(1.1);
+  border-radius: 50%;
+}
+
+.blobText {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .headlineLine {
+    font-size: clamp(3.5rem, 14vw, 5rem);
+  }
+
+  .cyclingLine {
+    height: clamp(3.15rem, 12.6vw, 4.5rem);
+  }
+
+  .starburstWrap {
+    width: 120px;
+    height: 120px;
+  }
+
+  .blob {
+    width: 120px;
+    height: 120px;
+  }
+
+  .blobText {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .headlineLine {
+    font-size: clamp(2.75rem, 15vw, 4rem);
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .cyclingLine {
+    height: auto;
+    min-height: 2.5rem;
+    position: relative;
+  }
+
+  .shapesRow {
+    gap: 1rem;
+  }
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .arrow {
+    transition: none;
+  }
+
+  .secondaryLink {
+    transition: none;
+  }
+
+  .blob {
+    transition: none;
+  }
+}

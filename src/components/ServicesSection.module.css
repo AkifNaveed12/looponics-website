@@ -1,0 +1,286 @@
+/* ─────────────────────────────────────────────
+   ServicesSection.module.css
+   ───────────────────────────────────────────── */
+
+/* ── Section shell ── */
+.section {
+  position: relative;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* ═══════════════════════════════
+   DESKTOP  ≥1024px
+═══════════════════════════════ */
+
+/* Scroll container – 500vh so each service gets 100vh */
+.scrollContainer {
+  display: none; /* hidden on mobile, shown on desktop */
+  height: 500vh;
+  position: relative;
+}
+
+/* Sticky panel that pins while user scrolls through the 500vh */
+.stickyPanel {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Three-column inner layout */
+.inner {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 4vw;
+  gap: 2vw;
+}
+
+/* Left column: 15% */
+.orbitalCol {
+  flex: 0 0 15%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Center column: 45% */
+.contentCol {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+
+/* Right column: 40% */
+.visualCol {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Orbital Navigation ── */
+.orbitalNav {
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+
+.arcSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.arcLabels {
+  position: absolute;
+  inset: 0;
+}
+
+.arcLabel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: default;
+  user-select: none;
+}
+
+.arcNum {
+  font-family: var(--font-sans);
+  letter-spacing: 0.04em;
+  color: var(--foreground);
+  line-height: 1;
+  display: inline-block;
+}
+
+.arcLabelActive .arcNum {
+  color: var(--foreground);
+}
+
+.arcDot {
+  font-size: 0.6rem;
+  color: #FF4D00;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* ── Service Content ── */
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground);
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.serviceTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.serviceDesc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--foreground);
+  opacity: 0.7;
+  max-width: 46ch;
+  margin: 0;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--foreground);
+  background: transparent;
+  line-height: 1.4;
+}
+
+/* ── Visual column ── */
+.visualWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visualWrap svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ═══════════════════════════════
+   MOBILE  <1024px
+═══════════════════════════════ */
+
+/* Mobile section is hidden on desktop */
+.mobileSection {
+  display: none;
+}
+
+/* ── Responsive breakpoint ── */
+@media (max-width: 1023px) {
+  /* Show mobile, hide desktop scroll container */
+  .scrollContainer {
+    display: none !important;
+  }
+
+  .mobileSection {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1.5rem 3rem;
+    gap: 1.5rem;
+    min-height: 100vh;
+  }
+
+  .mobileContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .mobileServiceNum {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+  }
+
+  .mobileDotIndicator {
+    color: #FF4D00;
+    font-size: 0.65rem;
+  }
+
+  .mobileVisual {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .mobileVisual svg {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Dot navigation */
+  .mobileDots {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .mobileDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border-color);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .mobileDotActive {
+    background: #FF4D00;
+    transform: scale(1.3);
+  }
+}
+
+/* ── Desktop becomes visible ── */
+@media (min-width: 1024px) {
+  .scrollContainer {
+    display: block;
+  }
+
+  .mobileSection {
+    display: none;
+  }
+}
+
+/* ── Tablet visual scale-down (768–1023px) ── */
+@media (max-width: 1023px) {
+  .serviceTitle {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .visualWrap,
+  .serviceContent {
+    animation: none !important;
+    transition: none !important;
+  }
+}

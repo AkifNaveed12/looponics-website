@@ -109,6 +109,36 @@
   background-color: var(--primary-hover, #0d62b3);
 }
 
+/* Contrast over hero when at page top */
+.navbar:not(.scrolled) .logoText {
+  color: #ffffff;
+}
+
+.navbar:not(.scrolled) .navLinks a {
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.navbar:not(.scrolled) .navLinks a:hover {
+  opacity: 1;
+}
+
+.navbar:not(.scrolled) .mobileMenuBtn span {
+  background-color: #ffffff;
+}
+
+.navbar:not(.scrolled) .contactBtn {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.navbar:not(.scrolled) .contactBtn:hover {
+  background-color: #222222;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
 @keyframes fadeIn {
   to { opacity: 1; }
 }

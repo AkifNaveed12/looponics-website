@@ -28,10 +28,10 @@ export default function Navbar() {
           </div>
           
           <nav className={styles.navLinks}>
-            <Link href="#agents">Agents</Link>
-            <Link href="#how-it-works">How It Works</Link>
-            <Link href="#security">Security</Link>
-            <Link href="#faqs">FAQs</Link>
+            <Link href="#services">Services</Link>
+            <Link href="#projects">Work</Link>
+            <Link href="#process">Process</Link>
+            <Link href="#faq">FAQs</Link>
           </nav>
           
           <div className={styles.actions}>
@@ -57,10 +57,10 @@ export default function Navbar() {
         <div className={styles.mobileMenuContent}>
           <nav className={styles.mobileNavLinks}>
             <Link href="/" className={styles.mobileNavLinkGray} onClick={() => setIsMobileMenuOpen(false)}>HOME</Link>
-            <Link href="#agents" onClick={() => setIsMobileMenuOpen(false)}>AGENTS</Link>
-            <Link href="#how-it-works" onClick={() => setIsMobileMenuOpen(false)}>HOW IT WORKS</Link>
-            <Link href="#security" onClick={() => setIsMobileMenuOpen(false)}>SECURITY</Link>
-            <Link href="#faqs" onClick={() => setIsMobileMenuOpen(false)}>FAQS</Link>
+            <Link href="#services" onClick={() => setIsMobileMenuOpen(false)}>SERVICES</Link>
+            <Link href="#projects" onClick={() => setIsMobileMenuOpen(false)}>WORK</Link>
+            <Link href="#process" onClick={() => setIsMobileMenuOpen(false)}>PROCESS</Link>
+            <Link href="#faq" onClick={() => setIsMobileMenuOpen(false)}>FAQS</Link>
             <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>CONTACT</Link>
           </nav>
           

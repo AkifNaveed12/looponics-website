@@ -22,11 +22,11 @@ export default function CTASection() {
   };
 
   const handleBookCall = () => {
-    window.open("https://cal.com/jatin-yadav05/15min", "_blank");
+    window.location.href = "#contact";
   };
 
   return (
-    <section className={styles.section} id="cta">
+    <section className={styles.section} id="contact">
       <div className={styles.container}>
         
         {/* Success View (after clicking circle button) */}
@@ -105,7 +105,7 @@ export default function CTASection() {
                   color: "#ffffff",
                 }}
               >
-                Book a call
+                Book a Call
               </span>
               <ArrowUpRight
                 className={styles.bookCallIcon}
@@ -134,7 +134,7 @@ export default function CTASection() {
               transitionDelay: "450ms",
             }}
           >
-            15 MIN INTRO CALL
+            30 MIN PROJECT CALL
           </span>
         </div>
 
@@ -167,7 +167,7 @@ export default function CTASection() {
                     transform: isHovered && !isClicked ? "translateY(-8%)" : "translateY(0)",
                   }}
                 >
-                  Let&apos;s Find Out
+                  Have an Idea?
                 </span>
               </span>
               <span className={styles.overflowHide}>
@@ -178,7 +178,7 @@ export default function CTASection() {
                     transform: isHovered && !isClicked ? "translateY(-8%)" : "translateY(0)",
                   }}
                 >
-                  <span className={styles.mutedWord}>What&apos;s Costing You</span>
+                  <span className={styles.mutedWord}>Let&apos;s Build It.</span>
                 </span>
               </span>
             </h2>
@@ -246,7 +246,7 @@ export default function CTASection() {
           }}
         >
           <p className={styles.description}>
-            No pitch deck. No pressure. Just a free 30-minute conversation where we show you, specifically, what&apos;s slowing your business down — and what it would look like fixed.
+            Whether you&apos;re launching a new product, improving existing systems, or exploring what&apos;s possible with AI — let&apos;s figure out the right way to build it. No pitch decks, no pressure.
           </p>
         </motion.div>
 
