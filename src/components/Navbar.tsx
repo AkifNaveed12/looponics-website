@@ -104,10 +104,41 @@ export default function Navbar() {
           <div className={styles.mobileSocials}>
             <div className={styles.socialsLabel}>FOLLOW US</div>
             <div className={styles.socialsList}>
-              <a href="#">INSTAGRAM</a>
-              <a href="#">LINKEDIN</a>
-              <a href="#">TWITTER</a>
-              <a href="#">YOUTUBE</a>
+              <a
+                href="https://www.instagram.com/looponics"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                INSTAGRAM
+              </a>
+              <a
+                href="https://www.linkedin.com/in/looponics-agency"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LINKEDIN
+              </a>
+              <a
+                href="https://x.com/looponics"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                X (TWITTER)
+              </a>
+              <a
+                href="https://discord.com/looponics"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DISCORD
+              </a>
+              <a
+                href="https://facebook.com/looponics"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FACEBOOK
+              </a>
             </div>
           </div>
         </div>

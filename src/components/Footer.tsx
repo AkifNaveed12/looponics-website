@@ -12,9 +12,11 @@ const bottomLinks = [
   { label: "PROCESS", href: "#process", isExternal: false },
   { label: "TEAM", href: "#team", isExternal: false },
   { label: "FAQS", href: "#faq", isExternal: false },
-  { label: "support@looponics.tech", href: "mailto:support@looponics.tech", isExternal: true },
-  { label: "TWITTER", href: "https://twitter.com", isExternal: true },
-  { label: "LINKEDIN", href: "https://linkedin.com", isExternal: true },
+  { label: "LINKEDIN", href: "https://www.linkedin.com/in/looponics-agency", isExternal: true },
+  { label: "X (TWITTER)", href: "https://x.com/looponics", isExternal: true },
+  { label: "INSTAGRAM", href: "https://www.instagram.com/looponics", isExternal: true },
+  { label: "DISCORD", href: "https://discord.com/looponics", isExternal: true },
+  { label: "FACEBOOK", href: "https://facebook.com/looponics", isExternal: true },
 ];
 
 export default function Footer() {
@@ -79,9 +81,17 @@ export default function Footer() {
             <div className={styles.contactSection}>
               <span className={styles.contactLabel}>CONTACT US</span>
               <a
+                href="mailto:hello@looponics.tech"
+                className={styles.contactEmail}
+                aria-label="Email Looponics at hello@looponics.tech"
+              >
+                hello@looponics.tech
+              </a>
+              <a
                 href="mailto:support@looponics.tech"
                 className={styles.contactEmail}
-                aria-label="Email Looponics at support@looponics.tech"
+                style={{ opacity: 0.85, fontSize: "0.95rem" }}
+                aria-label="Email Looponics Support at support@looponics.tech"
               >
                 support@looponics.tech
               </a>

@@ -56,7 +56,7 @@ We build React Native applications.
   assert.match(parsed.chunks[1].chunkText, /React Native/);
 });
 
-test("RAG Knowledge Base - all 8 curated documents exist and parse cleanly", () => {
+test("RAG Knowledge Base - all curated documents including founder intake exist and parse cleanly", () => {
   const knowledgeDir = path.join(process.cwd(), "docs", "knowledge");
   const expectedFiles = [
     "company.md",
@@ -67,6 +67,7 @@ test("RAG Knowledge Base - all 8 curated documents exist and parse cleanly", () 
     "portfolio.md",
     "policies.md",
     "escalation.md",
+    "LOOPONICS_FOUNDER_INTAKE_REVIEWED_2026-11-12.md",
   ];
 
   for (const file of expectedFiles) {
