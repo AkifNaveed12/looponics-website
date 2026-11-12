@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import HydrationFix from "@/components/HydrationFix";
+import AssistantModal from "@/components/assistant-ui/assistant-modal";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -44,7 +45,12 @@ export const metadata: Metadata = {
       "We design, develop, and engineer digital products, intelligent systems, and custom software solutions.",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/images/looponics-logo.png",
   },
 };
 
@@ -59,6 +65,7 @@ export default function RootLayout({
         <HydrationFix />
         <Navbar />
         {children}
+        <AssistantModal />
       </body>
     </html>
   );

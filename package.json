@@ -6,10 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "npx tsx --test tests/**/*.test.ts"
   },
   "dependencies": {
+    "@ai-sdk/google": "^4.0.118",
+    "@ai-sdk/react": "^4.0.174",
+    "@assistant-ui/react": "^0.15.36",
+    "@assistant-ui/react-ai-sdk": "^1.4.23",
+    "@assistant-ui/react-markdown": "^0.14.26",
     "@gsap/react": "^2.1.2",
+    "ai": "^7.0.170",
     "gsap": "^3.15.0",
     "lucide-react": "^1.31.0",
     "motion": "^12.42.2",
