@@ -107,8 +107,6 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
     setStatus("loading");
 
-    // Primary endpoint is Next.js proxy route /api/book-call (avoids CORS),
-    // fallback directly to FastAPI server if needed.
     const directApiUrl =
       typeof window !== "undefined" &&
       (window.location.hostname === "localhost" ||
@@ -140,7 +138,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
         });
-      } catch (networkErr) {
+      } catch {
         setStatus("idle");
         setErrorMsg(
           "Could not connect to the booking server. Please verify your connection or try again."
@@ -215,15 +213,49 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
         {status === "idle" && (
           <>
-            <div className={styles.header}>
-              <span className={styles.badge}>CALENDAR INTEGRATION</span>
-              <h3 id="booking-modal-title" className={styles.title}>
-                Schedule a Call
-              </h3>
-              <p className={styles.subtitle}>
-                Pick a time to connect with the Looponics team via Google Meet.
-              </p>
+            {/* Looponics Brand Lockup Header */}
+            <div className={styles.brandHeader}>
+              <div className={styles.logoGroup}>
+                <div className={styles.logoIcon}>
+                  <svg
+                    viewBox="-4.00 16.50 520.00 520.00"
+                    width="28"
+                    height="28"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Looponics Logo"
+                  >
+                    <path
+                      fill="#FFFFFF"
+                      d="M389.7 96.66A208 208 0 1 1 96.66 122.3A32 32 0 0 1 145.69 163.44A144 144 0 1 0 348.56 145.69A32 32 0 0 1 389.7 96.66Z"
+                    />
+                    <path
+                      fill="#FC5101"
+                      d="M376.15 234.81A122 122 0 1 1 234.81 135.85A32 32 0 0 1 245.93 198.88A58 58 0 1 0 313.12 245.93A32 32 0 0 1 376.15 234.81Z"
+                    />
+                  </svg>
+                </div>
+                <div className={styles.logoTextGroup}>
+                  <span className={styles.logoName}>Looponics</span>
+                  <span className={styles.logoTagline}>
+                    New generation, same Engineering DNA
+                  </span>
+                </div>
+              </div>
             </div>
+
+            {/* Eyebrow & Headline */}
+            <div className={styles.eyebrowRow}>
+              <span className={styles.eyebrow}>• CALENDAR INTEGRATION</span>
+              <span className={styles.eyebrowDuration}>30 MIN DISCOVERY</span>
+            </div>
+
+            <h3 id="booking-modal-title" className={styles.title}>
+              Schedule a Call
+            </h3>
+            <p className={styles.subtitle}>
+              Pick a time to connect with the Looponics team via Google Meet.
+            </p>
 
             {errorMsg && (
               <div className={`${styles.alert} ${styles.alertError}`}>
@@ -300,7 +332,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 <textarea
                   id="client-message"
                   rows={3}
-                  placeholder="Tell us briefly about what you'd like to automate or build..."
+                  placeholder="Tell us briefly about what you'd like to discuss..."
                   className={styles.textarea}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
