@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "npx tsx --test tests/**/*.test.ts"
+    "test": "npx tsx --test tests/**/*.test.ts",
+    "ingest": "npx tsx scripts/ingest-knowledge.ts"
   },
   "dependencies": {
     "@ai-sdk/google": "^4.0.118",
@@ -16,6 +17,7 @@
     "@assistant-ui/react-ai-sdk": "^1.4.23",
     "@assistant-ui/react-markdown": "^0.14.26",
     "@gsap/react": "^2.1.2",
+    "@supabase/supabase-js": "^2.119.0",
     "ai": "^7.0.170",
     "gsap": "^3.15.0",
     "lucide-react": "^1.31.0",

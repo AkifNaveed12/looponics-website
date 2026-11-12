@@ -2,6 +2,7 @@ import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { generateText } from "ai";
 import { getChatConfig } from "../config";
 import { LOOPONICS_SYSTEM_PROMPT } from "../prompts";
+import { searchKnowledge, assembleRAGContext } from "../retrieval";
 import type { ChatMessage, ChatResponseEnvelope } from "../schemas";
 
 export interface ProviderResponse {
@@ -44,6 +45,13 @@ export async function callGeminiChat(
       content: m.content,
     }));
 
+    // 1. RAG retrieval for the latest user message
+    const lastUserMessage = [...messages].reverse().find((m) => m.role === "user");
+    const query = lastUserMessage?.content || "";
+    const retrievedChunks = query ? await searchKnowledge(query, { topK: 4 }) : [];
+    const ragContext = assembleRAGContext(retrievedChunks);
+
+    // 2. Generate response with grounded RAG context
     const result = await generateText({
       model: google(config.geminiModel),
       providerOptions: {
@@ -51,9 +59,13 @@ export async function callGeminiChat(
           thinking: { budget: 0 },
         },
       },
-      system: LOOPONICS_SYSTEM_PROMPT,
+      system: `${LOOPONICS_SYSTEM_PROMPT}\n\n${ragContext}`,
       messages: formattedMessages,
     });
+
+    const uniqueSources = Array.from(
+      new Set(retrievedChunks.map((c) => c.filePath))
+    );
 
     return {
       ok: true,
@@ -65,7 +77,7 @@ export async function callGeminiChat(
           role: "assistant",
           content: result.text.trim(),
         },
-        sources: [],
+        sources: uniqueSources,
         actions: [],
       },
     };
