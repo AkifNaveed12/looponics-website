@@ -45,6 +45,7 @@ export default function Navbar() {
           <nav className={styles.navLinks}>
             <Link href="#services">Services</Link>
             <Link href="#process">Process</Link>
+            <Link href="#team">Team</Link>
             <Link href="#faq">FAQs</Link>
           </nav>
 
@@ -88,6 +89,9 @@ export default function Navbar() {
             </Link>
             <Link href="#process" onClick={() => setIsMobileMenuOpen(false)}>
               PROCESS
+            </Link>
+            <Link href="#team" onClick={() => setIsMobileMenuOpen(false)}>
+              TEAM
             </Link>
             <Link href="#faq" onClick={() => setIsMobileMenuOpen(false)}>
               FAQS

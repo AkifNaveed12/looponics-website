@@ -10,6 +10,7 @@ const bottomLinks = [
   { label: "SERVICES", href: "#services", isExternal: false },
   { label: "CAPABILITIES", href: "#capabilities", isExternal: false },
   { label: "PROCESS", href: "#process", isExternal: false },
+  { label: "TEAM", href: "#team", isExternal: false },
   { label: "FAQS", href: "#faq", isExternal: false },
   { label: "support@looponics.tech", href: "mailto:support@looponics.tech", isExternal: true },
   { label: "TWITTER", href: "https://twitter.com", isExternal: true },

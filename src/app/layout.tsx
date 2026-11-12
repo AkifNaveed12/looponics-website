@@ -37,20 +37,36 @@ export const metadata: Metadata = {
     siteName: "Looponics",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/looponics-logo.png",
+        width: 512,
+        height: 512,
+        alt: "Looponics Agency Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Looponics | Technology & Engineering Agency",
     description:
       "We design, develop, and engineer digital products, intelligent systems, and custom software solutions.",
+    images: ["/images/looponics-logo.png"],
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/images/favicon.svg", type: "image/svg+xml" },
+      { url: "/images/favicon.svg?v=20261112", type: "image/svg+xml" },
+      { url: "/favicon.ico?v=20261112", sizes: "any" },
+      { url: "/favicon.svg?v=20261112", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/images/looponics-logo.png",
+    shortcut: "/favicon.ico?v=20261112",
+    apple: [
+      {
+        url: "/images/looponics-logo.png?v=20261112",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
 };
 
@@ -61,6 +77,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          rel="icon"
+          href="/images/favicon.svg?v=20261112"
+          type="image/svg+xml"
+        />
+        <link rel="icon" href="/favicon.ico?v=20261112" sizes="any" />
+        <link
+          rel="apple-touch-icon"
+          href="/images/looponics-logo.png?v=20261112"
+        />
+      </head>
       <body suppressHydrationWarning>
         <HydrationFix />
         <Navbar />
