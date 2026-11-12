@@ -5,12 +5,14 @@ import { useState } from "react";
 import { ArrowUpRight, Calendar } from "lucide-react";
 import { motion } from "motion/react";
 import styles from "./CTASection.module.css";
+import BookingModal from "./BookingModal";
 
 export default function CTASection() {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [isButtonHovered, setIsButtonHovered] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const handleClick = (e: React.MouseEvent<HTMLDivElement | HTMLSpanElement>) => {
     e.preventDefault();
@@ -22,7 +24,7 @@ export default function CTASection() {
   };
 
   const handleBookCall = () => {
-    window.location.href = "#contact";
+    setIsBookingOpen(true);
   };
 
   return (
@@ -251,6 +253,11 @@ export default function CTASection() {
         </motion.div>
 
       </div>
+
+      <BookingModal
+        isOpen={isBookingOpen}
+        onClose={() => setIsBookingOpen(false)}
+      />
     </section>
   );
 }

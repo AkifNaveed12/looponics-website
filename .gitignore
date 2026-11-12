@@ -45,6 +45,17 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# python & backend
+**/venv/
+**/.venv/
+**/__pycache__/
+*.py[cod]
+*$py.class
+credentials.json
+token.json
+token*.json
+.pytest_cache/
+
 # IDEs and editors
 .vscode/
 .idea/
