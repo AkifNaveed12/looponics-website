@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Looponics | Agencia de Tecnología e Ingeniería",
+    "titleTemplate": "%s | Looponics",
+    "description": "Looponics es una agencia moderna de servicios tecnológicos que diseña y desarrolla aplicaciones web, apps móviles multiplataforma, plataformas SaaS impulsadas por IA, automatizaciones personalizadas y sistemas de IA agéntica.",
+    "ogTitle": "Looponics | Agencia de Tecnología e Ingeniería",
+    "ogDescription": "Diseñamos, desarrollamos y creamos productos digitales, sistemas inteligentes y soluciones de software personalizadas que ayudan a las empresas a escalar.",
+    "twitterTitle": "Looponics | Agencia de Tecnología e Ingeniería",
+    "twitterDescription": "Diseñamos, desarrollamos y creamos productos digitales, sistemas inteligentes y soluciones de software personalizadas."
+  },
+  "nav": {
+    "services": "Servicios",
+    "process": "Proceso",
+    "team": "Equipo",
+    "faqs": "Preguntas frecuentes",
+    "contactUs": "Contáctanos",
+    "home": "INICIO",
+    "followUs": "SÍGUENOS",
+    "tagline": "Nueva generación, mismo",
+    "taglineLine2": "ADN de ingeniería"
+  },
+  "hero": {
+    "your": "TU",
+    "agency": "AGENCIA",
+    "letsBond": "CONECTEMOS",
+    "words": ["DIGITAL", "CREATIVA", "INTEGRAL", "TECNOLÓGICA"]
+  },
+  "whoWeAre": {
+    "eyebrow": "QUIÉNES SOMOS",
+    "headline": "Las buenas ideas merecen una gran ingeniería.",
+    "body": "Diseñamos, desarrollamos y creamos productos digitales, sistemas inteligentes y soluciones personalizadas que impulsan a los negocios. Looponics combina ingeniería de software, automatización e IA para resolver problemas empresariales reales, desde aplicaciones web y móviles hasta flujos de trabajo autónomos con IA.",
+    "stats": [
+      { "label": "5 áreas de servicio", "sub": "Desde desarrollo web hasta IA agéntica" },
+      { "label": "De principio a fin", "sub": "Desde el descubrimiento hasta el despliegue" },
+      { "label": "Desarrollo a medida", "sub": "Sin plantillas. Sin atajos." }
+    ]
+  },
+  "services": {
+    "eyebrow": "NUESTROS SERVICIOS",
+    "items": [
+      {
+        "id": "01",
+        "title": "Desarrollo Web",
+        "description": "Desarrollamos experiencias digitales rápidas, escalables y adaptativas, diseñadas a la medida de los requerimientos de tu negocio.",
+        "tags": ["Sitios Web a Medida", "Desarrollo Full-Stack", "Arquitectura Escalable"]
+      },
+      {
+        "id": "02",
+        "title": "Desarrollo de Apps Móviles",
+        "description": "Creamos aplicaciones móviles intuitivas que conectan a los usuarios con experiencias digitales potentes y fiables.",
+        "tags": ["Apps Multiplataforma", "UI Móvil", "Integración de APIs"]
+      },
+      {
+        "id": "03",
+        "title": "SaaS Impulsado por IA",
+        "description": "Convertimos ideas en productos de software inteligentes utilizando capacidades impulsadas por IA, arquitecturas modernas e infraestructura escalable.",
+        "tags": ["Integración de IA", "Plataformas SaaS", "Aplicaciones Inteligentes"]
+      },
+      {
+        "id": "04",
+        "title": "Automatizaciones Personalizadas",
+        "description": "Eliminamos procesos repetitivos mediante automatizaciones a medida, integraciones y flujos de trabajo empresariales inteligentes.",
+        "tags": ["Automatización de Flujos", "Integraciones de API", "Procesos Empresariales"]
+      },
+      {
+        "id": "05",
+        "title": "Sistemas de IA Agéntica",
+        "description": "Diseñamos sistemas autónomos y multiagente que razonan, coordinan herramientas y ejecutan flujos de trabajo complejos según las necesidades del negocio.",
+        "tags": ["Agentes de IA", "Sistemas Multiagente", "Integraciones MCP"]
+      }
+    ]
+  },
+  "whyLooponics": {
+    "eyebrow": "POR QUÉ LOOPONICS",
+    "headline": "No solo desarrollo. Ingeniería con propósito.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Enfoque centrado en el negocio",
+        "description": "Comenzamos con tus objetivos, no con una lista de tecnologías. Cada decisión se toma en función de lo que impulsa el crecimiento de tu negocio."
+      },
+      {
+        "num": "02",
+        "title": "A medida, sin soluciones genéricas",
+        "description": "Sin plantillas ni soluciones de talla única. Todo lo que construimos está diseñado alrededor de tus requerimientos específicos."
+      },
+      {
+        "num": "03",
+        "title": "IA donde realmente aporta valor",
+        "description": "Integramos IA de forma estratégica: donde verdaderamente mejora tu producto, no simplemente por seguir tendencias."
+      },
+      {
+        "num": "04",
+        "title": "Arquitectura escalable",
+        "description": "Sistemas diseñados para crecer contigo. Construimos pensando hacia dónde vas, no solo dónde te encuentras hoy."
+      },
+      {
+        "num": "05",
+        "title": "Entrega de principio a fin",
+        "description": "Desde la primera conversación hasta el despliegue y más allá. Nos hacemos cargo de todo el proceso."
+      },
+      {
+        "num": "06",
+        "title": "Integraciones fiables",
+        "description": "Ya sean APIs de terceros, sistemas heredados o nuevas automatizaciones, creamos las conexiones que mantienen tu negocio en marcha."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "NUESTRO PROCESO",
+    "headline": "Desde la primera conversación",
+    "headlineEm": "hasta producción.",
+    "steps": [
+      {
+        "tab": "ETAPA 01",
+        "num": "1",
+        "title": "Descubrimiento",
+        "description": "Comprendemos el negocio, los requerimientos, los usuarios y los objetivos. Hacemos las preguntas correctas antes de escribir una sola línea de código."
+      },
+      {
+        "tab": "ETAPA 02",
+        "num": "2",
+        "title": "Estrategia",
+        "description": "Definimos el enfoque técnico, la arquitectura, el alcance del proyecto y la hoja de ruta de entrega."
+      },
+      {
+        "tab": "ETAPA 03",
+        "num": "3",
+        "title": "Diseño y Desarrollo",
+        "description": "Ingeniería, integración, pruebas y perfeccionamiento. Entregas semanales con ciclos continuos de retroalimentación."
+      },
+      {
+        "tab": "ETAPA 04",
+        "num": "4",
+        "title": "Despliegue",
+        "description": "Lanzamiento, monitorización y soporte del producto entregado. No desaparecemos después de la puesta en marcha."
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "CAPACIDADES COMPROBADAS",
+    "headline": "Nuestro Stack Técnico.",
+    "subtitle": "Las tecnologías y herramientas con las que trabajamos en diferentes tipos de proyectos.",
+    "categories": [
+      { "category": "Frontend", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
+      { "category": "Backend", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
+      { "category": "IA y Machine Learning", "items": ["LLMs", "RAG Systems", "AI Agents", "Multi-Agent Systems", "Machine Learning"] },
+      { "category": "Automatización", "items": ["n8n", "API Integrations", "Workflow Automation", "MCP", "Webhooks"] },
+      { "category": "Infraestructura", "items": ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+    ]
+  },
+  "team": {
+    "eyebrow": "EL EQUIPO DETRÁS DE LOOPONICS",
+    "headline": "Conoce al equipo detrás del trabajo.",
+    "subtitle": "Tres ingenieros. Distintas áreas de especialización. Un compromiso compartido con la creación de experiencias digitales significativas.",
+    "roles": {
+      "Full-Stack AI Engineer": "Ingeniero de IA Full-Stack",
+      "Full-Stack Engineer": "Ingeniero Full-Stack",
+      "Security & Quality Assurance Engineer": "Ingeniero de Seguridad y Aseguramiento de Calidad"
+    }
+  },
+  "faq": {
+    "eyebrow": "PREGUNTAS FRECUENTES",
+    "headline": "Preguntas habituales.",
+    "headlineEm": "Respuestas directas.",
+    "subtitle": "Todo lo que necesitas saber sobre trabajar con Looponics.",
+    "items": [
+      {
+        "question": "¿En qué tipo de proyectos suelen trabajar?",
+        "answer": "Trabajamos en aplicaciones web, apps móviles, plataformas SaaS impulsadas por IA, sistemas de automatización empresarial y flujos de trabajo de IA agéntica. Los proyectos van desde productos en etapa inicial hasta la optimización de sistemas existentes en empresas en crecimiento."
+      },
+      {
+        "question": "¿Trabajan con startups en etapas iniciales o con empresas consolidadas?",
+        "answer": "Con ambas. Hemos trabajado con fundadores en etapas iniciales construyendo su primer producto y con equipos consolidados que buscan incorporar capacidades de IA o modernizar su infraestructura existente. Lo que importa es tener un problema bien definido y la determinación de construirlo correctamente."
+      },
+      {
+        "question": "¿Cómo suele comenzar una colaboración?",
+        "answer": "Comienza con una conversación. Hablamos de tus objetivos, el problema que buscas resolver, tu infraestructura actual y tus tiempos. A partir de ahí, definimos el alcance del trabajo, establecemos la arquitectura y acordamos cómo colaboraremos antes de escribir una sola línea de código."
+      },
+      {
+        "question": "¿Utilizan IA en todo lo que construyen?",
+        "answer": "No, únicamente donde aporta valor real. No nos dedicamos a añadir funciones de IA solo porque suenen impresionantes. Si tu problema se resuelve mejor con ingeniería de software tradicional, eso es lo que te recomendaremos."
+      },
+      {
+        "question": "¿Qué sucede después de la entrega del proyecto?",
+        "answer": "No desaparecemos tras el lanzamiento. Ofrecemos soporte continuo, mantenimiento e iteración. Ya sea que necesites una corrección rápida o quieras seguir desarrollando nuevas funcionalidades, estamos a tu disposición."
+      }
+    ]
+  },
+  "cta": {
+    "perfect": "PERFECTO",
+    "letsTalk": "Hablemos",
+    "bookACall": "Agendar una llamada",
+    "thirtyMinCall": "LLAMADA DE PROYECTO DE 30 MIN",
+    "haveAnIdea": "¿Tienes una idea?",
+    "letsBuildIt": "Vamos a construirla.",
+    "description": "Ya sea que estés lanzando un nuevo producto, optimizando sistemas existentes o explorando las posibilidades de la IA, encontremos la manera adecuada de construirlo. Sin presentaciones de ventas, sin presiones."
+  },
+  "booking": {
+    "calendarIntegration": "INTEGRACIÓN CON CALENDARIO",
+    "thirtyMinDiscovery": "30 MIN DE DESCUBRIMIENTO",
+    "scheduleACall": "Agendar una llamada",
+    "subtitle": "Elige un horario para conectarte con el equipo de Looponics a través de Google Meet.",
+    "fullName": "Nombre completo",
+    "emailAddress": "Correo electrónico",
+    "dateTime": "Fecha y hora",
+    "projectDetails": "Detalles del proyecto / Nota (Opcional)",
+    "namePlaceholder": "ej. Alex Morgan",
+    "emailPlaceholder": "you@company.com",
+    "messagePlaceholder": "Cuéntanos brevemente sobre lo que te gustaría conversar...",
+    "timezoneHint": "Los horarios se muestran automáticamente en la zona horaria local de tu navegador.",
+    "confirmBooking": "Confirmar reserva",
+    "required": "*",
+    "scheduling": "Agendando tu llamada en Google Meet...",
+    "schedulingHint": "Conectando con Google Calendar y generando el enlace de video. Si el servidor se está reactivando, esto puede demorar hasta 60 segundos.",
+    "booked": "¡Tu llamada está confirmada!",
+    "bookedMsg": "Se ha enviado una invitación de Google Calendar con el enlace de Google Meet a",
+    "meetLinkLabel": "Enlace de Google Meet",
+    "joinMeeting": "Unirse a la reunión de video",
+    "done": "Listo",
+    "closeDialog": "Cerrar diálogo",
+    "errorRequired": "Por favor, completa todos los campos requeridos.",
+    "errorConnection": "No se pudo conectar con el servidor de reservas. Por favor, verifica tu conexión o inténtalo de nuevo.",
+    "errorConflict": "Ese horario ya está reservado o no está disponible en nuestro calendario. Por favor, selecciona otro horario.",
+    "errorRateLimit": "Demasiadas solicitudes de reserva desde tu conexión. Por favor, espera un momento antes de volver a intentarlo.",
+    "errorPast": "No se puede reservar una cita en el pasado. Por favor, selecciona un horario futuro.",
+    "errorGeneric": "No se pudo completar la reserva en este momento. Por favor, inténtalo de nuevo o escribe a info@looponics.tech.",
+    "errorUnexpected": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo en unos momentos.",
+    "logoAlt": "Logotipo de Looponics",
+    "tagline": "Nueva generación, mismo ADN de ingeniería"
+  },
+  "footer": {
+    "words": ["¿TIENES UNA", "IDEA?", "VAMOS A", "CONSTRUIRLA →"],
+    "contactUs": "CONTÁCTANOS",
+    "services": "SERVICIOS",
+    "capabilities": "CAPACIDADES",
+    "process": "PROCESO",
+    "team": "EQUIPO",
+    "faqs": "PREGUNTAS FRECUENTES"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "ariaLabel": "Seleccionar idioma"
+  }
+}

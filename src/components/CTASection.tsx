@@ -6,8 +6,10 @@ import { ArrowUpRight, Calendar } from "lucide-react";
 import { motion } from "motion/react";
 import styles from "./CTASection.module.css";
 import BookingModal from "./BookingModal";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function CTASection() {
+  const dict = useDictionary();
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -49,7 +51,7 @@ export default function CTASection() {
                 transitionDelay: "100ms",
               }}
             >
-              PERFECT
+              {dict.cta.perfect}
             </span>
             <h3
               className={styles.successTitle}
@@ -59,7 +61,7 @@ export default function CTASection() {
                 transitionDelay: "200ms",
               }}
             >
-              Let&apos;s talk
+              {dict.cta.letsTalk}
             </h3>
           </div>
 
@@ -107,7 +109,7 @@ export default function CTASection() {
                   color: "#ffffff",
                 }}
               >
-                Book a Call
+                {dict.cta.bookACall}
               </span>
               <ArrowUpRight
                 className={styles.bookCallIcon}
@@ -136,7 +138,7 @@ export default function CTASection() {
               transitionDelay: "450ms",
             }}
           >
-            30 MIN PROJECT CALL
+            {dict.cta.thirtyMinCall}
           </span>
         </div>
 
@@ -169,7 +171,7 @@ export default function CTASection() {
                     transform: isHovered && !isClicked ? "translateY(-8%)" : "translateY(0)",
                   }}
                 >
-                  Have an Idea?
+                  {dict.cta.haveAnIdea}
                 </span>
               </span>
               <span className={styles.overflowHide}>
@@ -180,7 +182,7 @@ export default function CTASection() {
                     transform: isHovered && !isClicked ? "translateY(-8%)" : "translateY(0)",
                   }}
                 >
-                  <span className={styles.mutedWord}>Let&apos;s Build It.</span>
+                  <span className={styles.mutedWord}>{dict.cta.letsBuildIt}</span>
                 </span>
               </span>
             </h2>
@@ -248,7 +250,7 @@ export default function CTASection() {
           }}
         >
           <p className={styles.description}>
-            Whether you&apos;re launching a new product, improving existing systems, or exploring what&apos;s possible with AI — let&apos;s figure out the right way to build it. No pitch decks, no pressure.
+            {dict.cta.description}
           </p>
         </motion.div>
 

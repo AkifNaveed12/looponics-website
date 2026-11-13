@@ -3,10 +3,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useDictionary } from "@/i18n/DictionaryContext";
+import type { Locale } from "@/i18n/config";
 
-export default function Navbar() {
+export default function Navbar({ currentLocale = "en" }: { currentLocale?: Locale }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const dict = useDictionary();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +31,7 @@ export default function Navbar() {
         <div className={styles.container}>
           <div className={styles.logoContainer}>
             <div className={styles.logoGroup}>
-              <Link href="/" className={styles.logoText}>
+              <Link href={`/${currentLocale}`} className={styles.logoText}>
                 Looponics
               </Link>
               <p
@@ -35,24 +39,25 @@ export default function Navbar() {
                   isScrolled ? styles.taglineHidden : ""
                 }`}
               >
-                New generation, same
+                {dict.nav.tagline}
                 <br />
-                Engineering DNA
+                {dict.nav.taglineLine2}
               </p>
             </div>
           </div>
 
           <nav className={styles.navLinks}>
-            <Link href="#services">Services</Link>
-            <Link href="#process">Process</Link>
-            <Link href="#team">Team</Link>
-            <Link href="#faq">FAQs</Link>
+            <Link href="#services">{dict.nav.services}</Link>
+            <Link href="#process">{dict.nav.process}</Link>
+            <Link href="#team">{dict.nav.team}</Link>
+            <Link href="#faq">{dict.nav.faqs}</Link>
           </nav>
 
           <div className={styles.actions}>
+            <LanguageSwitcher currentLocale={currentLocale} />
             <div className={styles.desktopContact}>
               <Link href="#contact" className={styles.contactBtn}>
-                Contact Us
+                {dict.nav.contactUs}
               </Link>
             </div>
             <button
@@ -78,31 +83,31 @@ export default function Navbar() {
         <div className={styles.mobileMenuContent}>
           <nav className={styles.mobileNavLinks}>
             <Link
-              href="/"
+              href={`/${currentLocale}`}
               className={styles.mobileNavLinkGray}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              HOME
+              {dict.nav.home}
             </Link>
             <Link href="#services" onClick={() => setIsMobileMenuOpen(false)}>
-              SERVICES
+              {dict.nav.services.toUpperCase()}
             </Link>
             <Link href="#process" onClick={() => setIsMobileMenuOpen(false)}>
-              PROCESS
+              {dict.nav.process.toUpperCase()}
             </Link>
             <Link href="#team" onClick={() => setIsMobileMenuOpen(false)}>
-              TEAM
+              {dict.nav.team.toUpperCase()}
             </Link>
             <Link href="#faq" onClick={() => setIsMobileMenuOpen(false)}>
-              FAQS
+              {dict.nav.faqs.toUpperCase()}
             </Link>
             <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-              CONTACT
+              {dict.nav.contactUs.toUpperCase()}
             </Link>
           </nav>
 
           <div className={styles.mobileSocials}>
-            <div className={styles.socialsLabel}>FOLLOW US</div>
+            <div className={styles.socialsLabel}>{dict.nav.followUs}</div>
             <div className={styles.socialsList}>
               <a
                 href="https://www.instagram.com/looponics"

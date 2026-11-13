@@ -10,53 +10,12 @@ import {
 } from "motion/react";
 import ServiceVisual from "./ServiceVisual";
 import styles from "./ServicesSection.module.css";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
-/* ─── Data ─── */
-const SERVICES = [
-  {
-    id: "01",
-    title: "Web Development",
-    description:
-      "We engineer fast, scalable, and responsive digital experiences tailored to your business requirements.",
-    tags: ["Custom Websites", "Full-Stack Development", "Scalable Architecture"],
-    visual: "web" as const,
-  },
-  {
-    id: "02",
-    title: "Mobile App Development",
-    description:
-      "We build intuitive mobile applications that connect users with powerful, reliable digital experiences.",
-    tags: ["Cross-Platform Apps", "Mobile UI", "API Integration"],
-    visual: "mobile" as const,
-  },
-  {
-    id: "03",
-    title: "AI-Powered SaaS",
-    description:
-      "We turn ideas into intelligent software products using AI-powered capabilities, modern architectures, and scalable infrastructure.",
-    tags: ["AI Integration", "SaaS Platforms", "Intelligent Applications"],
-    visual: "saas" as const,
-  },
-  {
-    id: "04",
-    title: "Custom Automations",
-    description:
-      "We eliminate repetitive processes through tailored automations, integrations, and intelligent business workflows.",
-    tags: ["Workflow Automation", "API Integrations", "Business Processes"],
-    visual: "automation" as const,
-  },
-  {
-    id: "05",
-    title: "Agentic AI Systems",
-    description:
-      "We design autonomous and multi-agent systems that reason, coordinate tools, and execute complex workflows according to business needs.",
-    tags: ["AI Agents", "Multi-Agent Systems", "MCP Integrations"],
-    visual: "agents" as const,
-  },
-] as const;
+/* ─── Visual types mapped to indices ─── */
+const VISUAL_TYPES = ["web", "mobile", "saas", "automation", "agents"] as const;
 
 /* ─── Orbital arc positions (SVG viewBox 0 0 100 400) ─── */
-// 5 points along an inward-curving arc bowing toward the content
 const ARC_POINTS: [number, number][] = [
   [26, 42],
   [54, 115],
@@ -66,7 +25,13 @@ const ARC_POINTS: [number, number][] = [
 ];
 
 /* ─── OrbitalNav ─── */
-function OrbitalNav({ activeIndex }: { activeIndex: number }) {
+function OrbitalNav({
+  activeIndex,
+  services,
+}: {
+  activeIndex: number;
+  services: Array<{ id: string; title: string }>;
+}) {
   return (
     <div className={styles.orbitalNav} aria-hidden="true">
       <svg
@@ -75,7 +40,6 @@ function OrbitalNav({ activeIndex }: { activeIndex: number }) {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
       >
-        {/* Decorative curved arc — inward bowing parenthesis towards content */}
         <path
           d="M 12 15 C 82 105, 82 295, 12 385"
           stroke="#e4e4e7"
@@ -85,8 +49,8 @@ function OrbitalNav({ activeIndex }: { activeIndex: number }) {
       </svg>
 
       <div className={styles.arcLabels}>
-        {SERVICES.map((s, i) => {
-          const [lx, ly] = ARC_POINTS[i];
+        {services.map((s, i) => {
+          const [lx, ly] = ARC_POINTS[i] || [26, 42];
           const isActive = i === activeIndex;
           return (
             <div
@@ -120,9 +84,15 @@ function OrbitalNav({ activeIndex }: { activeIndex: number }) {
 
 /* ─── Main component ─── */
 export default function ServicesSection() {
+  const dict = useDictionary();
+  const rawServices = dict.services.items || [];
+  const services = rawServices.map((s, idx) => ({
+    ...s,
+    visual: VISUAL_TYPES[idx % VISUAL_TYPES.length],
+  }));
+
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  // Mobile: tap-based navigation
   const [mobileIndex, setMobileIndex] = useState(0);
 
   /* Scroll-driven active index (desktop) */
@@ -131,18 +101,19 @@ export default function ServicesSection() {
     offset: ["start start", "end end"],
   });
 
-  // Map 0→1 to 0→4 segment index
-  const rawIndex = useTransform(scrollYProgress, [0, 1], [0, SERVICES.length - 1]);
+  const rawIndex = useTransform(scrollYProgress, [0, 1], [0, Math.max(1, services.length - 1)]);
 
   useMotionValueEvent(rawIndex, "change", (v) => {
     const next = Math.round(v);
-    if (next !== activeIndex) {
+    if (next !== activeIndex && next >= 0 && next < services.length) {
       setActiveIndex(next);
     }
   });
 
-  const service = SERVICES[activeIndex];
-  const mobileService = SERVICES[mobileIndex];
+  const service = services[activeIndex] || services[0];
+  const mobileService = services[mobileIndex] || services[0];
+
+  if (!service) return null;
 
   return (
     <section id="services" className={styles.section}>
@@ -152,12 +123,12 @@ export default function ServicesSection() {
           <div className={styles.inner}>
             {/* Left: Orbital nav */}
             <div className={styles.orbitalCol}>
-              <OrbitalNav activeIndex={activeIndex} />
+              <OrbitalNav activeIndex={activeIndex} services={services} />
             </div>
 
             {/* Center: Service content */}
             <div className={styles.contentCol}>
-              <p className={styles.eyebrow}>• OUR SERVICES</p>
+              <p className={styles.eyebrow}>• {dict.services.eyebrow}</p>
 
               <AnimatePresence mode="wait">
                 <motion.div
@@ -202,7 +173,7 @@ export default function ServicesSection() {
 
       {/* ── Mobile layout (shown <1024px) ── */}
       <div className={styles.mobileSection}>
-        <p className={styles.eyebrow}>• OUR SERVICES</p>
+        <p className={styles.eyebrow}>• {dict.services.eyebrow}</p>
 
         <AnimatePresence mode="wait">
           <motion.div
@@ -234,7 +205,7 @@ export default function ServicesSection() {
 
         {/* Dot nav */}
         <div className={styles.mobileDots}>
-          {SERVICES.map((s, i) => (
+          {services.map((s, i) => (
             <button
               key={s.id}
               className={`${styles.mobileDot} ${i === mobileIndex ? styles.mobileDotActive : ""}`}

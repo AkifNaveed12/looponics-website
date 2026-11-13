@@ -12,8 +12,10 @@ import {
   TEAM_MEMBERS,
 } from "./ui/profile-card-testimonial-carousel";
 import styles from "./TeamSection.module.css";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function TeamSection() {
+  const dict = useDictionary();
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const isManualScrollingRef = useRef(false);
@@ -86,12 +88,9 @@ export default function TeamSection() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className={styles.eyebrow}>THE PEOPLE BEHIND LOOPONICS</span>
-            <h2 className={styles.title}>Meet the Team Behind the Work.</h2>
-            <p className={styles.subtitle}>
-              Three engineers. Different areas of expertise. One shared
-              commitment to building meaningful digital experiences.
-            </p>
+            <span className={styles.eyebrow}>{dict.team.eyebrow}</span>
+            <h2 className={styles.title}>{dict.team.headline}</h2>
+            <p className={styles.subtitle}>{dict.team.subtitle}</p>
           </motion.div>
 
           {/* 21st.dev Profile Card Carousel */}

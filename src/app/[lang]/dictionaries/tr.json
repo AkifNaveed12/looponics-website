@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "title": "Looponics | Teknoloji ve Mühendislik Ajansı",
+    "titleTemplate": "%s | Looponics",
+    "description": "Looponics; web uygulamaları, çapraz platform mobil uygulamalar, yapay zekâ destekli SaaS platformları, özel otomasyonlar ve otonom yapay zekâ sistemleri geliştiren modern bir teknoloji hizmetleri ajansıdır.",
+    "ogTitle": "Looponics | Teknoloji ve Mühendislik Ajansı",
+    "ogDescription": "İşletmelerin ölçeklenmesine yardımcı olan dijital ürünler, akıllı sistemler ve özel yazılım çözümleri tasarlıyor, geliştiriyor ve hayata geçiriyoruz.",
+    "twitterTitle": "Looponics | Teknoloji ve Mühendislik Ajansı",
+    "twitterDescription": "Dijital ürünler, akıllı sistemler ve özel yazılım çözümleri tasarlıyor, geliştiriyor ve inşa ediyoruz."
+  },
+  "nav": {
+    "services": "Hizmetler",
+    "process": "Süreç",
+    "team": "Ekip",
+    "faqs": "SSS",
+    "contactUs": "İletişim",
+    "home": "ANA SAYFA",
+    "followUs": "BİZİ TAKİP EDİN",
+    "tagline": "Yeni nesil, aynı",
+    "taglineLine2": "Mühendislik DNA'sı"
+  },
+  "hero": {
+    "your": "SİZİN",
+    "agency": "AJANSINIZ",
+    "letsBond": "BAĞ KURALIM",
+    "words": ["DİJİTAL", "YARATICI", "KAPSAMLI", "TEKNOLOJİ"]
+  },
+  "whoWeAre": {
+    "eyebrow": "BİZ KİMİZ",
+    "headline": "İyi fikirler, harika mühendisliği hak eder.",
+    "body": "İşletmelerin ileriye gitmesine yardımcı olan dijital ürünler, akıllı sistemler ve özel çözümler tasarlıyor, geliştiriyor ve hayata geçiriyoruz. Looponics; web ve mobil uygulamalardan otonom yapay zekâ iş akışlarına kadar gerçek iş problemlerini çözmek için yazılım mühendisliğini, otomasyonu ve yapay zekâyı bir araya getirir.",
+    "stats": [
+      { "label": "5 Hizmet Alanı", "sub": "Web'den otonom yapay zekâya" },
+      { "label": "Uçtan Uca", "sub": "Keşiften canlıya geçişe" },
+      { "label": "Özel Geliştirme", "sub": "Şablon yok. Kolaya kaçmak yok." }
+    ]
+  },
+  "services": {
+    "eyebrow": "HİZMETLERİMİZ",
+    "items": [
+      {
+        "id": "01",
+        "title": "Web Geliştirme",
+        "description": "İşletmenizin gereksinimlerine göre uyarlanmış hızlı, ölçeklenebilir ve duyarlı dijital deneyimler geliştiriyoruz.",
+        "tags": ["Özel Web Siteleri", "Full-Stack Geliştirme", "Ölçeklenebilir Mimari"]
+      },
+      {
+        "id": "02",
+        "title": "Mobil Uygulama Geliştirme",
+        "description": "Kullanıcıları güçlü ve güvenilir dijital deneyimlerle buluşturan sezgisel mobil uygulamalar inşa ediyoruz.",
+        "tags": ["Çoklu Platform Uygulamaları", "Mobil Arayüz", "API Entegrasyonu"]
+      },
+      {
+        "id": "03",
+        "title": "Yapay Zekâ Destekli SaaS",
+        "description": "Yapay zekâ yetenekleri, modern mimariler ve ölçeklenebilir altyapı kullanarak fikirleri akıllı yazılım ürünlerine dönüştürüyoruz.",
+        "tags": ["Yapay Zekâ Entegrasyonu", "SaaS Platformları", "Akıllı Uygulamalar"]
+      },
+      {
+        "id": "04",
+        "title": "Özel Otomasyonlar",
+        "description": "Özel otomasyonlar, entegrasyonlar ve akıllı iş akışlarıyla tekrarlayan süreçleri ortadan kaldırıyoruz.",
+        "tags": ["İş Akışı Otomasyonu", "API Entegrasyonları", "İş Süreçleri"]
+      },
+      {
+        "id": "05",
+        "title": "Otonom Yapay Zekâ Sistemleri",
+        "description": "İş gereksinimlerine göre muhakeme yürüten, araçları koordine eden ve karmaşık iş akışlarını gerçekleştiren otonom ve çoklu ajan sistemleri tasarlıyoruz.",
+        "tags": ["AI Ajanları", "Çoklu Ajan Sistemleri", "MCP Entegrasyonları"]
+      }
+    ]
+  },
+  "whyLooponics": {
+    "eyebrow": "NEDEN LOOPONICS",
+    "headline": "Sadece Geliştirme Değil. Akılcı Mühendislik.",
+    "items": [
+      {
+        "num": "01",
+        "title": "İş Odaklı Düşünce",
+        "description": "Bir teknoloji kontrol listesiyle değil, hedeflerinizle başlıyoruz. Her karar, işinizi ileriye taşıyacak bağlamda alınır."
+      },
+      {
+        "num": "02",
+        "title": "Kalıplaşmış Değil, Size Özel",
+        "description": "Şablonlar yok, tek tip çözümler yok. İnşa ettiğimiz her şey sizin özel gereksinimleriniz doğrultusunda tasarlanır."
+      },
+      {
+        "num": "03",
+        "title": "Yalnızca Değer Katan Yerde Yapay Zekâ",
+        "description": "Yapay zekâyı popüler olduğu için değil, ürününüzü gerçekten geliştirdiği noktalarda özenle entegre ediyoruz."
+      },
+      {
+        "num": "04",
+        "title": "Ölçeklenebilir Mimari",
+        "description": "Sizinle birlikte büyümek üzere tasarlanmış sistemler. Sadece bugünkü durumunuz için değil, gelecekteki hedefleriniz için inşa ediyoruz."
+      },
+      {
+        "num": "05",
+        "title": "Uçtan Uca Teslimat",
+        "description": "İlk görüşmeden canlıya geçişe ve sonrasına kadar tüm sürecin sorumluluğunu üstleniyoruz."
+      },
+      {
+        "num": "06",
+        "title": "Güvenilir Entegrasyonlar",
+        "description": "Üçüncü taraf API'ler, mevcut eski sistemler veya yeni otomasyonlar; işinizin kesintisiz çalışmasını sağlayan tüm bağlantıları kuruyoruz."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "SÜRECİMİZ",
+    "headline": "İlk Görüşmeden",
+    "headlineEm": "Canlıya Geçişe.",
+    "steps": [
+      {
+        "tab": "AŞAMA 01",
+        "num": "1",
+        "title": "Keşif",
+        "description": "İş modelini, gereksinimleri, kullanıcıları ve hedefleri anlamak. Tek bir satır kod yazmadan önce doğru soruları soruyoruz."
+      },
+      {
+        "tab": "AŞAMA 02",
+        "num": "2",
+        "title": "Strateji",
+        "description": "Teknik yaklaşımı, mimariyi, proje kapsamını ve teslimat yol haritasını belirliyoruz."
+      },
+      {
+        "tab": "AŞAMA 03",
+        "num": "3",
+        "title": "Tasarım ve İnşa",
+        "description": "Mühendislik, entegrasyon, test ve iyileştirme. Sürekli geri bildirim döngüleriyle haftalık teslimatlar."
+      },
+      {
+        "tab": "AŞAMA 04",
+        "num": "4",
+        "title": "Canlıya Alma",
+        "description": "Teslim edilen ürünü yayına alma, izleme ve destekleme. Canlıya geçtikten sonra ortadan kaybolmuyoruz."
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "KANITLANMIŞ YETKİNLİKLER",
+    "headline": "Teknoloji Yığınımız.",
+    "subtitle": "Farklı proje türlerinde çalıştığımız teknolojiler ve araçlar.",
+    "categories": [
+      { "category": "Ön Yüz", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
+      { "category": "Arka Yüz", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
+      { "category": "Yapay Zekâ ve Makine Öğrenimi", "items": ["LLM'ler", "RAG Sistemleri", "AI Ajanları", "Çoklu Ajan Sistemleri", "Makine Öğrenimi"] },
+      { "category": "Otomasyon", "items": ["n8n", "API Entegrasyonları", "İş Akışı Otomasyonu", "MCP", "Webhooks"] },
+      { "category": "Altyapı", "items": ["Docker", "Bulut Dağıtımı", "PostgreSQL", "MongoDB", "CI/CD"] }
+    ]
+  },
+  "team": {
+    "eyebrow": "LOOPONICS'İN ARKASINDAKİ EKİP",
+    "headline": "Çalışmalarımızın Arkasındaki Ekiple Tanışın.",
+    "subtitle": "Üç mühendis. Farklı uzmanlık alanları. Anlamlı dijital deneyimler inşa etmeye yönelik tek bir ortak bağlılık.",
+    "roles": {
+      "Full-Stack AI Engineer": "Full-Stack AI Mühendisi",
+      "Full-Stack Engineer": "Full-Stack Mühendisi",
+      "Security & Quality Assurance Engineer": "Güvenlik ve Kalite Güvence Mühendisi"
+    }
+  },
+  "faq": {
+    "eyebrow": "SIKÇA SORULAN SORULAR",
+    "headline": "Yaygın sorular.",
+    "headlineEm": "Net yanıtlar.",
+    "subtitle": "Looponics ile çalışmak hakkında bilmeniz gereken her şey.",
+    "items": [
+      {
+        "question": "Genellikle ne tür projeler üzerinde çalışıyorsunuz?",
+        "answer": "Web uygulamaları, mobil uygulamalar, yapay zekâ destekli SaaS platformları, iş otomasyon sistemleri ve otonom yapay zekâ iş akışları üzerinde çalışıyoruz. Projelerimiz, erken aşama ürünlerden büyümekte olan şirketlerin mevcut sistemlerini geliştirmeye kadar geniş bir yelpazeyi kapsar."
+      },
+      {
+        "question": "Erken aşama girişimlerle mi yoksa yerleşik işletmelerle mi çalışıyorsunuz?",
+        "answer": "Her ikisiyle de. İlk ürününü geliştiren erken aşama kurucularla da, yapay zekâ yetenekleri eklemek veya mevcut altyapılarını modernize etmek isteyen yerleşik ekiplerle de çalıştık. Bizim için önemli olan, net bir problem ve bunu doğru şekilde inşa etme kararlılığıdır."
+      },
+      {
+        "question": "İş birliği süreci genellikle nasıl başlar?",
+        "answer": "Bir sohbetle başlar. Hedeflerinizi, çözdüğünüz problemi, mevcut teknik altyapınızı ve zaman planınızı konuşuruz. Buradan yola çıkarak, herhangi bir kod yazılmadan önce işin kapsamını belirler, mimariyi tanımlar ve nasıl birlikte çalışacağımız konusunda mutabık kalırız."
+      },
+      {
+        "question": "Geliştirdiğiniz her şeyde yapay zekâ kullanıyor musunuz?",
+        "answer": "Hayır — yalnızca gerçekten değer kattığı yerlerde. Sırf etkileyici duyulduğu için yapay zekâ özellikleri eklemiyoruz. Probleminiz geleneksel yazılım mühendisliğiyle daha iyi çözülüyorsa, bunu öneririz."
+      },
+      {
+        "question": "Proje teslim edildikten sonra ne oluyor?",
+        "answer": "Lansmandan sonra ortadan kaybolmuyoruz. Sürekli destek, bakım ve geliştirme hizmeti sunuyoruz. İster hızlı bir hata düzeltmesine ihtiyaç duyun, ister yeni özellikler geliştirmeye devam etmek isteyin, yanınızdayız."
+      }
+    ]
+  },
+  "cta": {
+    "perfect": "MÜKEMMEL",
+    "letsTalk": "Konuşalım",
+    "bookACall": "Görüşme Planlayın",
+    "thirtyMinCall": "30 DAKİKALIK PROJE GÖRÜŞMESİ",
+    "haveAnIdea": "Bir Fikriniz mi Var?",
+    "letsBuildIt": "Birlikte İnşa Edelim.",
+    "description": "İster yeni bir ürün çıkarıyor olun, ister mevcut sistemleri iyileştiriyor ya da yapay zekâ ile nelerin mümkün olduğunu keşfediyor olun — bunu inşa etmenin en doğru yolunu birlikte bulalım. Sunum dosyalarına gerek yok, baskı yok."
+  },
+  "booking": {
+    "calendarIntegration": "TAKVİM ENTEGRASYONU",
+    "thirtyMinDiscovery": "30 DAKİKALIK KEŞİF GÖRÜŞMESİ",
+    "scheduleACall": "Görüşme Planlayın",
+    "subtitle": "Google Meet üzerinden Looponics ekibiyle görüşmek için bir zaman seçin.",
+    "fullName": "Ad Soyad",
+    "emailAddress": "E-posta Adresi",
+    "dateTime": "Tarih ve Saat",
+    "projectDetails": "Proje Detayları / Not (İsteğe Bağlı)",
+    "namePlaceholder": "örn. Ahmet Yılmaz",
+    "emailPlaceholder": "siz@sirketiniz.com",
+    "messagePlaceholder": "Görüşmek istediğiniz konu hakkında kısaca bilgi verin...",
+    "timezoneHint": "Saatler, tarayıcınızın yerel saat dilimine göre otomatik olarak ayarlanır.",
+    "confirmBooking": "Rezervasyonu Onayla",
+    "required": "*",
+    "scheduling": "Google Meet görüşmeniz planlanıyor...",
+    "schedulingHint": "Google Takvim'e bağlanılıyor ve video bağlantısı oluşturuluyor. Sunucu uyku modundan çıkıyorsa bu işlem 60 saniyeye kadar sürebilir.",
+    "booked": "Görüşmeniz Planlandı!",
+    "bookedMsg": "Google Meet bağlantısını içeren bir Google Takvim daveti şu adrese gönderildi:",
+    "meetLinkLabel": "Google Meet Bağlantısı",
+    "joinMeeting": "Görüntülü Görüşmeye Katıl",
+    "done": "Tamam",
+    "closeDialog": "Pencereyi kapat",
+    "errorRequired": "Lütfen tüm zorunlu alanları doldurun.",
+    "errorConnection": "Rezervasyon sunucusuna bağlanılamadı. Lütfen bağlantınızı kontrol edin veya tekrar deneyin.",
+    "errorConflict": "Bu zaman dilimi zaten dolu veya takvimimizde müsait değil. Lütfen başka bir zaman seçin.",
+    "errorRateLimit": "Bağlantınızdan çok fazla rezervasyon isteği yapıldı. Lütfen tekrar denemeden önce kısa bir süre bekleyin.",
+    "errorPast": "Geçmiş bir tarihe randevu alınamaz. Lütfen yaklaşan bir zaman dilimi seçin.",
+    "errorGeneric": "Rezervasyon şu anda tamamlanamıyor. Lütfen tekrar deneyin veya info@looponics.tech adresine e-posta gönderin.",
+    "errorUnexpected": "Beklenmeyen bir hata oluştu. Lütfen kısa süre sonra tekrar deneyin.",
+    "logoAlt": "Looponics Logosu",
+    "tagline": "Yeni nesil, aynı Mühendislik DNA'sı"
+  },
+  "footer": {
+    "words": ["BİR FİKRİNİZ", "Mİ VAR?", "BİRLİKTE", "İNŞA EDELİM →"],
+    "contactUs": "İLETİŞİM",
+    "services": "HİZMETLER",
+    "capabilities": "YETKİNLİKLER",
+    "process": "SÜREÇ",
+    "team": "EKİP",
+    "faqs": "SSS"
+  },
+  "languageSwitcher": {
+    "label": "Dil",
+    "ariaLabel": "Dil seçin"
+  }
+}
+

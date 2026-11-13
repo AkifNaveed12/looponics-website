@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Looponics | Technology & Engineering Agency",
+    "titleTemplate": "%s | Looponics",
+    "description": "Looponics is a modern technology services agency engineering web applications, cross-platform mobile apps, AI-powered SaaS platforms, custom automations, and agentic AI systems.",
+    "ogTitle": "Looponics | Technology & Engineering Agency",
+    "ogDescription": "We design, develop, and engineer digital products, intelligent systems, and custom software solutions that help businesses scale.",
+    "twitterTitle": "Looponics | Technology & Engineering Agency",
+    "twitterDescription": "We design, develop, and engineer digital products, intelligent systems, and custom software solutions."
+  },
+  "nav": {
+    "services": "Services",
+    "process": "Process",
+    "team": "Team",
+    "faqs": "FAQs",
+    "contactUs": "Contact Us",
+    "home": "HOME",
+    "followUs": "FOLLOW US",
+    "tagline": "New generation, same",
+    "taglineLine2": "Engineering DNA"
+  },
+  "hero": {
+    "your": "YOUR",
+    "agency": "AGENCY",
+    "letsBond": "LET'S BOND",
+    "words": ["DIGITAL", "CREATIVE", "ALL-IN-ONE", "TECHNOLOGY"]
+  },
+  "whoWeAre": {
+    "eyebrow": "WHO WE ARE",
+    "headline": "Good ideas deserve great engineering.",
+    "body": "We design, develop, and engineer digital products, intelligent systems, and custom solutions that help businesses move forward. Looponics combines software engineering, automation, and AI to solve real business problems — from web and mobile applications to autonomous AI workflows.",
+    "stats": [
+      { "label": "5 Service Areas", "sub": "From web to agentic AI" },
+      { "label": "End-to-End", "sub": "Discovery through deployment" },
+      { "label": "Custom Built", "sub": "No templates. No shortcuts." }
+    ]
+  },
+  "services": {
+    "eyebrow": "OUR SERVICES",
+    "items": [
+      {
+        "id": "01",
+        "title": "Web Development",
+        "description": "We engineer fast, scalable, and responsive digital experiences tailored to your business requirements.",
+        "tags": ["Custom Websites", "Full-Stack Development", "Scalable Architecture"]
+      },
+      {
+        "id": "02",
+        "title": "Mobile App Development",
+        "description": "We build intuitive mobile applications that connect users with powerful, reliable digital experiences.",
+        "tags": ["Cross-Platform Apps", "Mobile UI", "API Integration"]
+      },
+      {
+        "id": "03",
+        "title": "AI-Powered SaaS",
+        "description": "We turn ideas into intelligent software products using AI-powered capabilities, modern architectures, and scalable infrastructure.",
+        "tags": ["AI Integration", "SaaS Platforms", "Intelligent Applications"]
+      },
+      {
+        "id": "04",
+        "title": "Custom Automations",
+        "description": "We eliminate repetitive processes through tailored automations, integrations, and intelligent business workflows.",
+        "tags": ["Workflow Automation", "API Integrations", "Business Processes"]
+      },
+      {
+        "id": "05",
+        "title": "Agentic AI Systems",
+        "description": "We design autonomous and multi-agent systems that reason, coordinate tools, and execute complex workflows according to business needs.",
+        "tags": ["AI Agents", "Multi-Agent Systems", "MCP Integrations"]
+      }
+    ]
+  },
+  "whyLooponics": {
+    "eyebrow": "WHY LOOPONICS",
+    "headline": "Not Just Development. Thoughtful Engineering.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Business-First Thinking",
+        "description": "We start with your goals, not a technology checklist. Every decision is made in context of what moves your business forward."
+      },
+      {
+        "num": "02",
+        "title": "Custom, Not Cookie-Cutter",
+        "description": "No templates, no one-size-fits-all solutions. Everything we build is designed around your specific requirements."
+      },
+      {
+        "num": "03",
+        "title": "AI Where It Adds Value",
+        "description": "We integrate AI thoughtfully — where it genuinely improves your product, not because it's trendy."
+      },
+      {
+        "num": "04",
+        "title": "Scalable Architecture",
+        "description": "Systems designed to grow with you. We build for where you're going, not just where you are today."
+      },
+      {
+        "num": "05",
+        "title": "End-to-End Delivery",
+        "description": "From the first conversation through deployment and beyond. We own the entire process."
+      },
+      {
+        "num": "06",
+        "title": "Reliable Integrations",
+        "description": "Whether it's third-party APIs, legacy systems, or new automations — we make the connections that keep your business running."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "OUR PROCESS",
+    "headline": "From First Conversation",
+    "headlineEm": "to Production.",
+    "steps": [
+      {
+        "tab": "STAGE 01",
+        "num": "1",
+        "title": "Discover",
+        "description": "Understand the business, requirements, users, and objectives. We ask the right questions before writing a single line of code."
+      },
+      {
+        "tab": "STAGE 02",
+        "num": "2",
+        "title": "Strategize",
+        "description": "Define the technical approach, architecture, project scope, and delivery roadmap."
+      },
+      {
+        "tab": "STAGE 03",
+        "num": "3",
+        "title": "Design & Build",
+        "description": "Engineer, integrate, test, and refine. Weekly deliverables with continuous feedback loops."
+      },
+      {
+        "tab": "STAGE 04",
+        "num": "4",
+        "title": "Deploy",
+        "description": "Launch, monitor, and support the delivered product. We don't disappear after go-live."
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "PROVEN CAPABILITIES",
+    "headline": "Our Technical Stack.",
+    "subtitle": "The technologies and tools we work with across different project types.",
+    "categories": [
+      { "category": "Frontend", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
+      { "category": "Backend", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
+      { "category": "AI & Machine Learning", "items": ["LLMs", "RAG Systems", "AI Agents", "Multi-Agent Systems", "Machine Learning"] },
+      { "category": "Automation", "items": ["n8n", "API Integrations", "Workflow Automation", "MCP", "Webhooks"] },
+      { "category": "Infrastructure", "items": ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+    ]
+  },
+  "team": {
+    "eyebrow": "THE PEOPLE BEHIND LOOPONICS",
+    "headline": "Meet the Team Behind the Work.",
+    "subtitle": "Three engineers. Different areas of expertise. One shared commitment to building meaningful digital experiences.",
+    "roles": {
+      "Full-Stack AI Engineer": "Full-Stack AI Engineer",
+      "Full-Stack Engineer": "Full-Stack Engineer",
+      "Security & Quality Assurance Engineer": "Security & Quality Assurance Engineer"
+    }
+  },
+  "faq": {
+    "eyebrow": "FREQUENTLY ASKED QUESTIONS",
+    "headline": "Common questions.",
+    "headlineEm": "Direct answers.",
+    "subtitle": "Everything you need to know about working with Looponics.",
+    "items": [
+      {
+        "question": "What types of projects do you typically work on?",
+        "answer": "We work on web applications, mobile apps, AI-powered SaaS platforms, business automation systems, and agentic AI workflows. Projects range from early-stage products to improving existing systems at growing companies."
+      },
+      {
+        "question": "Do you work with early-stage startups or established businesses?",
+        "answer": "Both. We've worked with early-stage founders building their first product and with established teams looking to add AI capabilities or modernize existing infrastructure. What matters is a clear problem and a willingness to build it right."
+      },
+      {
+        "question": "How does the engagement typically start?",
+        "answer": "It starts with a conversation. We discuss your goals, the problem you're solving, your current setup, and your timeline. From there, we scope the work, define the architecture, and agree on how we'll work together before any code is written."
+      },
+      {
+        "question": "Do you use AI in everything you build?",
+        "answer": "No — only where it genuinely adds value. We're not in the business of adding AI features because they sound impressive. If your problem is better solved with traditional software engineering, that's what we'll recommend."
+      },
+      {
+        "question": "What happens after the project is delivered?",
+        "answer": "We don't disappear after launch. We offer ongoing support, maintenance, and iteration. Whether you need a quick bug fix or want to continue building new features, we're available."
+      }
+    ]
+  },
+  "cta": {
+    "perfect": "PERFECT",
+    "letsTalk": "Let's talk",
+    "bookACall": "Book a Call",
+    "thirtyMinCall": "30 MIN PROJECT CALL",
+    "haveAnIdea": "Have an Idea?",
+    "letsBuildIt": "Let's Build It.",
+    "description": "Whether you're launching a new product, improving existing systems, or exploring what's possible with AI — let's figure out the right way to build it. No pitch decks, no pressure."
+  },
+  "booking": {
+    "calendarIntegration": "CALENDAR INTEGRATION",
+    "thirtyMinDiscovery": "30 MIN DISCOVERY",
+    "scheduleACall": "Schedule a Call",
+    "subtitle": "Pick a time to connect with the Looponics team via Google Meet.",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "dateTime": "Date & Time",
+    "projectDetails": "Project Details / Note (Optional)",
+    "namePlaceholder": "e.g. Alex Morgan",
+    "emailPlaceholder": "you@company.com",
+    "messagePlaceholder": "Tell us briefly about what you'd like to discuss...",
+    "timezoneHint": "Times are automatically scheduled in your browser's local timezone.",
+    "confirmBooking": "Confirm Booking",
+    "required": "*",
+    "scheduling": "Scheduling your Google Meet call...",
+    "schedulingHint": "Connecting to Google Calendar and generating video link. If the server is waking up from sleep, this may take up to 60 seconds.",
+    "booked": "Your Call is Booked!",
+    "bookedMsg": "A Google Calendar invitation with a Google Meet link has been sent to",
+    "meetLinkLabel": "Google Meet Link",
+    "joinMeeting": "Join Video Meeting",
+    "done": "Done",
+    "closeDialog": "Close dialog",
+    "errorRequired": "Please fill in all required fields.",
+    "errorConnection": "Could not connect to the booking server. Please verify your connection or try again.",
+    "errorConflict": "That time slot is already booked or unavailable on our calendar. Please select another time.",
+    "errorRateLimit": "Too many booking requests from your connection. Please wait a little while before trying again.",
+    "errorPast": "Cannot book an appointment in the past. Please select an upcoming slot.",
+    "errorGeneric": "Unable to complete booking right now. Please try again or email info@looponics.tech.",
+    "errorUnexpected": "An unexpected error occurred. Please try again shortly.",
+    "logoAlt": "Looponics Logo",
+    "tagline": "New generation, same Engineering DNA"
+  },
+  "footer": {
+    "words": ["HAVE AN", "IDEA?", "LET'S", "BUILD IT →"],
+    "contactUs": "CONTACT US",
+    "services": "SERVICES",
+    "capabilities": "CAPABILITIES",
+    "process": "PROCESS",
+    "team": "TEAM",
+    "faqs": "FAQS"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "ariaLabel": "Select language"
+  }
+}

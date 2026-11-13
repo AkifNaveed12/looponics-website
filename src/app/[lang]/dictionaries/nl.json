@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Looponics | Technologie- en Engineeringbureau",
+    "titleTemplate": "%s | Looponics",
+    "description": "Looponics is een modern technologiebureau gespecialiseerd in het ontwikkelen van webapplicaties, cross-platform mobiele apps, AI-gedreven SaaS-platformen, maatwerkautomatisering en agentische AI-systemen.",
+    "ogTitle": "Looponics | Technologie- en Engineeringbureau",
+    "ogDescription": "Wij ontwerpen, ontwikkelen en bouwen digitale producten, intelligente systemen en maatwerksoftwareoplossingen die bedrijven helpen schalen.",
+    "twitterTitle": "Looponics | Technologie- en Engineeringbureau",
+    "twitterDescription": "Wij ontwerpen, ontwikkelen en bouwen digitale producten, intelligente systemen en maatwerksoftwareoplossingen."
+  },
+  "nav": {
+    "services": "Diensten",
+    "process": "Werkwijze",
+    "team": "Team",
+    "faqs": "Veelgestelde vragen",
+    "contactUs": "Contact",
+    "home": "HOME",
+    "followUs": "VOLG ONS",
+    "tagline": "Nieuwe generatie, hetzelfde",
+    "taglineLine2": "Engineering-DNA"
+  },
+  "hero": {
+    "your": "UW",
+    "agency": "BUREAU",
+    "letsBond": "MAAK KENNIS",
+    "words": ["DIGITAAL", "CREATIEF", "ALL-IN-ONE", "TECHNOLOGIE"]
+  },
+  "whoWeAre": {
+    "eyebrow": "WIE WE ZIJN",
+    "headline": "Goede ideeën verdienen uitmuntende engineering.",
+    "body": "Wij ontwerpen, ontwikkelen en bouwen digitale producten, intelligente systemen en maatwerkoplossingen die bedrijven vooruithelpen. Looponics combineert software-engineering, automatisering en AI om reële zakelijke uitdagingen op te lossen — van web- en mobiele applicaties tot autonome AI-workflows.",
+    "stats": [
+      { "label": "5 Expertisegebieden", "sub": "Van web tot agentische AI" },
+      { "label": "End-to-End", "sub": "Van verkenning tot ingebruikname" },
+      { "label": "Volledig maatwerk", "sub": "Geen templates. Geen shortcuts." }
+    ]
+  },
+  "services": {
+    "eyebrow": "ONZE DIENSTEN",
+    "items": [
+      {
+        "id": "01",
+        "title": "Webontwikkeling",
+        "description": "Wij bouwen snelle, schaalbare en responsieve digitale ervaringen die nauwkeurig zijn afgestemd op uw zakelijke eisen.",
+        "tags": ["Maatwerk websites", "Full-stack development", "Schaalbare architectuur"]
+      },
+      {
+        "id": "02",
+        "title": "Mobiele app-ontwikkeling",
+        "description": "Wij bouwen intuïtieve mobiele applicaties die gebruikers verbinden met krachtige, betrouwbare digitale ervaringen.",
+        "tags": ["Cross-platform apps", "Mobiele UI", "API-integratie"]
+      },
+      {
+        "id": "03",
+        "title": "AI-gedreven SaaS",
+        "description": "Wij transformeren ideeën naar intelligente softwareproducten met behulp van AI-functionaliteiten, moderne architecturen en schaalbare infrastructuur.",
+        "tags": ["AI-integratie", "SaaS-platformen", "Intelligente applicaties"]
+      },
+      {
+        "id": "04",
+        "title": "Maatwerkautomatisering",
+        "description": "Wij elimineren repetitieve taken door middel van op maat gemaakte automatiseringen, integraties en intelligente bedrijfsworkflows.",
+        "tags": ["Workflow-automatisering", "API-integraties", "Bedrijfsprocessen"]
+      },
+      {
+        "id": "05",
+        "title": "Agentische AI-systemen",
+        "description": "Wij ontwerpen autonome en multi-agent systemen die redeneren, tools coördineren en complexe workflows uitvoeren volgens uw bedrijfsbehoeften.",
+        "tags": ["AI-agents", "Multi-agent systemen", "MCP-integraties"]
+      }
+    ]
+  },
+  "whyLooponics": {
+    "eyebrow": "WAAROM LOOPONICS",
+    "headline": "Niet zomaar development. Doordachte engineering.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Business-first denken",
+        "description": "Wij beginnen bij uw doelstellingen, niet bij een technologische checklist. Elke beslissing wordt genomen in het licht van wat uw bedrijf echt vooruithelpt."
+      },
+      {
+        "num": "02",
+        "title": "Maatwerk, geen standaardwerk",
+        "description": "Geen templates, geen one-size-fits-all oplossingen. Alles wat we bouwen is specifiek ontworpen rondom uw unieke eisen."
+      },
+      {
+        "num": "03",
+        "title": "AI waar het waarde toevoegt",
+        "description": "Wij integreren AI op een doordachte manier — waar het uw product daadwerkelijk verbetert, niet enkel omdat het een trend is."
+      },
+      {
+        "num": "04",
+        "title": "Schaalbare architectuur",
+        "description": "Systemen ontworpen om met u mee te groeien. Wij bouwen voor waar u naartoe wilt, niet alleen voor waar u vandaag staat."
+      },
+      {
+        "num": "05",
+        "title": "End-to-end oplevering",
+        "description": "Vanaf het eerste gesprek tot en met de implementatie en daarna. Wij nemen de volledige verantwoordelijkheid voor het gehele proces."
+      },
+      {
+        "num": "06",
+        "title": "Betrouwbare integraties",
+        "description": "Of het nu gaat om externe API's, legacy-systemen of nieuwe automatiseringen — wij leggen de verbindingen die uw bedrijf draaiende houden."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "ONZE WERKWIJZE",
+    "headline": "Van het eerste gesprek",
+    "headlineEm": "tot productie.",
+    "steps": [
+      {
+        "tab": "FASE 01",
+        "num": "1",
+        "title": "Ontdekken",
+        "description": "Het doorgronden van uw bedrijf, eisen, eindgebruikers en doelstellingen. Wij stellen de juiste vragen voordat we ook maar één regel code schrijven."
+      },
+      {
+        "tab": "FASE 02",
+        "num": "2",
+        "title": "Strategie",
+        "description": "Het bepalen van de technische aanpak, architectuur, projectomvang en opleveringsroadmap."
+      },
+      {
+        "tab": "FASE 03",
+        "num": "3",
+        "title": "Ontwerpen & Bouwen",
+        "description": "Engineeren, integreren, testen en verfijnen. Wekelijkse opleveringen met continue feedbackloops."
+      },
+      {
+        "tab": "FASE 04",
+        "num": "4",
+        "title": "Lanceren",
+        "description": "Lancering, monitoring en ondersteuning van het opgeleverde product. Wij verdwijnen niet na de livegang."
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "BEWEZEN CAPACITEITEN",
+    "headline": "Onze technische stack.",
+    "subtitle": "De technologieën en tools waarmee we werken binnen verschillende projecttypes.",
+    "categories": [
+      { "category": "Frontend", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
+      { "category": "Backend", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
+      { "category": "AI & Machine Learning", "items": ["LLMs", "RAG Systems", "AI Agents", "Multi-Agent Systems", "Machine Learning"] },
+      { "category": "Automatisering", "items": ["n8n", "API Integrations", "Workflow Automation", "MCP", "Webhooks"] },
+      { "category": "Infrastructuur", "items": ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+    ]
+  },
+  "team": {
+    "eyebrow": "DE MENSEN ACHTER LOOPONICS",
+    "headline": "Maak kennis met het team achter het werk.",
+    "subtitle": "Drie engineers. Verschillende expertises. Eén gedeelde toewijding aan het bouwen van betekenisvolle digitale ervaringen.",
+    "roles": {
+      "Full-Stack AI Engineer": "Full-Stack AI Engineer",
+      "Full-Stack Engineer": "Full-Stack Engineer",
+      "Security & Quality Assurance Engineer": "Security & Quality Assurance Engineer"
+    }
+  },
+  "faq": {
+    "eyebrow": "VEELGESTELDE VRAGEN",
+    "headline": "Veelvoorkomende vragen.",
+    "headlineEm": "Heldere antwoorden.",
+    "subtitle": "Alles wat u moet weten over de samenwerking met Looponics.",
+    "items": [
+      {
+        "question": "Aan wat voor soort projecten werken jullie doorgaans?",
+        "answer": "Wij werken aan webapplicaties, mobiele apps, AI-gedreven SaaS-platformen, systemen voor bedrijfsautomatisering en agentische AI-workflows. Onze projecten variëren van early-stage producten tot het optimaliseren van bestaande systemen bij groeiende bedrijven."
+      },
+      {
+        "question": "Werken jullie met vroege startups of met gevestigde bedrijven?",
+        "answer": "Met beide. We hebben samengewerkt met startende oprichters die hun eerste product bouwen én met gevestigde teams die AI-functionaliteiten willen toevoegen of hun bestaande infrastructuur willen moderniseren. Wat telt is een duidelijk probleem en de wil om het direct goed te bouwen."
+      },
+      {
+        "question": "Hoe start een samenwerkingstraject doorgaans?",
+        "answer": "Het begint met een goed gesprek. We bespreken uw doelen, het probleem dat u wilt oplossen, uw huidige opzet en uw tijdlijn. Van daaruit bepalen we de scope van het project, definiëren we de architectuur en stemmen we de samenwerking af voordat er ook maar één regel code wordt geschreven."
+      },
+      {
+        "question": "Gebruiken jullie AI in alles wat jullie bouwen?",
+        "answer": "Nee — alleen waar het echt waarde toevoegt. We voegen geen AI-functies toe enkel omdat het modern klinkt. Als uw vraagstuk beter opgelost kan worden met traditionele software-engineering, dan is dat wat we aanbevelen."
+      },
+      {
+        "question": "Wat gebeurt er nadat het project is opgeleverd?",
+        "answer": "Wij verdwijnen niet na de livegang. We bieden continue ondersteuning, onderhoud en verdere doorontwikkeling. Of het nu gaat om een snelle bugfix of het uitbouwen van nieuwe functionaliteiten, we staan voor u klaar."
+      }
+    ]
+  },
+  "cta": {
+    "perfect": "PERFECT",
+    "letsTalk": "Laten we praten",
+    "bookACall": "Plan een gesprek",
+    "thirtyMinCall": "30 MIN PROJECTGESPREK",
+    "haveAnIdea": "Heeft u een idee?",
+    "letsBuildIt": "Laten we het bouwen.",
+    "description": "Of u nu een nieuw product lanceert, bestaande systemen wilt verbeteren of de mogelijkheden van AI wilt verkennen — laten we samen bepalen wat de juiste aanpak is. Geen pitchdecks, geen verkoopdruk."
+  },
+  "booking": {
+    "calendarIntegration": "AGENDA-INTEGRATIE",
+    "thirtyMinDiscovery": "30 MIN KENNISMAKING",
+    "scheduleACall": "Plan een gesprek",
+    "subtitle": "Kies een geschikt moment om via Google Meet in contact te komen met het team van Looponics.",
+    "fullName": "Volledige naam",
+    "emailAddress": "E-mailadres",
+    "dateTime": "Datum & tijd",
+    "projectDetails": "Projectdetails / Notitie (optioneel)",
+    "namePlaceholder": "bijv. Alex Jansen",
+    "emailPlaceholder": "you@company.com",
+    "messagePlaceholder": "Vertel ons kort wat u zou willen bespreken...",
+    "timezoneHint": "Tijden worden automatisch weergegeven in de lokale tijdzone van uw browser.",
+    "confirmBooking": "Afspraak bevestigen",
+    "required": "*",
+    "scheduling": "Uw Google Meet-gesprek wordt ingepland...",
+    "schedulingHint": "Verbinding maken met Google Agenda en videolink genereren. Als de server opstart vanuit slaapstand, kan dit tot 60 seconden duren.",
+    "booked": "Uw gesprek is ingepland!",
+    "bookedMsg": "Een uitnodiging voor Google Agenda met een Google Meet-link is verzonden naar",
+    "meetLinkLabel": "Google Meet-link",
+    "joinMeeting": "Deelnemen aan videomeeting",
+    "done": "Klaar",
+    "closeDialog": "Venster sluiten",
+    "errorRequired": "Vul alstublieft alle verplichte velden in.",
+    "errorConnection": "Kan geen verbinding maken met de boekingsserver. Controleer uw verbinding of probeer het opnieuw.",
+    "errorConflict": "Dit tijdslot is al geboekt of niet beschikbaar in onze agenda. Kies een ander tijdstip.",
+    "errorRateLimit": "Te veel boekingsverzoeken vanaf uw verbinding. Wacht even voordat u het opnieuw probeert.",
+    "errorPast": "Het is niet mogelijk een afspraak in het verleden te boeken. Kies een tijdstip in de toekomst.",
+    "errorGeneric": "Het boeken kan op dit moment niet worden voltooid. Probeer het opnieuw of stuur een e-mail naar info@looponics.tech.",
+    "errorUnexpected": "Er is een onverwachte fout opgetreden. Probeer het over enkele ogenblikken opnieuw.",
+    "logoAlt": "Looponics-logo",
+    "tagline": "Nieuwe generatie, hetzelfde Engineering-DNA"
+  },
+  "footer": {
+    "words": ["HEEFT U EEN", "IDEE?", "LATEN WE HET", "BOUWEN →"],
+    "contactUs": "CONTACT",
+    "services": "DIENSTEN",
+    "capabilities": "CAPACITEITEN",
+    "process": "WERKWIJZE",
+    "team": "TEAM",
+    "faqs": "FAQ"
+  },
+  "languageSwitcher": {
+    "label": "Taal",
+    "ariaLabel": "Selecteer taal"
+  }
+}

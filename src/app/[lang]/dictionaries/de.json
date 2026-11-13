@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Looponics | Technologie- & Engineering-Agentur",
+    "titleTemplate": "%s | Looponics",
+    "description": "Looponics ist eine moderne Technologieagentur, die Webanwendungen, plattformübergreifende mobile Apps, KI-gestützte SaaS-Plattformen, maßgeschneiderte Automatisierungen und agentische KI-Systeme entwickelt.",
+    "ogTitle": "Looponics | Technologie- & Engineering-Agentur",
+    "ogDescription": "Wir konzipieren, entwickeln und realisieren digitale Produkte, intelligente Systeme und maßgeschneiderte Softwarelösungen, die Unternehmen beim Skalieren unterstützen.",
+    "twitterTitle": "Looponics | Technologie- & Engineering-Agentur",
+    "twitterDescription": "Wir konzipieren, entwickeln und realisieren digitale Produkte, intelligente Systeme und maßgeschneiderte Softwarelösungen."
+  },
+  "nav": {
+    "services": "Leistungen",
+    "process": "Prozess",
+    "team": "Team",
+    "faqs": "FAQs",
+    "contactUs": "Kontakt",
+    "home": "STARTSEITE",
+    "followUs": "FOLGEN SIE UNS",
+    "tagline": "Neue Generation, dieselbe",
+    "taglineLine2": "Engineering-DNA"
+  },
+  "hero": {
+    "your": "IHRE",
+    "agency": "AGENTUR",
+    "letsBond": "JETZT VERNETZEN",
+    "words": ["DIGITAL", "KREATIV", "ALL-IN-ONE", "TECHNOLOGIE"]
+  },
+  "whoWeAre": {
+    "eyebrow": "ÜBER UNS",
+    "headline": "Gute Ideen verdienen erstklassiges Engineering.",
+    "body": "Wir konzipieren, entwickeln und realisieren digitale Produkte, intelligente Systeme und maßgeschneiderte Lösungen, die Unternehmen voranbringen. Looponics vereint Software Engineering, Automatisierung und KI, um echte geschäftliche Herausforderungen zu lösen – von Web- und Mobilanwendungen bis hin zu autonomen KI-Workflows.",
+    "stats": [
+      { "label": "5 Leistungsbereiche", "sub": "Vom Web bis zur agentischen KI" },
+      { "label": "End-to-End", "sub": "Von der Konzeption bis zum Deployment" },
+      { "label": "Maßgeschneidert", "sub": "Keine Templates. Keine Abkürzungen." }
+    ]
+  },
+  "services": {
+    "eyebrow": "UNSERE LEISTUNGEN",
+    "items": [
+      {
+        "id": "01",
+        "title": "Webentwicklung",
+        "description": "Wir entwickeln schnelle, skalierbare und responsive digitale Erlebnisse, die exakt auf Ihre Geschäftsanforderungen zugeschnitten sind.",
+        "tags": ["Individuelle Websites", "Full-Stack-Entwicklung", "Skalierbare Architektur"]
+      },
+      {
+        "id": "02",
+        "title": "Mobile App-Entwicklung",
+        "description": "Wir entwickeln intuitive mobile Anwendungen, die Nutzer mit leistungsstarken, zuverlässigen digitalen Erlebnissen verbinden.",
+        "tags": ["Cross-Platform-Apps", "Mobile UI", "API-Integration"]
+      },
+      {
+        "id": "03",
+        "title": "KI-gestützte SaaS",
+        "description": "Wir verwandeln Ideen in intelligente Softwareprodukte mit modernen KI-Funktionen, zukunftsfähigen Architekturen und skalierbarer Infrastruktur.",
+        "tags": ["KI-Integration", "SaaS-Plattformen", "Intelligente Anwendungen"]
+      },
+      {
+        "id": "04",
+        "title": "Individuelle Automatisierungen",
+        "description": "Wir eliminieren wiederkehrende Prozesse durch maßgeschneiderte Automatisierungen, Integrationen und intelligente Geschäftsabläufe.",
+        "tags": ["Workflow-Automatisierung", "API-Integrationen", "Geschäftsprozesse"]
+      },
+      {
+        "id": "05",
+        "title": "Agentische KI-Systeme",
+        "description": "Wir entwickeln autonome Multi-Agenten-Systeme, die logisch schlussfolgern, Tools koordinieren und komplexe Workflows passgenau nach Unternehmensanforderungen ausführen.",
+        "tags": ["KI-Agenten", "Multi-Agenten-Systeme", "MCP-Integrationen"]
+      }
+    ]
+  },
+  "whyLooponics": {
+    "eyebrow": "WARUM LOOPONICS",
+    "headline": "Nicht nur Entwicklung. Durchdachtes Engineering.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Business-First-Denkweise",
+        "description": "Wir starten mit Ihren Zielen, nicht mit einer Technologie-Checkliste. Jede Entscheidung wird danach ausgerichtet, was Ihr Unternehmen wirklich voranbringt."
+      },
+      {
+        "num": "02",
+        "title": "Maßarbeit statt Standardlösung",
+        "description": "Keine Templates, keine Pauschallösungen. Alles, was wir bauen, wird exakt nach Ihren spezifischen Anforderungen konzipiert."
+      },
+      {
+        "num": "03",
+        "title": "KI dort, wo sie Mehrwert schafft",
+        "description": "Wir integrieren KI gezielt – dort, wo sie Ihr Produkt spürbar verbessert, nicht bloß weil es im Trend liegt."
+      },
+      {
+        "num": "04",
+        "title": "Skalierbare Architektur",
+        "description": "Systeme, die mit Ihnen wachsen. Wir entwickeln für Ihre zukünftigen Ziele, nicht nur für den heutigen Status quo."
+      },
+      {
+        "num": "05",
+        "title": "End-to-End-Umsetzung",
+        "description": "Vom ersten Gespräch über das Deployment bis weit darüber hinaus: Wir übernehmen die Verantwortung für den gesamten Prozess."
+      },
+      {
+        "num": "06",
+        "title": "Zuverlässige Integrationen",
+        "description": "Ob Drittanbieter-APIs, bestehende Legacy-Systeme oder neue Automatisierungen – wir schaffen die Verbindungen, die Ihr Geschäft am Laufen halten."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "UNSER PROZESS",
+    "headline": "Vom ersten Gespräch",
+    "headlineEm": "bis zur Produktion.",
+    "steps": [
+      {
+        "tab": "PHASE 01",
+        "num": "1",
+        "title": "Entdecken",
+        "description": "Das Unternehmen, die Anforderungen, Zielgruppen und Ziele verstehen. Wir stellen die richtigen Fragen, bevor auch nur eine Zeile Code geschrieben wird."
+      },
+      {
+        "tab": "PHASE 02",
+        "num": "2",
+        "title": "Strategie & Konzeption",
+        "description": "Den technischen Ansatz, die Architektur, den Projektumfang und die Umsetzungs-Roadmap definieren."
+      },
+      {
+        "tab": "PHASE 03",
+        "num": "3",
+        "title": "Design & Entwicklung",
+        "description": "Entwickeln, integrieren, testen und optimieren. Wöchentliche Zwischenstände mit kontinuierlichen Feedbackschleifen."
+      },
+      {
+        "tab": "PHASE 04",
+        "num": "4",
+        "title": "Deployment",
+        "description": "Go-Live, Monitoring und langfristiger Support für das ausgelieferte Produkt. Wir sind auch nach dem Launch für Sie da."
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "BEWÄHRTE KOMPETENZEN",
+    "headline": "Unser Technologie-Stack.",
+    "subtitle": "Die Technologien und Tools, mit denen wir in verschiedenen Projekten arbeiten.",
+    "categories": [
+      { "category": "Frontend", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
+      { "category": "Backend", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
+      { "category": "KI & Maschinelles Lernen", "items": ["LLMs", "RAG-Systeme", "KI-Agenten", "Multi-Agenten-Systeme", "Maschinelles Lernen"] },
+      { "category": "Automatisierung", "items": ["n8n", "API-Integrationen", "Workflow-Automatisierung", "MCP", "Webhooks"] },
+      { "category": "Infrastruktur", "items": ["Docker", "Cloud-Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+    ]
+  },
+  "team": {
+    "eyebrow": "DAS TEAM HINTER LOOPONICS",
+    "headline": "Lernen Sie unser Team kennen.",
+    "subtitle": "Drei Ingenieure. Unterschiedliche Fachbereiche. Eine gemeinsame Leidenschaft für herausragende digitale Lösungen.",
+    "roles": {
+      "Full-Stack AI Engineer": "Full-Stack AI Engineer",
+      "Full-Stack Engineer": "Full-Stack Engineer",
+      "Security & Quality Assurance Engineer": "Security & Quality Assurance Engineer"
+    }
+  },
+  "faq": {
+    "eyebrow": "HÄUFIG GESTELLTE FRAGEN",
+    "headline": "Häufige Fragen.",
+    "headlineEm": "Direkte Antworten.",
+    "subtitle": "Alles, was Sie über die Zusammenarbeit mit Looponics wissen müssen.",
+    "items": [
+      {
+        "question": "An welchen Arten von Projekten arbeiten Sie typischerweise?",
+        "answer": "Wir entwickeln Webanwendungen, mobile Apps, KI-gestützte SaaS-Plattformen, Systeme zur Unternehmensautomatisierung und agentische KI-Workflows. Unsere Projekte reichen von Produkten in der Frühphase bis hin zur Modernisierung und Erweiterung bestehender Systeme für wachsende Unternehmen."
+      },
+      {
+        "question": "Arbeiten Sie mit Start-ups in der Frühphase oder mit etablierten Unternehmen zusammen?",
+        "answer": "Mit beiden. Wir haben sowohl mit Gründerteams beim Aufbau ihres ersten Produkts zusammengearbeitet als auch mit etablierten Unternehmen, die KI-Funktionen integrieren oder ihre bestehende Infrastruktur modernisieren wollen. Entscheidend sind ein klares Problem und der Anspruch, eine nachhaltige, hochwertige Lösung zu bauen."
+      },
+      {
+        "question": "Wie beginnt die Zusammenarbeit in der Regel?",
+        "answer": "Alles beginnt mit einem Gespräch. Wir sprechen über Ihre Ziele, das Problem, das Sie lösen möchten, Ihre bestehende Infrastruktur und Ihren Zeitplan. Darauf aufbauend definieren wir den Projektumfang, die Architektur und unsere gemeinsame Arbeitsweise – bevor auch nur eine Zeile Code entsteht."
+      },
+      {
+        "question": "Setzen Sie bei jedem Projekt auf KI?",
+        "answer": "Nein – nur dort, wo es echten geschäftlichen Mehrwert bietet. Wir integrieren KI-Funktionen nicht bloß, weil sie beeindruckend klingen. Wenn sich Ihre Anforderung mit klassischem Software Engineering besser lösen lässt, empfehlen wir genau das."
+      },
+      {
+        "question": "Was passiert nach der Auslieferung des Projekts?",
+        "answer": "Wir sind auch nach dem Launch verlässlich für Sie da. Wir bieten kontinuierlichen Support, Wartung und Weiterentwicklung. Ganz gleich, ob Sie schnelle Fehlerbehebungen benötigen oder neue Features implementieren möchten – wir unterstützen Sie jederzeit."
+      }
+    ]
+  },
+  "cta": {
+    "perfect": "PERFEKT",
+    "letsTalk": "Lassen Sie uns sprechen",
+    "bookACall": "Gespräch vereinbaren",
+    "thirtyMinCall": "30-MINÜTIGES PROJEKTGESPRÄCH",
+    "haveAnIdea": "Haben Sie eine Idee?",
+    "letsBuildIt": "Bauen wir sie gemeinsam.",
+    "description": "Ganz gleich, ob Sie ein neues Produkt launchen, bestehende Systeme optimieren oder die Möglichkeiten moderner KI erkunden möchten – lassen Sie uns gemeinsam den besten Weg finden. Ohne Verkaufsdruck, ohne komplizierte Pitch-Decks."
+  },
+  "booking": {
+    "calendarIntegration": "KALENDER-INTEGRATION",
+    "thirtyMinDiscovery": "30-MINÜTIGES KENNENLERNEN",
+    "scheduleACall": "Termin vereinbaren",
+    "subtitle": "Wählen Sie einen passenden Termin für ein Gespräch mit dem Looponics-Team via Google Meet.",
+    "fullName": "Vollständiger Name",
+    "emailAddress": "E-Mail-Adresse",
+    "dateTime": "Datum & Uhrzeit",
+    "projectDetails": "Projektdetails / Notiz (Optional)",
+    "namePlaceholder": "z. B. Alex Morgan",
+    "emailPlaceholder": "you@company.com",
+    "messagePlaceholder": "Beschreiben Sie kurz, worüber Sie sprechen möchten...",
+    "timezoneHint": "Termine werden automatisch in der lokalen Zeitzone Ihres Browsers angezeigt.",
+    "confirmBooking": "Termin bestätigen",
+    "required": "*",
+    "scheduling": "Ihr Google Meet-Termin wird gebucht...",
+    "schedulingHint": "Verbindung zum Google Kalender wird hergestellt und ein Videolink generiert. Wenn der Server aus dem Ruhezustand hochfährt, kann dies bis zu 60 Sekunden dauern.",
+    "booked": "Ihr Termin ist gebucht!",
+    "bookedMsg": "Eine Einladung im Google Kalender mit einem Google Meet-Link wurde gesendet an",
+    "meetLinkLabel": "Google Meet-Link",
+    "joinMeeting": "Am Video-Meeting teilnehmen",
+    "done": "Fertig",
+    "closeDialog": "Dialog schließen",
+    "errorRequired": "Bitte füllen Sie alle erforderlichen Felder aus.",
+    "errorConnection": "Verbindung zum Buchungsserver fehlgeschlagen. Bitte überprüfen Sie Ihre Internetverbindung oder versuchen Sie es erneut.",
+    "errorConflict": "Dieses Zeitfenster ist bereits gebucht oder im Kalender nicht mehr verfügbar. Bitte wählen Sie eine andere Uhrzeit.",
+    "errorRateLimit": "Zu viele Buchungsanfragen von Ihrer Verbindung. Bitte warten Sie einen Moment, bevor Sie es erneut versuchen.",
+    "errorPast": "Termine in der Vergangenheit können nicht gebucht werden. Bitte wählen Sie ein zukünftiges Zeitfenster.",
+    "errorGeneric": "Die Buchung konnte zurzeit nicht abgeschlossen werden. Bitte versuchen Sie es erneut oder schreiben Sie an info@looponics.tech.",
+    "errorUnexpected": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es in Kürze erneut.",
+    "logoAlt": "Looponics Logo",
+    "tagline": "Neue Generation, dieselbe Engineering-DNA"
+  },
+  "footer": {
+    "words": ["HABEN SIE", "EINE IDEE?", "BAUEN WIR", "SIE GEMEINSAM →"],
+    "contactUs": "KONTAKT",
+    "services": "LEISTUNGEN",
+    "capabilities": "KOMPETENZEN",
+    "process": "PROZESS",
+    "team": "TEAM",
+    "faqs": "FAQS"
+  },
+  "languageSwitcher": {
+    "label": "Sprache",
+    "ariaLabel": "Sprache auswählen"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Looponics | 技术与工程服务机构",
+    "titleTemplate": "%s | Looponics",
+    "description": "Looponics 是一家现代技术服务机构，专注于打造 Web 应用程序、跨平台移动应用、AI 驱动的 SaaS 平台、定制化自动化流程以及 Agentic AI（智能体）系统。",
+    "ogTitle": "Looponics | 技术与工程服务机构",
+    "ogDescription": "我们设计、开发并构建数字化产品、智能化系统及定制化软件解决方案，助力企业实现业务增长与规模化发展。",
+    "twitterTitle": "Looponics | 技术与工程服务机构",
+    "twitterDescription": "我们设计、开发并构建数字化产品、智能化系统及定制化软件解决方案。"
+  },
+  "nav": {
+    "services": "服务",
+    "process": "流程",
+    "team": "团队",
+    "faqs": "常见问题",
+    "contactUs": "联系我们",
+    "home": "首页",
+    "followUs": "关注我们",
+    "tagline": "新一代技术浪潮，不变的",
+    "taglineLine2": "工程基因"
+  },
+  "hero": {
+    "your": "专属您的",
+    "agency": "工程机构",
+    "letsBond": "开启合作",
+    "words": ["数字创新", "创意驱动", "全栈一体", "前沿科技"]
+  },
+  "whoWeAre": {
+    "eyebrow": "关于我们",
+    "headline": "优秀的构想，值得卓越的工程实现。",
+    "body": "我们设计、开发并构建数字化产品、智能系统以及定制解决方案，助力企业破局前行。Looponics 将软件工程、自动化技术与 AI 紧密结合，解决真实的业务痛点——业务涵盖 Web 与移动端应用开发，乃至自主式 AI 工作流打造。",
+    "stats": [
+      { "label": "5 大核心业务领域", "sub": "从 Web 开发到 Agentic AI" },
+      { "label": "全链路端到端交付", "sub": "从前期调研到上线部署" },
+      { "label": "量身定制开发", "sub": "拒绝套用模板，拒绝捷径妥协" }
+    ]
+  },
+  "services": {
+    "eyebrow": "服务范围",
+    "items": [
+      {
+        "id": "01",
+        "title": "Web 应用程序开发",
+        "description": "我们根据您的业务需求，打造快速、可扩展且响应迅速的数字化体验。",
+        "tags": ["定制网站开发", "全栈开发", "高可用架构"]
+      },
+      {
+        "id": "02",
+        "title": "移动应用开发",
+        "description": "我们打造直观顺畅的移动端应用，为用户带来强劲、可靠的数字交互体验。",
+        "tags": ["跨平台应用", "移动端 UI", "API 集成"]
+      },
+      {
+        "id": "03",
+        "title": "AI 驱动的 SaaS 平台",
+        "description": "我们依托 AI 智能能力、现代架构与高扩展基础设施，将构想转化为智能软件产品。",
+        "tags": ["AI 集成", "SaaS 平台", "智能化应用"]
+      },
+      {
+        "id": "04",
+        "title": "定制化业务自动化",
+        "description": "我们通过定制自动化程序、系统集成与智能业务流，消除重复繁琐的人工流程。",
+        "tags": ["工作流自动化", "API 集成", "企业业务流程"]
+      },
+      {
+        "id": "05",
+        "title": "Agentic AI 智能体系统",
+        "description": "我们设计能够自主推理、协同调用工具并依业务需求执行复杂工作流的自主与多智能体系统。",
+        "tags": ["AI 智能体", "多智能体系统", "MCP 集成"]
+      }
+    ]
+  },
+  "whyLooponics": {
+    "eyebrow": "为什么选择 LOOPONICS",
+    "headline": "不只是代码开发，更是深思熟虑的严谨工程。",
+    "items": [
+      {
+        "num": "01",
+        "title": "业务为先思维",
+        "description": "我们始于您的业务目标，而非生硬的技术清单。每一项技术决策都旨在切实推动您的业务前行。"
+      },
+      {
+        "num": "02",
+        "title": "量身定制，拒绝千篇一律",
+        "description": "不套用死板模板，不做一刀切的通用方案。我们构建的每一项成果，均紧密围绕您的特定需求定制。"
+      },
+      {
+        "num": "03",
+        "title": "让 AI 在真正有价值处赋能",
+        "description": "我们深思熟虑地引入 AI——只在它能真正提升产品竞争力的地方施展拳脚，绝非为了盲目跟风。"
+      },
+      {
+        "num": "04",
+        "title": "高可扩展架构设计",
+        "description": "为持续增长而设计。我们的架构不仅满足当下所需，更为您未来的长远扩张奠定基石。"
+      },
+      {
+        "num": "05",
+        "title": "全链路端到端交付",
+        "description": "从首次沟通、方案规划到部署上线及后续维护，我们对全流程品质全权负责。"
+      },
+      {
+        "num": "06",
+        "title": "稳定可靠的系统集成",
+        "description": "无论是第三方 API、传统遗留系统还是新型自动化工具，我们都能无缝打通，确保业务平稳高效运转。"
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "服务流程",
+    "headline": "从最初的灵感碰撞",
+    "headlineEm": "到平稳投产上线。",
+    "steps": [
+      {
+        "tab": "阶段 01",
+        "num": "1",
+        "title": "需求探索与洞见",
+        "description": "深入理解业务、需求、目标用户和核心目的。在敲下第一行代码前，我们精准剖析每一个关键细节。"
+      },
+      {
+        "tab": "阶段 02",
+        "num": "2",
+        "title": "技术架构与策略规划",
+        "description": "确立技术方案、系统架构、项目范围与交付路线图。"
+      },
+      {
+        "tab": "阶段 03",
+        "num": "3",
+        "title": "精细设计与工程开发",
+        "description": "工程开发、系统集成、严谨测试与持续打磨。按周交付成果，保持敏捷闭环反馈。"
+      },
+      {
+        "tab": "阶段 04",
+        "num": "4",
+        "title": "全面部署与持续保障",
+        "description": "上线发布、监控保障并提供长期支持。我们绝不会在系统上线后抽身离场。"
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "核心技术实力",
+    "headline": "我们的技术栈。",
+    "subtitle": "我们在不同类型项目中熟练运用的核心技术与工具。",
+    "categories": [
+      { "category": "前端开发", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
+      { "category": "后端开发", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
+      { "category": "人工智能与机器学习", "items": ["LLMs", "RAG Systems", "AI Agents", "Multi-Agent Systems", "Machine Learning"] },
+      { "category": "自动化流程", "items": ["n8n", "API Integrations", "Workflow Automation", "MCP", "Webhooks"] },
+      { "category": "基础设施", "items": ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+    ]
+  },
+  "team": {
+    "eyebrow": "LOOPONICS 核心团队",
+    "headline": "认识卓越工程背后的团队。",
+    "subtitle": "三位工程师，各专其长；一份共同的执着——打造真正有价值的数字化体验。",
+    "roles": {
+      "Full-Stack AI Engineer": "全栈 AI 工程师",
+      "Full-Stack Engineer": "全栈开发工程师",
+      "Security & Quality Assurance Engineer": "安全与质量保障工程师"
+    }
+  },
+  "faq": {
+    "eyebrow": "常见问题",
+    "headline": "解惑答疑。",
+    "headlineEm": "坦诚明晰。",
+    "subtitle": "关于与 Looponics 合作您需要了解的一切。",
+    "items": [
+      {
+        "question": "你们通常承接什么类型的项目？",
+        "answer": "我们主要交付 Web 应用程序、移动应用、AI 驱动的 SaaS 平台、企业自动化系统以及 Agentic AI（智能体）工作流。项目涵盖从初创产品的从零构建，到成长型企业现有系统的现代化升级与重构。"
+      },
+      {
+        "question": "你们是与初创团队合作，还是更倾向于成熟企业？",
+        "answer": "两者兼顾。我们既陪伴过初创创始人打造他们的首款核心产品，也协助过成熟团队引入前沿 AI 能力或升级现有基础设施。对我们而言，最重要的是清晰明确的问题导向，以及精益求精打造优质产品的坚定共识。"
+      },
+      {
+        "question": "合作通常如何开启？",
+        "answer": "一切始于一次深入对话。我们将共同探讨您的业务目标、待解决的痛点、现有技术架构以及预期交付周期。在此基础上，我们在编写代码前明确项目范围、确立系统架构，并敲定高效协作模式。"
+      },
+      {
+        "question": "你们会在所有项目中都使用 AI 技术吗？",
+        "answer": "不会——仅在它能带来实际业务价值的地方采用。我们绝不会为了听起来吸睛而生搬硬套 AI 功能。如果传统软件工程方案能够更高效、更稳定地解决您的问题，我们会如实建议采用传统方案。"
+      },
+      {
+        "question": "项目交付上线后，你们还提供支持吗？",
+        "answer": "产品上线绝不意味着合作终结。我们提供持续的运维支持、系统维护与版本迭代服务。无论您是需要快速修复问题，还是希望持续开发新功能，我们都随时待命。"
+      }
+    ]
+  },
+  "cta": {
+    "perfect": "完美契合",
+    "letsTalk": "即刻洽谈",
+    "bookACall": "预约通话",
+    "thirtyMinCall": "30 分钟项目咨询",
+    "haveAnIdea": "心怀构想？",
+    "letsBuildIt": "让我们共同打造。",
+    "description": "无论您是计划发布全新产品、优化现有系统，还是探索 AI 带来的无限可能——让我们一同探寻最理想的构建路径。无需繁复的商业计划书，毫无沟通压力。"
+  },
+  "booking": {
+    "calendarIntegration": "日程集成",
+    "thirtyMinDiscovery": "30 分钟初次探讨",
+    "scheduleACall": "预约线上沟通",
+    "subtitle": "选择一个合适的时间，通过 Google Meet 与 Looponics 团队在线沟通。",
+    "fullName": "姓名",
+    "emailAddress": "电子邮箱",
+    "dateTime": "日期与时间",
+    "projectDetails": "项目详情 / 留言备注（选填）",
+    "namePlaceholder": "例如：张明",
+    "emailPlaceholder": "you@company.com",
+    "messagePlaceholder": "请简要描述您希望沟通探讨的项目或问题...",
+    "timezoneHint": "时间将自动按您浏览器当前所在的本地时区显示与排期。",
+    "confirmBooking": "确认预约",
+    "required": "*",
+    "scheduling": "正在为您预约 Google Meet 会议...",
+    "schedulingHint": "正在连接 Google Calendar 并生成专属会议链接。若服务器刚从休眠状态唤醒，可能需要等待至多 60 秒。",
+    "booked": "会议预约成功！",
+    "bookedMsg": "附带 Google Meet 会议链接的 Google Calendar 邀请已发送至：",
+    "meetLinkLabel": "Google Meet 会议链接",
+    "joinMeeting": "进入视频会议",
+    "done": "完成",
+    "closeDialog": "关闭窗口",
+    "errorRequired": "请填写所有必填字段。",
+    "errorConnection": "无法连接到预约服务器。请检查您的网络连接或稍后再试。",
+    "errorConflict": "该时段已被预约或暂不可用，请选择其他合适的时间段。",
+    "errorRateLimit": "来自您当前网络的请求过于频繁，请稍候再试。",
+    "errorPast": "不能选择已过去的时间预约，请选择未来的时间段。",
+    "errorGeneric": "当前无法完成预约。请重试，或直接发送邮件至 info@looponics.tech。",
+    "errorUnexpected": "发生意外错误，请稍后重试。",
+    "logoAlt": "Looponics 标志",
+    "tagline": "新一代技术浪潮，不变的工程基因"
+  },
+  "footer": {
+    "words": ["心怀", "构想？", "携手", "共同打造 →"],
+    "contactUs": "联系我们",
+    "services": "服务范围",
+    "capabilities": "技术实力",
+    "process": "服务流程",
+    "team": "核心团队",
+    "faqs": "常见问题"
+  },
+  "languageSwitcher": {
+    "label": "语言",
+    "ariaLabel": "选择语言"
+  }
+}

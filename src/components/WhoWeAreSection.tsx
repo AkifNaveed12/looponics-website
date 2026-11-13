@@ -2,14 +2,16 @@
 
 import { motion } from "motion/react";
 import styles from "./WhoWeAreSection.module.css";
-
-const stats = [
-  { label: "5 Service Areas", sub: "From web to agentic AI" },
-  { label: "End-to-End", sub: "Discovery through deployment" },
-  { label: "Custom Built", sub: "No templates. No shortcuts." },
-];
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function WhoWeAreSection() {
+  const dict = useDictionary();
+  const stats = dict.whoWeAre.stats || [
+    { label: "5 Service Areas", sub: "From web to agentic AI" },
+    { label: "End-to-End", sub: "Discovery through deployment" },
+    { label: "Custom Built", sub: "No templates. No shortcuts." },
+  ];
+
   return (
     <section className={styles.section} id="who-we-are">
       <div className={styles.container}>
@@ -22,7 +24,7 @@ export default function WhoWeAreSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              • WHO WE ARE
+              • {dict.whoWeAre.eyebrow}
             </motion.p>
             <motion.h2
               className={styles.headline}
@@ -31,7 +33,7 @@ export default function WhoWeAreSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Good ideas deserve great engineering.
+              {dict.whoWeAre.headline}
             </motion.h2>
           </div>
           <motion.div
@@ -41,13 +43,7 @@ export default function WhoWeAreSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <p className={styles.body}>
-              We design, develop, and engineer digital products, intelligent
-              systems, and custom solutions that help businesses move forward.
-              Looponics combines software engineering, automation, and AI to solve
-              real business problems — from web and mobile applications to
-              autonomous AI workflows.
-            </p>
+            <p className={styles.body}>{dict.whoWeAre.body}</p>
           </motion.div>
         </div>
 

@@ -3,11 +3,16 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useMotionValue, useSpring } from "motion/react";
 import styles from "./AgencyHero.module.css";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
-const DYNAMIC_WORDS = ["DIGITAL", "CREATIVE", "ALL-IN-ONE", "TECHNOLOGY"];
 const SHIFT_INTERVAL_MS = 3200;
 
 export default function AgencyHero() {
+  const dict = useDictionary();
+  const dynamicWords = dict.hero.words && dict.hero.words.length > 0
+    ? dict.hero.words
+    : ["DIGITAL", "CREATIVE", "ALL-IN-ONE", "TECHNOLOGY"];
+
   const [wordIndex, setWordIndex] = useState(0);
   const [isHoveringHero, setIsHoveringHero] = useState(false);
   const heroRef = useRef<HTMLElement>(null);
@@ -28,12 +33,12 @@ export default function AgencyHero() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setWordIndex((prev) => (prev + 1) % DYNAMIC_WORDS.length);
+      setWordIndex((prev) => (prev + 1) % dynamicWords.length);
     }, SHIFT_INTERVAL_MS);
     return () => clearInterval(interval);
-  }, []);
+  }, [dynamicWords.length]);
 
-  const currentWord = DYNAMIC_WORDS[wordIndex];
+  const currentWord = dynamicWords[wordIndex] || dynamicWords[0];
 
   return (
     <section
@@ -65,7 +70,7 @@ export default function AgencyHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             >
-              YOUR
+              {dict.hero.your}
             </motion.span>
           </div>
 
@@ -80,7 +85,7 @@ export default function AgencyHero() {
                   animate="animate"
                   exit="exit"
                 >
-                  {currentWord.split("").map((char, index) => (
+                  {Array.from(currentWord).map((char, index) => (
                     <motion.span
                       key={`${currentWord}-${index}`}
                       className={styles.charSpan}
@@ -122,7 +127,7 @@ export default function AgencyHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             >
-              AGENCY
+              {dict.hero.agency}
             </motion.span>
 
             {/* Two Animated Shapes Placed Side-by-Side */}
@@ -159,7 +164,7 @@ export default function AgencyHero() {
               <motion.a
                 href="#contact"
                 className={styles.badgeLink}
-                aria-label="Let's bond - Contact Looponics"
+                aria-label={`${dict.hero.letsBond} - Contact Looponics`}
                 whileHover="hovered"
                 initial="idle"
               >
@@ -184,7 +189,7 @@ export default function AgencyHero() {
                     <path d="M11.4576 83.9274C9.91978 102.544 22.9721 115.601 41.583 114.063C53.6527 128.312 72.1136 128.312 84.1908 114.063C102.802 115.601 115.854 102.544 114.316 83.9274C128.561 71.8537 128.561 53.3868 114.316 41.3056C115.854 22.6886 102.802 9.63195 84.1908 11.1702C72.1211 -3.07953 53.6602 -3.07953 41.583 11.1702C22.9721 9.63195 9.91978 22.6886 11.4576 41.3056C-2.78753 53.3793 -2.78753 71.8462 11.4576 83.9274Z" />
                   </svg>
                 </motion.div>
-                <span className={styles.badgeText}>LET&apos;S BOND</span>
+                <span className={styles.badgeText}>{dict.hero.letsBond}</span>
               </motion.a>
             </div>
           </div>

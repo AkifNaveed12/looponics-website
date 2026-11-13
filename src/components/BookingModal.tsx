@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { X, Calendar, Check, ArrowUpRight, Video } from "lucide-react";
 import styles from "./BookingModal.module.css";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -10,6 +11,9 @@ interface BookingModalProps {
 }
 
 export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
+  const dict = useDictionary();
+  const t = dict.booking;
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [dateTime, setDateTime] = useState("");
@@ -91,7 +95,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
     setErrorMsg(null);
 
     if (!name.trim() || !email.trim() || !dateTime) {
-      setErrorMsg("Please fill in all required fields.");
+      setErrorMsg(t.errorRequired || "Please fill in all required fields.");
       return;
     }
 
@@ -116,14 +120,12 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
     let response: Response;
     try {
-      // First attempt via internal /api/book-call proxy
       response = await fetch("/api/book-call", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
-      // If internal route is not available (404), fall back to direct backend URL
       if (response.status === 404) {
         response = await fetch(directApiUrl, {
           method: "POST",
@@ -141,7 +143,8 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
       } catch {
         setStatus("idle");
         setErrorMsg(
-          "Could not connect to the booking server. Please verify your connection or try again."
+          t.errorConnection ||
+            "Could not connect to the booking server. Please verify your connection or try again."
         );
         return;
       }
@@ -162,29 +165,36 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
       } else if (response.status === 409) {
         setStatus("idle");
         setErrorMsg(
-          "That time slot is already booked or unavailable on our calendar. Please select another time."
+          t.errorConflict ||
+            "That time slot is already booked or unavailable on our calendar. Please select another time."
         );
       } else if (response.status === 429) {
         setStatus("idle");
         setErrorMsg(
-          "Too many booking requests from your connection. Please wait a little while before trying again."
+          t.errorRateLimit ||
+            "Too many booking requests from your connection. Please wait a little while before trying again."
         );
       } else if (response.status === 400) {
         setStatus("idle");
         setErrorMsg(
           data.detail ||
+            t.errorPast ||
             "Cannot book an appointment in the past. Please select an upcoming slot."
         );
       } else {
         setStatus("idle");
         setErrorMsg(
           data.detail ||
+            t.errorGeneric ||
             "Unable to complete booking right now. Please try again or email info@looponics.tech."
         );
       }
     } catch {
       setStatus("idle");
-      setErrorMsg("An unexpected error occurred. Please try again shortly.");
+      setErrorMsg(
+        t.errorUnexpected ||
+          "An unexpected error occurred. Please try again shortly."
+      );
     }
   };
 
@@ -206,7 +216,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
           type="button"
           onClick={handleClose}
           className={styles.closeButton}
-          aria-label="Close dialog"
+          aria-label={t.closeDialog || "Close dialog"}
         >
           <X size={18} />
         </button>
@@ -223,7 +233,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                     height="28"
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
-                    aria-label="Looponics Logo"
+                    aria-label={t.logoAlt || "Looponics Logo"}
                   >
                     <path
                       fill="#FFFFFF"
@@ -238,7 +248,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 <div className={styles.logoTextGroup}>
                   <span className={styles.logoName}>Looponics</span>
                   <span className={styles.logoTagline}>
-                    New generation, same Engineering DNA
+                    {t.tagline || "New generation, same Engineering DNA"}
                   </span>
                 </div>
               </div>
@@ -246,15 +256,15 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
             {/* Eyebrow & Headline */}
             <div className={styles.eyebrowRow}>
-              <span className={styles.eyebrow}>• CALENDAR INTEGRATION</span>
-              <span className={styles.eyebrowDuration}>30 MIN DISCOVERY</span>
+              <span className={styles.eyebrow}>• {t.calendarIntegration}</span>
+              <span className={styles.eyebrowDuration}>{t.thirtyMinDiscovery}</span>
             </div>
 
             <h3 id="booking-modal-title" className={styles.title}>
-              Schedule a Call
+              {t.scheduleACall}
             </h3>
             <p className={styles.subtitle}>
-              Pick a time to connect with the Looponics team via Google Meet.
+              {t.subtitle}
             </p>
 
             {errorMsg && (
@@ -278,13 +288,13 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
               <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor="client-name">
-                  Full Name <span className={styles.required}>*</span>
+                  {t.fullName} <span className={styles.required}>{t.required}</span>
                 </label>
                 <input
                   id="client-name"
                   type="text"
                   required
-                  placeholder="e.g. Alex Morgan"
+                  placeholder={t.namePlaceholder}
                   className={styles.input}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -293,13 +303,13 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
               <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor="client-email">
-                  Email Address <span className={styles.required}>*</span>
+                  {t.emailAddress} <span className={styles.required}>{t.required}</span>
                 </label>
                 <input
                   id="client-email"
                   type="email"
                   required
-                  placeholder="you@company.com"
+                  placeholder={t.emailPlaceholder}
                   className={styles.input}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -308,7 +318,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
               <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor="client-datetime">
-                  Date & Time <span className={styles.required}>*</span>
+                  {t.dateTime} <span className={styles.required}>{t.required}</span>
                 </label>
                 <input
                   id="client-datetime"
@@ -320,19 +330,18 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                   onChange={(e) => setDateTime(e.target.value)}
                 />
                 <span className={styles.helpText}>
-                  Times are automatically scheduled in your browser&apos;s local
-                  timezone.
+                  {t.timezoneHint}
                 </span>
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor="client-message">
-                  Project Details / Note (Optional)
+                  {t.projectDetails}
                 </label>
                 <textarea
                   id="client-message"
                   rows={3}
-                  placeholder="Tell us briefly about what you'd like to discuss..."
+                  placeholder={t.messagePlaceholder}
                   className={styles.textarea}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -341,7 +350,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
               <button type="submit" className={styles.submitBtn}>
                 <Calendar size={18} />
-                Confirm Booking
+                {t.confirmBooking}
               </button>
             </form>
           </>
@@ -351,11 +360,10 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
           <div className={styles.loaderBox}>
             <div className={styles.spinner} />
             <h4 className={styles.loaderTitle}>
-              Scheduling your Google Meet call...
+              {t.scheduling}
             </h4>
             <p className={styles.loaderSubtitle}>
-              Connecting to Google Calendar and generating video link. If the
-              server is waking up from sleep, this may take up to 60 seconds.
+              {t.schedulingHint}
             </p>
           </div>
         )}
@@ -365,15 +373,14 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             <div className={styles.successIcon}>
               <Check size={32} />
             </div>
-            <h4 className={styles.successTitle}>Your Call is Booked!</h4>
+            <h4 className={styles.successTitle}>{t.booked}</h4>
             <p className={styles.successMsg}>
-              A Google Calendar invitation with a Google Meet link has been sent
-              to <strong>{email}</strong>.
+              {t.bookedMsg} <strong>{email}</strong>.
             </p>
 
             {meetLink && (
               <div className={styles.meetCard}>
-                <span className={styles.meetCardLabel}>Google Meet Link</span>
+                <span className={styles.meetCardLabel}>{t.meetLinkLabel}</span>
                 <a
                   href={meetLink}
                   target="_blank"
@@ -381,7 +388,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                   className={styles.meetLink}
                 >
                   <Video size={16} />
-                  <span>Join Video Meeting</span>
+                  <span>{t.joinMeeting}</span>
                   <ArrowUpRight size={14} />
                 </a>
               </div>
@@ -392,7 +399,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               onClick={handleClose}
               className={styles.closeDoneBtn}
             >
-              Done
+              {t.done}
             </button>
           </div>
         )}

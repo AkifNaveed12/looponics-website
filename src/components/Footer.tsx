@@ -3,23 +3,25 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import styles from "./Footer.module.css";
-
-const words = ["HAVE AN", "IDEA?", "LET'S", "BUILD IT →"];
-
-const bottomLinks = [
-  { label: "SERVICES", href: "#services", isExternal: false },
-  { label: "CAPABILITIES", href: "#capabilities", isExternal: false },
-  { label: "PROCESS", href: "#process", isExternal: false },
-  { label: "TEAM", href: "#team", isExternal: false },
-  { label: "FAQS", href: "#faq", isExternal: false },
-  { label: "LINKEDIN", href: "https://www.linkedin.com/in/looponics-agency", isExternal: true },
-  { label: "X (TWITTER)", href: "https://x.com/looponics", isExternal: true },
-  { label: "INSTAGRAM", href: "https://www.instagram.com/looponics", isExternal: true },
-  { label: "DISCORD", href: "https://discord.com/looponics", isExternal: true },
-  { label: "FACEBOOK", href: "https://facebook.com/looponics", isExternal: true },
-];
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function Footer() {
+  const dict = useDictionary();
+  const words = dict.footer.words || ["HAVE AN", "IDEA?", "LET'S", "BUILD IT →"];
+
+  const bottomLinks = [
+    { label: dict.footer.services, href: "#services", isExternal: false },
+    { label: dict.footer.capabilities, href: "#capabilities", isExternal: false },
+    { label: dict.footer.process, href: "#process", isExternal: false },
+    { label: dict.footer.team, href: "#team", isExternal: false },
+    { label: dict.footer.faqs, href: "#faq", isExternal: false },
+    { label: "LINKEDIN", href: "https://www.linkedin.com/in/looponics-agency", isExternal: true },
+    { label: "X (TWITTER)", href: "https://x.com/looponics", isExternal: true },
+    { label: "INSTAGRAM", href: "https://www.instagram.com/looponics", isExternal: true },
+    { label: "DISCORD", href: "https://discord.com/looponics", isExternal: true },
+    { label: "FACEBOOK", href: "https://facebook.com/looponics", isExternal: true },
+  ];
+
   const handleBookCall = (e: React.MouseEvent) => {
     e.preventDefault();
     window.location.href = "#contact";
@@ -45,7 +47,7 @@ export default function Footer() {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 {words.map((word, index) => (
-                  <span key={word} className={styles.wordWrapper}>
+                  <span key={`${word}-${index}`} className={styles.wordWrapper}>
                     <motion.span
                       className={styles.animatedWord}
                       variants={{
@@ -79,7 +81,7 @@ export default function Footer() {
 
             {/* Contact Us Section with official business email */}
             <div className={styles.contactSection}>
-              <span className={styles.contactLabel}>CONTACT US</span>
+              <span className={styles.contactLabel}>{dict.footer.contactUs}</span>
               <a
                 href="mailto:hello@looponics.tech"
                 className={styles.contactEmail}
@@ -132,9 +134,9 @@ export default function Footer() {
             },
           }}
         >
-          {bottomLinks.map((link) => (
+          {bottomLinks.map((link, idx) => (
             <motion.div
-              key={link.label}
+              key={`${link.label}-${idx}`}
               variants={{
                 hidden: { opacity: 0, y: 15 },
                 show: {

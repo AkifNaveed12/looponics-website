@@ -1,36 +1,20 @@
 import type { MetadataRoute } from "next";
+import { locales } from "@/i18n/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: "https://looponics.tech",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: "https://looponics.tech/#services",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://looponics.tech/#process",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://looponics.tech/#faq",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: "https://looponics.tech/#contact",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-  ];
+  const routes = ["", "/#services", "/#process", "/#faq", "/#contact"];
+  const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  for (const locale of locales) {
+    for (const route of routes) {
+      sitemapEntries.push({
+        url: `https://looponics.tech/${locale}${route}`,
+        lastModified: new Date(),
+        changeFrequency: route === "" || route === "/#services" ? "weekly" : "monthly",
+        priority: route === "" ? 1.0 : route === "/#contact" ? 0.9 : route === "/#services" ? 0.8 : 0.7,
+      });
+    }
+  }
+
+  return sitemapEntries;
 }

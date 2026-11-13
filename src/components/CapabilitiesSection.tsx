@@ -2,43 +2,12 @@
 
 import { motion } from "motion/react";
 import styles from "./CapabilitiesSection.module.css";
-
-const CAPABILITIES = [
-  {
-    category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"],
-  },
-  {
-    category: "Backend",
-    items: ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"],
-  },
-  {
-    category: "AI & Machine Learning",
-    items: [
-      "LLMs",
-      "RAG Systems",
-      "AI Agents",
-      "Multi-Agent Systems",
-      "Machine Learning",
-    ],
-  },
-  {
-    category: "Automation",
-    items: [
-      "n8n",
-      "API Integrations",
-      "Workflow Automation",
-      "MCP",
-      "Webhooks",
-    ],
-  },
-  {
-    category: "Infrastructure",
-    items: ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"],
-  },
-];
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function CapabilitiesSection() {
+  const dict = useDictionary();
+  const capabilities = dict.capabilities.categories || [];
+
   return (
     <section className={styles.section} id="capabilities">
       <div className={styles.container}>
@@ -49,7 +18,7 @@ export default function CapabilitiesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          • PROVEN CAPABILITIES
+          • {dict.capabilities.eyebrow}
         </motion.p>
         <motion.h2
           className={styles.headline}
@@ -58,7 +27,7 @@ export default function CapabilitiesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          Our Technical Stack.
+          {dict.capabilities.headline}
         </motion.h2>
         <motion.p
           className={styles.subtitle}
@@ -67,11 +36,11 @@ export default function CapabilitiesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          The technologies and tools we work with across different project types.
+          {dict.capabilities.subtitle}
         </motion.p>
 
         <div className={styles.list}>
-          {CAPABILITIES.map((cap, idx) => (
+          {capabilities.map((cap, idx) => (
             <motion.div
               key={cap.category}
               className={styles.row}
