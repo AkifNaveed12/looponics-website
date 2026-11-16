@@ -23,16 +23,30 @@
     "your": "VOTRE",
     "agency": "AGENCE",
     "letsBond": "FAISONS ÉQUIPE",
-    "words": ["DIGITAL", "CRÉATIF", "TOUT-EN-UN", "TECHNOLOGIE"]
+    "words": [
+      "DIGITAL",
+      "CRÉATIF",
+      "TOUT-EN-UN",
+      "TECHNOLOGIE"
+    ]
   },
   "whoWeAre": {
     "eyebrow": "QUI SOMMES-NOUS",
     "headline": "Les bonnes idées méritent une ingénierie d'exception.",
     "body": "Nous concevons, développons et réalisons des produits numériques, des systèmes intelligents et des solutions sur mesure qui font progresser les entreprises. Looponics associe l'ingénierie logicielle, l'automatisation et l'IA pour résoudre de réels défis métier — des applications web et mobiles jusqu'aux flux de travail autonomes basés sur l'IA.",
     "stats": [
-      { "label": "5 domaines d'expertise", "sub": "Du web à l'IA agentique" },
-      { "label": "De bout en bout", "sub": "De la découverte au déploiement" },
-      { "label": "Sur mesure", "sub": "Sans template. Sans raccourci." }
+      {
+        "label": "6 domaines d'expertise",
+        "sub": "Du web à la croissance de marque"
+      },
+      {
+        "label": "De bout en bout",
+        "sub": "De la découverte au déploiement"
+      },
+      {
+        "label": "Sur mesure",
+        "sub": "Sans template. Sans raccourci."
+      }
     ]
   },
   "services": {
@@ -42,31 +56,62 @@
         "id": "01",
         "title": "Développement Web",
         "description": "Nous concevons des expériences numériques rapides, évolutives et réactives, adaptées aux exigences de votre entreprise.",
-        "tags": ["Sites web sur mesure", "Développement Full-Stack", "Architecture évolutive"]
+        "tags": [
+          "Sites web sur mesure",
+          "Développement Full-Stack",
+          "Architecture évolutive"
+        ]
       },
       {
         "id": "02",
         "title": "Développement d'applications mobiles",
         "description": "Nous créons des applications mobiles intuitives qui offrent aux utilisateurs des expériences numériques performantes et fiables.",
-        "tags": ["Applications multiplateformes", "UI mobile", "Intégration d'API"]
+        "tags": [
+          "Applications multiplateformes",
+          "UI mobile",
+          "Intégration d'API"
+        ]
       },
       {
         "id": "03",
         "title": "SaaS propulsé par l'IA",
         "description": "Nous transformons vos idées en logiciels intelligents grâce aux fonctionnalités de l'IA, à des architectures modernes et à une infrastructure évolutive.",
-        "tags": ["Intégration de l'IA", "Plateformes SaaS", "Applications intelligentes"]
+        "tags": [
+          "Intégration de l'IA",
+          "Plateformes SaaS",
+          "Applications intelligentes"
+        ]
       },
       {
         "id": "04",
         "title": "Automatisations sur mesure",
         "description": "Nous éliminons les processus répétitifs grâce à des automatisations sur mesure, des intégrations et des flux métier intelligents.",
-        "tags": ["Automatisation des flux", "Intégrations d'API", "Processus métier"]
+        "tags": [
+          "Automatisation des flux",
+          "Intégrations d'API",
+          "Processus métier"
+        ]
       },
       {
         "id": "05",
         "title": "Systèmes d'IA agentique",
         "description": "Nous concevons des systèmes autonomes et multi-agents capables de raisonner, de coordonner des outils et d'exécuter des flux complexes selon vos besoins métier.",
-        "tags": ["Agents IA", "Systèmes multi-agents", "Intégrations MCP"]
+        "tags": [
+          "Agents IA",
+          "Systèmes multi-agents",
+          "Intégrations MCP"
+        ]
+      },
+      {
+        "id": "06",
+        "title": "Business Development",
+        "description": "Nous façonnons des identités de marque distinctives, des systèmes de design évolutifs et des stratégies de croissance basées sur les données pour valoriser votre présence en ligne.",
+        "tags": [
+          "Identité de marque",
+          "Systèmes de design",
+          "Présence en ligne",
+          "Croissance réseaux"
+        ]
       }
     ]
   },
@@ -142,11 +187,56 @@
     "headline": "Notre stack technique.",
     "subtitle": "Les technologies et outils que nous mobilisons sur nos différents projets.",
     "categories": [
-      { "category": "Front-end", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
-      { "category": "Back-end", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
-      { "category": "IA & Machine Learning", "items": ["LLMs", "Systèmes RAG", "Agents IA", "Systèmes multi-agents", "Machine Learning"] },
-      { "category": "Automatisation", "items": ["n8n", "Intégrations d'API", "Automatisation des flux", "MCP", "Webhooks"] },
-      { "category": "Infrastructure", "items": ["Docker", "Déploiement Cloud", "PostgreSQL", "MongoDB", "CI/CD"] }
+      {
+        "category": "Front-end",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "CSS / Tailwind"
+        ]
+      },
+      {
+        "category": "Back-end",
+        "items": [
+          "Node.js",
+          "Express",
+          "Python",
+          "FastAPI",
+          "REST & GraphQL"
+        ]
+      },
+      {
+        "category": "IA & Machine Learning",
+        "items": [
+          "LLMs",
+          "Systèmes RAG",
+          "Agents IA",
+          "Systèmes multi-agents",
+          "Machine Learning"
+        ]
+      },
+      {
+        "category": "Automatisation",
+        "items": [
+          "n8n",
+          "Intégrations d'API",
+          "Automatisation des flux",
+          "MCP",
+          "Webhooks"
+        ]
+      },
+      {
+        "category": "Infrastructure",
+        "items": [
+          "Docker",
+          "Déploiement Cloud",
+          "PostgreSQL",
+          "MongoDB",
+          "CI/CD"
+        ]
+      }
     ]
   },
   "team": {
@@ -230,7 +320,12 @@
     "tagline": "Nouvelle génération, même ADN d'ingénierie"
   },
   "footer": {
-    "words": ["VOUS AVEZ", "UNE IDÉE ?", "DONNONS-LUI", "VIE →"],
+    "words": [
+      "VOUS AVEZ",
+      "UNE IDÉE ?",
+      "DONNONS-LUI",
+      "VIE →"
+    ],
     "contactUs": "CONTACTEZ-NOUS",
     "services": "SERVICES",
     "capabilities": "COMPÉTENCES",

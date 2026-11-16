@@ -23,16 +23,30 @@
     "your": "UW",
     "agency": "BUREAU",
     "letsBond": "MAAK KENNIS",
-    "words": ["DIGITAAL", "CREATIEF", "ALL-IN-ONE", "TECHNOLOGIE"]
+    "words": [
+      "DIGITAAL",
+      "CREATIEF",
+      "ALL-IN-ONE",
+      "TECHNOLOGIE"
+    ]
   },
   "whoWeAre": {
     "eyebrow": "WIE WE ZIJN",
     "headline": "Goede ideeën verdienen uitmuntende engineering.",
     "body": "Wij ontwerpen, ontwikkelen en bouwen digitale producten, intelligente systemen en maatwerkoplossingen die bedrijven vooruithelpen. Looponics combineert software-engineering, automatisering en AI om reële zakelijke uitdagingen op te lossen — van web- en mobiele applicaties tot autonome AI-workflows.",
     "stats": [
-      { "label": "5 Expertisegebieden", "sub": "Van web tot agentische AI" },
-      { "label": "End-to-End", "sub": "Van verkenning tot ingebruikname" },
-      { "label": "Volledig maatwerk", "sub": "Geen templates. Geen shortcuts." }
+      {
+        "label": "6 Expertisegebieden",
+        "sub": "Van web tot merkgroei"
+      },
+      {
+        "label": "End-to-End",
+        "sub": "Van verkenning tot ingebruikname"
+      },
+      {
+        "label": "Volledig maatwerk",
+        "sub": "Geen templates. Geen shortcuts."
+      }
     ]
   },
   "services": {
@@ -42,31 +56,62 @@
         "id": "01",
         "title": "Webontwikkeling",
         "description": "Wij bouwen snelle, schaalbare en responsieve digitale ervaringen die nauwkeurig zijn afgestemd op uw zakelijke eisen.",
-        "tags": ["Maatwerk websites", "Full-stack development", "Schaalbare architectuur"]
+        "tags": [
+          "Maatwerk websites",
+          "Full-stack development",
+          "Schaalbare architectuur"
+        ]
       },
       {
         "id": "02",
         "title": "Mobiele app-ontwikkeling",
         "description": "Wij bouwen intuïtieve mobiele applicaties die gebruikers verbinden met krachtige, betrouwbare digitale ervaringen.",
-        "tags": ["Cross-platform apps", "Mobiele UI", "API-integratie"]
+        "tags": [
+          "Cross-platform apps",
+          "Mobiele UI",
+          "API-integratie"
+        ]
       },
       {
         "id": "03",
         "title": "AI-gedreven SaaS",
         "description": "Wij transformeren ideeën naar intelligente softwareproducten met behulp van AI-functionaliteiten, moderne architecturen en schaalbare infrastructuur.",
-        "tags": ["AI-integratie", "SaaS-platformen", "Intelligente applicaties"]
+        "tags": [
+          "AI-integratie",
+          "SaaS-platformen",
+          "Intelligente applicaties"
+        ]
       },
       {
         "id": "04",
         "title": "Maatwerkautomatisering",
         "description": "Wij elimineren repetitieve taken door middel van op maat gemaakte automatiseringen, integraties en intelligente bedrijfsworkflows.",
-        "tags": ["Workflow-automatisering", "API-integraties", "Bedrijfsprocessen"]
+        "tags": [
+          "Workflow-automatisering",
+          "API-integraties",
+          "Bedrijfsprocessen"
+        ]
       },
       {
         "id": "05",
         "title": "Agentische AI-systemen",
         "description": "Wij ontwerpen autonome en multi-agent systemen die redeneren, tools coördineren en complexe workflows uitvoeren volgens uw bedrijfsbehoeften.",
-        "tags": ["AI-agents", "Multi-agent systemen", "MCP-integraties"]
+        "tags": [
+          "AI-agents",
+          "Multi-agent systemen",
+          "MCP-integraties"
+        ]
+      },
+      {
+        "id": "06",
+        "title": "Business Development",
+        "description": "Wij bouwen onderscheidende merkidentiteiten, schaalbare designsystemen en datagestuurde groeistrategieën om uw online aanwezigheid te versterken.",
+        "tags": [
+          "Merkidentiteit",
+          "Designsystemen",
+          "Online aanwezigheid",
+          "Sociale groei"
+        ]
       }
     ]
   },
@@ -142,11 +187,56 @@
     "headline": "Onze technische stack.",
     "subtitle": "De technologieën en tools waarmee we werken binnen verschillende projecttypes.",
     "categories": [
-      { "category": "Frontend", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
-      { "category": "Backend", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
-      { "category": "AI & Machine Learning", "items": ["LLMs", "RAG Systems", "AI Agents", "Multi-Agent Systems", "Machine Learning"] },
-      { "category": "Automatisering", "items": ["n8n", "API Integrations", "Workflow Automation", "MCP", "Webhooks"] },
-      { "category": "Infrastructuur", "items": ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+      {
+        "category": "Frontend",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "CSS / Tailwind"
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": [
+          "Node.js",
+          "Express",
+          "Python",
+          "FastAPI",
+          "REST & GraphQL"
+        ]
+      },
+      {
+        "category": "AI & Machine Learning",
+        "items": [
+          "LLMs",
+          "RAG Systems",
+          "AI Agents",
+          "Multi-Agent Systems",
+          "Machine Learning"
+        ]
+      },
+      {
+        "category": "Automatisering",
+        "items": [
+          "n8n",
+          "API Integrations",
+          "Workflow Automation",
+          "MCP",
+          "Webhooks"
+        ]
+      },
+      {
+        "category": "Infrastructuur",
+        "items": [
+          "Docker",
+          "Cloud Deployment",
+          "PostgreSQL",
+          "MongoDB",
+          "CI/CD"
+        ]
+      }
     ]
   },
   "team": {
@@ -230,7 +320,12 @@
     "tagline": "Nieuwe generatie, hetzelfde Engineering-DNA"
   },
   "footer": {
-    "words": ["HEEFT U EEN", "IDEE?", "LATEN WE HET", "BOUWEN →"],
+    "words": [
+      "HEEFT U EEN",
+      "IDEE?",
+      "LATEN WE HET",
+      "BOUWEN →"
+    ],
     "contactUs": "CONTACT",
     "services": "DIENSTEN",
     "capabilities": "CAPACITEITEN",

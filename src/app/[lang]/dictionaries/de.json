@@ -23,16 +23,30 @@
     "your": "IHRE",
     "agency": "AGENTUR",
     "letsBond": "JETZT VERNETZEN",
-    "words": ["DIGITAL", "KREATIV", "ALL-IN-ONE", "TECHNOLOGIE"]
+    "words": [
+      "DIGITAL",
+      "KREATIV",
+      "ALL-IN-ONE",
+      "TECHNOLOGIE"
+    ]
   },
   "whoWeAre": {
     "eyebrow": "ÜBER UNS",
     "headline": "Gute Ideen verdienen erstklassiges Engineering.",
     "body": "Wir konzipieren, entwickeln und realisieren digitale Produkte, intelligente Systeme und maßgeschneiderte Lösungen, die Unternehmen voranbringen. Looponics vereint Software Engineering, Automatisierung und KI, um echte geschäftliche Herausforderungen zu lösen – von Web- und Mobilanwendungen bis hin zu autonomen KI-Workflows.",
     "stats": [
-      { "label": "5 Leistungsbereiche", "sub": "Vom Web bis zur agentischen KI" },
-      { "label": "End-to-End", "sub": "Von der Konzeption bis zum Deployment" },
-      { "label": "Maßgeschneidert", "sub": "Keine Templates. Keine Abkürzungen." }
+      {
+        "label": "6 Leistungsbereiche",
+        "sub": "Vom Web bis zum Markenwachstum"
+      },
+      {
+        "label": "End-to-End",
+        "sub": "Von der Konzeption bis zum Deployment"
+      },
+      {
+        "label": "Maßgeschneidert",
+        "sub": "Keine Templates. Keine Abkürzungen."
+      }
     ]
   },
   "services": {
@@ -42,31 +56,62 @@
         "id": "01",
         "title": "Webentwicklung",
         "description": "Wir entwickeln schnelle, skalierbare und responsive digitale Erlebnisse, die exakt auf Ihre Geschäftsanforderungen zugeschnitten sind.",
-        "tags": ["Individuelle Websites", "Full-Stack-Entwicklung", "Skalierbare Architektur"]
+        "tags": [
+          "Individuelle Websites",
+          "Full-Stack-Entwicklung",
+          "Skalierbare Architektur"
+        ]
       },
       {
         "id": "02",
         "title": "Mobile App-Entwicklung",
         "description": "Wir entwickeln intuitive mobile Anwendungen, die Nutzer mit leistungsstarken, zuverlässigen digitalen Erlebnissen verbinden.",
-        "tags": ["Cross-Platform-Apps", "Mobile UI", "API-Integration"]
+        "tags": [
+          "Cross-Platform-Apps",
+          "Mobile UI",
+          "API-Integration"
+        ]
       },
       {
         "id": "03",
         "title": "KI-gestützte SaaS",
         "description": "Wir verwandeln Ideen in intelligente Softwareprodukte mit modernen KI-Funktionen, zukunftsfähigen Architekturen und skalierbarer Infrastruktur.",
-        "tags": ["KI-Integration", "SaaS-Plattformen", "Intelligente Anwendungen"]
+        "tags": [
+          "KI-Integration",
+          "SaaS-Plattformen",
+          "Intelligente Anwendungen"
+        ]
       },
       {
         "id": "04",
         "title": "Individuelle Automatisierungen",
         "description": "Wir eliminieren wiederkehrende Prozesse durch maßgeschneiderte Automatisierungen, Integrationen und intelligente Geschäftsabläufe.",
-        "tags": ["Workflow-Automatisierung", "API-Integrationen", "Geschäftsprozesse"]
+        "tags": [
+          "Workflow-Automatisierung",
+          "API-Integrationen",
+          "Geschäftsprozesse"
+        ]
       },
       {
         "id": "05",
         "title": "Agentische KI-Systeme",
         "description": "Wir entwickeln autonome Multi-Agenten-Systeme, die logisch schlussfolgern, Tools koordinieren und komplexe Workflows passgenau nach Unternehmensanforderungen ausführen.",
-        "tags": ["KI-Agenten", "Multi-Agenten-Systeme", "MCP-Integrationen"]
+        "tags": [
+          "KI-Agenten",
+          "Multi-Agenten-Systeme",
+          "MCP-Integrationen"
+        ]
+      },
+      {
+        "id": "06",
+        "title": "Business Development",
+        "description": "Wir entwickeln unverwechselbare Markenidentitäten, skalierbare Design-Systeme und datengestützte Wachstumsstrategien für Ihre digitale Präsenz.",
+        "tags": [
+          "Markenidentität",
+          "Design-Systeme",
+          "Online-Präsenz",
+          "Social-Media-Wachstum"
+        ]
       }
     ]
   },
@@ -142,11 +187,56 @@
     "headline": "Unser Technologie-Stack.",
     "subtitle": "Die Technologien und Tools, mit denen wir in verschiedenen Projekten arbeiten.",
     "categories": [
-      { "category": "Frontend", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
-      { "category": "Backend", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
-      { "category": "KI & Maschinelles Lernen", "items": ["LLMs", "RAG-Systeme", "KI-Agenten", "Multi-Agenten-Systeme", "Maschinelles Lernen"] },
-      { "category": "Automatisierung", "items": ["n8n", "API-Integrationen", "Workflow-Automatisierung", "MCP", "Webhooks"] },
-      { "category": "Infrastruktur", "items": ["Docker", "Cloud-Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+      {
+        "category": "Frontend",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "CSS / Tailwind"
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": [
+          "Node.js",
+          "Express",
+          "Python",
+          "FastAPI",
+          "REST & GraphQL"
+        ]
+      },
+      {
+        "category": "KI & Maschinelles Lernen",
+        "items": [
+          "LLMs",
+          "RAG-Systeme",
+          "KI-Agenten",
+          "Multi-Agenten-Systeme",
+          "Maschinelles Lernen"
+        ]
+      },
+      {
+        "category": "Automatisierung",
+        "items": [
+          "n8n",
+          "API-Integrationen",
+          "Workflow-Automatisierung",
+          "MCP",
+          "Webhooks"
+        ]
+      },
+      {
+        "category": "Infrastruktur",
+        "items": [
+          "Docker",
+          "Cloud-Deployment",
+          "PostgreSQL",
+          "MongoDB",
+          "CI/CD"
+        ]
+      }
     ]
   },
   "team": {
@@ -230,7 +320,12 @@
     "tagline": "Neue Generation, dieselbe Engineering-DNA"
   },
   "footer": {
-    "words": ["HABEN SIE", "EINE IDEE?", "BAUEN WIR", "SIE GEMEINSAM →"],
+    "words": [
+      "HABEN SIE",
+      "EINE IDEE?",
+      "BAUEN WIR",
+      "SIE GEMEINSAM →"
+    ],
     "contactUs": "KONTAKT",
     "services": "LEISTUNGEN",
     "capabilities": "KOMPETENZEN",

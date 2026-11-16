@@ -23,16 +23,30 @@
     "your": "SİZİN",
     "agency": "AJANSINIZ",
     "letsBond": "BAĞ KURALIM",
-    "words": ["DİJİTAL", "YARATICI", "KAPSAMLI", "TEKNOLOJİ"]
+    "words": [
+      "DİJİTAL",
+      "YARATICI",
+      "KAPSAMLI",
+      "TEKNOLOJİ"
+    ]
   },
   "whoWeAre": {
     "eyebrow": "BİZ KİMİZ",
     "headline": "İyi fikirler, harika mühendisliği hak eder.",
     "body": "İşletmelerin ileriye gitmesine yardımcı olan dijital ürünler, akıllı sistemler ve özel çözümler tasarlıyor, geliştiriyor ve hayata geçiriyoruz. Looponics; web ve mobil uygulamalardan otonom yapay zekâ iş akışlarına kadar gerçek iş problemlerini çözmek için yazılım mühendisliğini, otomasyonu ve yapay zekâyı bir araya getirir.",
     "stats": [
-      { "label": "5 Hizmet Alanı", "sub": "Web'den otonom yapay zekâya" },
-      { "label": "Uçtan Uca", "sub": "Keşiften canlıya geçişe" },
-      { "label": "Özel Geliştirme", "sub": "Şablon yok. Kolaya kaçmak yok." }
+      {
+        "label": "6 Hizmet Alanı",
+        "sub": "Web'den marka büyümesine"
+      },
+      {
+        "label": "Uçtan Uca",
+        "sub": "Keşiften canlıya geçişe"
+      },
+      {
+        "label": "Özel Geliştirme",
+        "sub": "Şablon yok. Kolaya kaçmak yok."
+      }
     ]
   },
   "services": {
@@ -42,31 +56,62 @@
         "id": "01",
         "title": "Web Geliştirme",
         "description": "İşletmenizin gereksinimlerine göre uyarlanmış hızlı, ölçeklenebilir ve duyarlı dijital deneyimler geliştiriyoruz.",
-        "tags": ["Özel Web Siteleri", "Full-Stack Geliştirme", "Ölçeklenebilir Mimari"]
+        "tags": [
+          "Özel Web Siteleri",
+          "Full-Stack Geliştirme",
+          "Ölçeklenebilir Mimari"
+        ]
       },
       {
         "id": "02",
         "title": "Mobil Uygulama Geliştirme",
         "description": "Kullanıcıları güçlü ve güvenilir dijital deneyimlerle buluşturan sezgisel mobil uygulamalar inşa ediyoruz.",
-        "tags": ["Çoklu Platform Uygulamaları", "Mobil Arayüz", "API Entegrasyonu"]
+        "tags": [
+          "Çoklu Platform Uygulamaları",
+          "Mobil Arayüz",
+          "API Entegrasyonu"
+        ]
       },
       {
         "id": "03",
         "title": "Yapay Zekâ Destekli SaaS",
         "description": "Yapay zekâ yetenekleri, modern mimariler ve ölçeklenebilir altyapı kullanarak fikirleri akıllı yazılım ürünlerine dönüştürüyoruz.",
-        "tags": ["Yapay Zekâ Entegrasyonu", "SaaS Platformları", "Akıllı Uygulamalar"]
+        "tags": [
+          "Yapay Zekâ Entegrasyonu",
+          "SaaS Platformları",
+          "Akıllı Uygulamalar"
+        ]
       },
       {
         "id": "04",
         "title": "Özel Otomasyonlar",
         "description": "Özel otomasyonlar, entegrasyonlar ve akıllı iş akışlarıyla tekrarlayan süreçleri ortadan kaldırıyoruz.",
-        "tags": ["İş Akışı Otomasyonu", "API Entegrasyonları", "İş Süreçleri"]
+        "tags": [
+          "İş Akışı Otomasyonu",
+          "API Entegrasyonları",
+          "İş Süreçleri"
+        ]
       },
       {
         "id": "05",
         "title": "Otonom Yapay Zekâ Sistemleri",
         "description": "İş gereksinimlerine göre muhakeme yürüten, araçları koordine eden ve karmaşık iş akışlarını gerçekleştiren otonom ve çoklu ajan sistemleri tasarlıyoruz.",
-        "tags": ["AI Ajanları", "Çoklu Ajan Sistemleri", "MCP Entegrasyonları"]
+        "tags": [
+          "AI Ajanları",
+          "Çoklu Ajan Sistemleri",
+          "MCP Entegrasyonları"
+        ]
+      },
+      {
+        "id": "06",
+        "title": "İş Geliştirme",
+        "description": "Çevrim içi varlığınızı güçlendirmek için özgün marka kimlikleri, ölçeklenebilir tasarım sistemleri ve veri odaklı büyüme stratejileri inşa ediyoruz.",
+        "tags": [
+          "Marka Kimliği",
+          "Tasarım Sistemleri",
+          "Çevrim İçi Varlık",
+          "Sosyal Medya Büyümesi"
+        ]
       }
     ]
   },
@@ -142,11 +187,56 @@
     "headline": "Teknoloji Yığınımız.",
     "subtitle": "Farklı proje türlerinde çalıştığımız teknolojiler ve araçlar.",
     "categories": [
-      { "category": "Ön Yüz", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
-      { "category": "Arka Yüz", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
-      { "category": "Yapay Zekâ ve Makine Öğrenimi", "items": ["LLM'ler", "RAG Sistemleri", "AI Ajanları", "Çoklu Ajan Sistemleri", "Makine Öğrenimi"] },
-      { "category": "Otomasyon", "items": ["n8n", "API Entegrasyonları", "İş Akışı Otomasyonu", "MCP", "Webhooks"] },
-      { "category": "Altyapı", "items": ["Docker", "Bulut Dağıtımı", "PostgreSQL", "MongoDB", "CI/CD"] }
+      {
+        "category": "Ön Yüz",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "CSS / Tailwind"
+        ]
+      },
+      {
+        "category": "Arka Yüz",
+        "items": [
+          "Node.js",
+          "Express",
+          "Python",
+          "FastAPI",
+          "REST & GraphQL"
+        ]
+      },
+      {
+        "category": "Yapay Zekâ ve Makine Öğrenimi",
+        "items": [
+          "LLM'ler",
+          "RAG Sistemleri",
+          "AI Ajanları",
+          "Çoklu Ajan Sistemleri",
+          "Makine Öğrenimi"
+        ]
+      },
+      {
+        "category": "Otomasyon",
+        "items": [
+          "n8n",
+          "API Entegrasyonları",
+          "İş Akışı Otomasyonu",
+          "MCP",
+          "Webhooks"
+        ]
+      },
+      {
+        "category": "Altyapı",
+        "items": [
+          "Docker",
+          "Bulut Dağıtımı",
+          "PostgreSQL",
+          "MongoDB",
+          "CI/CD"
+        ]
+      }
     ]
   },
   "team": {
@@ -230,7 +320,12 @@
     "tagline": "Yeni nesil, aynı Mühendislik DNA'sı"
   },
   "footer": {
-    "words": ["BİR FİKRİNİZ", "Mİ VAR?", "BİRLİKTE", "İNŞA EDELİM →"],
+    "words": [
+      "BİR FİKRİNİZ",
+      "Mİ VAR?",
+      "BİRLİKTE",
+      "İNŞA EDELİM →"
+    ],
     "contactUs": "İLETİŞİM",
     "services": "HİZMETLER",
     "capabilities": "YETKİNLİKLER",
@@ -243,4 +338,3 @@
     "ariaLabel": "Dil seçin"
   }
 }
-

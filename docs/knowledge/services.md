@@ -29,3 +29,9 @@ We engineer production-grade autonomous agents and tool-calling systems governed
 - Technology Stack: Model Context Protocol (MCP), Vercel AI SDK, tool registries, custom evaluation suites.
 - Key Capabilities: Tool calling with human-in-the-loop validation, multi-step task planning, specialized subagents, and domain-grounded knowledge retrieval.
 - Deliverables: Allowlisted backend tool registries, sandboxed environments, evaluation suites, and audit logs.
+
+## 6. Business Development & Brand Growth
+We craft distinctive brand identities, scalable design systems, and data-backed digital growth strategies that amplify market presence and social reach.
+- Focus Areas: Distinct brand identity creation, cross-platform design systems, social accounts growth, and comprehensive online presence improvement.
+- Key Capabilities: Brand guidelines, UI/UX design systems, social media growth strategies, content architectures, and audience reach optimization.
+- Deliverables: Comprehensive brand identity assets, component design systems, social growth playbooks, and digital presence audits.

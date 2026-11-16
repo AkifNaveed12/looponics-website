@@ -23,16 +23,30 @@
     "your": "专属您的",
     "agency": "工程机构",
     "letsBond": "开启合作",
-    "words": ["数字创新", "创意驱动", "全栈一体", "前沿科技"]
+    "words": [
+      "数字创新",
+      "创意驱动",
+      "全栈一体",
+      "前沿科技"
+    ]
   },
   "whoWeAre": {
     "eyebrow": "关于我们",
     "headline": "优秀的构想，值得卓越的工程实现。",
     "body": "我们设计、开发并构建数字化产品、智能系统以及定制解决方案，助力企业破局前行。Looponics 将软件工程、自动化技术与 AI 紧密结合，解决真实的业务痛点——业务涵盖 Web 与移动端应用开发，乃至自主式 AI 工作流打造。",
     "stats": [
-      { "label": "5 大核心业务领域", "sub": "从 Web 开发到 Agentic AI" },
-      { "label": "全链路端到端交付", "sub": "从前期调研到上线部署" },
-      { "label": "量身定制开发", "sub": "拒绝套用模板，拒绝捷径妥协" }
+      {
+        "label": "6 大核心业务领域",
+        "sub": "从 Web 开发到品牌增长"
+      },
+      {
+        "label": "全链路端到端交付",
+        "sub": "从前期调研到上线部署"
+      },
+      {
+        "label": "量身定制开发",
+        "sub": "拒绝套用模板，拒绝捷径妥协"
+      }
     ]
   },
   "services": {
@@ -42,31 +56,62 @@
         "id": "01",
         "title": "Web 应用程序开发",
         "description": "我们根据您的业务需求，打造快速、可扩展且响应迅速的数字化体验。",
-        "tags": ["定制网站开发", "全栈开发", "高可用架构"]
+        "tags": [
+          "定制网站开发",
+          "全栈开发",
+          "高可用架构"
+        ]
       },
       {
         "id": "02",
         "title": "移动应用开发",
         "description": "我们打造直观顺畅的移动端应用，为用户带来强劲、可靠的数字交互体验。",
-        "tags": ["跨平台应用", "移动端 UI", "API 集成"]
+        "tags": [
+          "跨平台应用",
+          "移动端 UI",
+          "API 集成"
+        ]
       },
       {
         "id": "03",
         "title": "AI 驱动的 SaaS 平台",
         "description": "我们依托 AI 智能能力、现代架构与高扩展基础设施，将构想转化为智能软件产品。",
-        "tags": ["AI 集成", "SaaS 平台", "智能化应用"]
+        "tags": [
+          "AI 集成",
+          "SaaS 平台",
+          "智能化应用"
+        ]
       },
       {
         "id": "04",
         "title": "定制化业务自动化",
         "description": "我们通过定制自动化程序、系统集成与智能业务流，消除重复繁琐的人工流程。",
-        "tags": ["工作流自动化", "API 集成", "企业业务流程"]
+        "tags": [
+          "工作流自动化",
+          "API 集成",
+          "企业业务流程"
+        ]
       },
       {
         "id": "05",
         "title": "Agentic AI 智能体系统",
         "description": "我们设计能够自主推理、协同调用工具并依业务需求执行复杂工作流的自主与多智能体系统。",
-        "tags": ["AI 智能体", "多智能体系统", "MCP 集成"]
+        "tags": [
+          "AI 智能体",
+          "多智能体系统",
+          "MCP 集成"
+        ]
+      },
+      {
+        "id": "06",
+        "title": "业务拓展与品牌发展",
+        "description": "我们打造独具特色的品牌识别、可扩展的设计系统以及数据驱动的增长策略，全面提升您的线上影响力和社交矩阵表现。",
+        "tags": [
+          "品牌识别",
+          "设计系统",
+          "线上影响力",
+          "社交媒体增长"
+        ]
       }
     ]
   },
@@ -142,11 +187,56 @@
     "headline": "我们的技术栈。",
     "subtitle": "我们在不同类型项目中熟练运用的核心技术与工具。",
     "categories": [
-      { "category": "前端开发", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
-      { "category": "后端开发", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
-      { "category": "人工智能与机器学习", "items": ["LLMs", "RAG Systems", "AI Agents", "Multi-Agent Systems", "Machine Learning"] },
-      { "category": "自动化流程", "items": ["n8n", "API Integrations", "Workflow Automation", "MCP", "Webhooks"] },
-      { "category": "基础设施", "items": ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+      {
+        "category": "前端开发",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "CSS / Tailwind"
+        ]
+      },
+      {
+        "category": "后端开发",
+        "items": [
+          "Node.js",
+          "Express",
+          "Python",
+          "FastAPI",
+          "REST & GraphQL"
+        ]
+      },
+      {
+        "category": "人工智能与机器学习",
+        "items": [
+          "LLMs",
+          "RAG Systems",
+          "AI Agents",
+          "Multi-Agent Systems",
+          "Machine Learning"
+        ]
+      },
+      {
+        "category": "自动化流程",
+        "items": [
+          "n8n",
+          "API Integrations",
+          "Workflow Automation",
+          "MCP",
+          "Webhooks"
+        ]
+      },
+      {
+        "category": "基础设施",
+        "items": [
+          "Docker",
+          "Cloud Deployment",
+          "PostgreSQL",
+          "MongoDB",
+          "CI/CD"
+        ]
+      }
     ]
   },
   "team": {
@@ -230,7 +320,12 @@
     "tagline": "新一代技术浪潮，不变的工程基因"
   },
   "footer": {
-    "words": ["心怀", "构想？", "携手", "共同打造 →"],
+    "words": [
+      "心怀",
+      "构想？",
+      "携手",
+      "共同打造 →"
+    ],
     "contactUs": "联系我们",
     "services": "服务范围",
     "capabilities": "技术实力",

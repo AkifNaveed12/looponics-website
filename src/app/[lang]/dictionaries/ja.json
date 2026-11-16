@@ -23,16 +23,30 @@
     "your": "あなたの",
     "agency": "エージェンシー",
     "letsBond": "共に創る",
-    "words": ["デジタル", "クリエイティブ", "オールインワン", "テクノロジー"]
+    "words": [
+      "デジタル",
+      "クリエイティブ",
+      "オールインワン",
+      "テクノロジー"
+    ]
   },
   "whoWeAre": {
     "eyebrow": "私たちについて",
     "headline": "優れたアイデアには、確かなエンジニアリングを。",
     "body": "私たちは、企業の成長と前進を後押しするデジタルプロダクト、インテリジェントシステム、カスタムソリューションの設計・開発・エンジニアリングを行っています。Looponicsは、ソフトウェアエンジニアリング、業務自動化、AI技術を融合し、Webやモバイルアプリから自律型AIワークフローに至るまで、ビジネスの本質的な課題を解決します。",
     "stats": [
-      { "label": "5つの提供領域", "sub": "Web開発からエージェント型AIまで" },
-      { "label": "エンドツーエンド", "sub": "要件定義からデプロイまで" },
-      { "label": "フルカスタム開発", "sub": "テンプレート不使用。妥協のない設計。" }
+      {
+        "label": "6つの提供領域",
+        "sub": "Web開発からブランド成長まで"
+      },
+      {
+        "label": "エンドツーエンド",
+        "sub": "要件定義からデプロイまで"
+      },
+      {
+        "label": "フルカスタム開発",
+        "sub": "テンプレート不使用。妥協のない設計。"
+      }
     ]
   },
   "services": {
@@ -42,31 +56,62 @@
         "id": "01",
         "title": "Web開発",
         "description": "貴社のビジネス要件に合わせて最適化された、高速・スケーラブル・高レスポンシブなデジタル体験をエンジニアリングします。",
-        "tags": ["カスタムWebサイト", "フルスタック開発", "スケーラブルアーキテクチャ"]
+        "tags": [
+          "カスタムWebサイト",
+          "フルスタック開発",
+          "スケーラブルアーキテクチャ"
+        ]
       },
       {
         "id": "02",
         "title": "モバイルアプリ開発",
         "description": "ユーザーと強力で信頼性の高いデジタル体験をつなぐ、直感的で操作性に優れたモバイルアプリケーションを構築します。",
-        "tags": ["クロスプラットフォームアプリ", "モバイルUI", "API連携"]
+        "tags": [
+          "クロスプラットフォームアプリ",
+          "モバイルUI",
+          "API連携"
+        ]
       },
       {
         "id": "03",
         "title": "AI搭載SaaS",
         "description": "最新のAI機能、モダンなアーキテクチャ、高信頼なスケーラブルインフラを活用し、アイデアを知的なソフトウェア製品へと具現化します。",
-        "tags": ["AI統合", "SaaSプラットフォーム", "インテリジェントアプリ"]
+        "tags": [
+          "AI統合",
+          "SaaSプラットフォーム",
+          "インテリジェントアプリ"
+        ]
       },
       {
         "id": "04",
         "title": "カスタム自動化",
         "description": "オーダーメイドの自動化、システム連携、インテリジェントなビジネスワークフローにより、反復業務や非効率なプロセスを徹底的に排除します。",
-        "tags": ["ワークフロー自動化", "API連携", "ビジネスプロセス"]
+        "tags": [
+          "ワークフロー自動化",
+          "API連携",
+          "ビジネスプロセス"
+        ]
       },
       {
         "id": "05",
         "title": "エージェント型AIシステム",
         "description": "ビジネスニーズに応じて自律的に推論し、ツールを連携させ、複雑なワークフローを実行する自律型・マルチエージェントシステムを設計・構築します。",
-        "tags": ["AIエージェント", "マルチエージェントシステム", "MCP連携"]
+        "tags": [
+          "AIエージェント",
+          "マルチエージェントシステム",
+          "MCP連携"
+        ]
+      },
+      {
+        "id": "06",
+        "title": "ビジネス開発",
+        "description": "市場での存在感を高めるため、独自性のあるブランドアイデンティティ、拡張可能なデザインシステム、データ主導の成長戦略を構築します。",
+        "tags": [
+          "ブランドアイデンティティ",
+          "デザインシステム",
+          "オンラインプレゼンス",
+          "ソーシャルグロース"
+        ]
       }
     ]
   },
@@ -142,11 +187,56 @@
     "headline": "私たちが扱う技術スタック。",
     "subtitle": "様々なプロジェクトタイプにおいて私たちが活用している主要な技術とツールです。",
     "categories": [
-      { "category": "フロントエンド", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
-      { "category": "バックエンド", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
-      { "category": "AI＆機械学習", "items": ["LLMs", "RAG Systems", "AI Agents", "Multi-Agent Systems", "Machine Learning"] },
-      { "category": "自動化", "items": ["n8n", "API Integrations", "Workflow Automation", "MCP", "Webhooks"] },
-      { "category": "インフラストラクチャ", "items": ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+      {
+        "category": "フロントエンド",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "CSS / Tailwind"
+        ]
+      },
+      {
+        "category": "バックエンド",
+        "items": [
+          "Node.js",
+          "Express",
+          "Python",
+          "FastAPI",
+          "REST & GraphQL"
+        ]
+      },
+      {
+        "category": "AI＆機械学習",
+        "items": [
+          "LLMs",
+          "RAG Systems",
+          "AI Agents",
+          "Multi-Agent Systems",
+          "Machine Learning"
+        ]
+      },
+      {
+        "category": "自動化",
+        "items": [
+          "n8n",
+          "API Integrations",
+          "Workflow Automation",
+          "MCP",
+          "Webhooks"
+        ]
+      },
+      {
+        "category": "インフラストラクチャ",
+        "items": [
+          "Docker",
+          "Cloud Deployment",
+          "PostgreSQL",
+          "MongoDB",
+          "CI/CD"
+        ]
+      }
     ]
   },
   "team": {
@@ -230,7 +320,12 @@
     "tagline": "新世代に受け継がれる、確かなエンジニアリングDNA"
   },
   "footer": {
-    "words": ["アイデアを", "お持ちですか？", "共に", "創りましょう →"],
+    "words": [
+      "アイデアを",
+      "お持ちですか？",
+      "共に",
+      "創りましょう →"
+    ],
     "contactUs": "お問い合わせ",
     "services": "サービス",
     "capabilities": "対応技術",

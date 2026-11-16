@@ -23,16 +23,30 @@
     "your": "A SUA",
     "agency": "AGÊNCIA",
     "letsBond": "VAMOS CONVERSAR",
-    "words": ["DIGITAL", "CRIATIVA", "COMPLETA", "TECNOLÓGICA"]
+    "words": [
+      "DIGITAL",
+      "CRIATIVA",
+      "COMPLETA",
+      "TECNOLÓGICA"
+    ]
   },
   "whoWeAre": {
     "eyebrow": "QUEM SOMOS",
     "headline": "Boas ideias merecem uma excelente engenharia.",
     "body": "Projetamos, desenvolvemos e construímos produtos digitais, sistemas inteligentes e soluções sob medida que ajudam as empresas a avançar. A Looponics combina engenharia de software, automação e IA para resolver problemas reais de negócio — desde aplicações web e móveis até fluxos de trabalho autónomos com IA.",
     "stats": [
-      { "label": "5 Áreas de Atuação", "sub": "Da web à IA agêntica" },
-      { "label": "Ponta a Ponta", "sub": "Da descoberta à implementação" },
-      { "label": "Sob Medida", "sub": "Sem modelos prontos. Sem atalhos." }
+      {
+        "label": "6 Áreas de Atuação",
+        "sub": "Da web ao crescimento da marca"
+      },
+      {
+        "label": "Ponta a Ponta",
+        "sub": "Da descoberta à implementação"
+      },
+      {
+        "label": "Sob Medida",
+        "sub": "Sem modelos prontos. Sem atalhos."
+      }
     ]
   },
   "services": {
@@ -42,31 +56,62 @@
         "id": "01",
         "title": "Desenvolvimento Web",
         "description": "Desenvolvemos experiências digitais rápidas, escaláveis e responsivas, adaptadas às necessidades do seu negócio.",
-        "tags": ["Websites Personalizados", "Desenvolvimento Full-Stack", "Arquitetura Escalável"]
+        "tags": [
+          "Websites Personalizados",
+          "Desenvolvimento Full-Stack",
+          "Arquitetura Escalável"
+        ]
       },
       {
         "id": "02",
         "title": "Desenvolvimento de Aplicações Móveis",
         "description": "Criamos aplicações móveis intuitivas que conectam utilizadores a experiências digitais robustas e confiáveis.",
-        "tags": ["Aplicações Multiplataforma", "UI Mobile", "Integração de APIs"]
+        "tags": [
+          "Aplicações Multiplataforma",
+          "UI Mobile",
+          "Integração de APIs"
+        ]
       },
       {
         "id": "03",
         "title": "SaaS com Inteligência Artificial",
         "description": "Transformamos ideias em produtos de software inteligentes com recursos avançados de IA, arquiteturas modernas e infraestrutura escalável.",
-        "tags": ["Integração de IA", "Plataformas SaaS", "Aplicações Inteligentes"]
+        "tags": [
+          "Integração de IA",
+          "Plataformas SaaS",
+          "Aplicações Inteligentes"
+        ]
       },
       {
         "id": "04",
         "title": "Automações Personalizadas",
         "description": "Eliminamos processos repetitivos através de automações sob medida, integrações e fluxos de trabalho empresariais inteligentes.",
-        "tags": ["Automação de Fluxos de Trabalho", "Integrações de API", "Processos de Negócio"]
+        "tags": [
+          "Automação de Fluxos de Trabalho",
+          "Integrações de API",
+          "Processos de Negócio"
+        ]
       },
       {
         "id": "05",
         "title": "Sistemas de IA Agêntica",
         "description": "Projetamos sistemas autónomos e multiagente capazes de raciocinar, coordenar ferramentas e executar fluxos de trabalho complexos de acordo com as necessidades do negócio.",
-        "tags": ["Agentes de IA", "Sistemas Multiagente", "Integrações MCP"]
+        "tags": [
+          "Agentes de IA",
+          "Sistemas Multiagente",
+          "Integrações MCP"
+        ]
+      },
+      {
+        "id": "06",
+        "title": "Desenvolvimento de Negócios",
+        "description": "Criamos identidades de marca distintas, sistemas de design escaláveis e estratégias de crescimento baseadas em dados para elevar sua presença online.",
+        "tags": [
+          "Identidade de marca",
+          "Sistemas de design",
+          "Presença online",
+          "Crescimento social"
+        ]
       }
     ]
   },
@@ -142,11 +187,56 @@
     "headline": "A Nossa Stack Tecnológica.",
     "subtitle": "As tecnologias e ferramentas com as quais trabalhamos nos diferentes tipos de projeto.",
     "categories": [
-      { "category": "Frontend", "items": ["React", "Next.js", "TypeScript", "JavaScript", "CSS / Tailwind"] },
-      { "category": "Backend", "items": ["Node.js", "Express", "Python", "FastAPI", "REST & GraphQL"] },
-      { "category": "IA e Machine Learning", "items": ["LLMs", "RAG Systems", "AI Agents", "Multi-Agent Systems", "Machine Learning"] },
-      { "category": "Automação", "items": ["n8n", "API Integrations", "Workflow Automation", "MCP", "Webhooks"] },
-      { "category": "Infraestrutura", "items": ["Docker", "Cloud Deployment", "PostgreSQL", "MongoDB", "CI/CD"] }
+      {
+        "category": "Frontend",
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "CSS / Tailwind"
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": [
+          "Node.js",
+          "Express",
+          "Python",
+          "FastAPI",
+          "REST & GraphQL"
+        ]
+      },
+      {
+        "category": "IA e Machine Learning",
+        "items": [
+          "LLMs",
+          "RAG Systems",
+          "AI Agents",
+          "Multi-Agent Systems",
+          "Machine Learning"
+        ]
+      },
+      {
+        "category": "Automação",
+        "items": [
+          "n8n",
+          "API Integrations",
+          "Workflow Automation",
+          "MCP",
+          "Webhooks"
+        ]
+      },
+      {
+        "category": "Infraestrutura",
+        "items": [
+          "Docker",
+          "Cloud Deployment",
+          "PostgreSQL",
+          "MongoDB",
+          "CI/CD"
+        ]
+      }
     ]
   },
   "team": {
@@ -230,7 +320,12 @@
     "tagline": "Nova geração, o mesmo DNA de Engenharia"
   },
   "footer": {
-    "words": ["TEM UMA", "IDEIA?", "VAMOS", "CONSTRUÍ-LA →"],
+    "words": [
+      "TEM UMA",
+      "IDEIA?",
+      "VAMOS",
+      "CONSTRUÍ-LA →"
+    ],
     "contactUs": "FALE CONOSCO",
     "services": "SERVIÇOS",
     "capabilities": "CAPACIDADES",

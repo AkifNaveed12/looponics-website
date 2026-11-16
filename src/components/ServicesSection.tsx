@@ -8,20 +8,29 @@ import {
   useTransform,
   useMotionValueEvent,
 } from "motion/react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import ServiceVisual from "./ServiceVisual";
 import styles from "./ServicesSection.module.css";
 import { useDictionary } from "@/i18n/DictionaryContext";
 
 /* ─── Visual types mapped to indices ─── */
-const VISUAL_TYPES = ["web", "mobile", "saas", "automation", "agents"] as const;
+const VISUAL_TYPES = [
+  "web",
+  "mobile",
+  "saas",
+  "automation",
+  "agents",
+  "bizdev",
+] as const;
 
 /* ─── Orbital arc positions (SVG viewBox 0 0 100 400) ─── */
 const ARC_POINTS: [number, number][] = [
-  [26, 42],
-  [54, 115],
-  [65, 200],
-  [54, 285],
-  [26, 358],
+  [26, 36],
+  [49, 100],
+  [63, 167],
+  [63, 233],
+  [49, 300],
+  [26, 364],
 ];
 
 /* ─── OrbitalNav ─── */
@@ -94,6 +103,14 @@ export default function ServicesSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [mobileIndex, setMobileIndex] = useState(0);
+
+  const handlePrev = () => {
+    setMobileIndex((prev) => (prev > 0 ? prev - 1 : services.length - 1));
+  };
+
+  const handleNext = () => {
+    setMobileIndex((prev) => (prev < services.length - 1 ? prev + 1 : 0));
+  };
 
   /* Scroll-driven active index (desktop) */
   const { scrollYProgress } = useScroll({
@@ -179,10 +196,20 @@ export default function ServicesSection() {
           <motion.div
             key={mobileService.id}
             className={styles.mobileContent}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.35, ease: "easeInOut" }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.2}
+            onDragEnd={(_, info) => {
+              if (info.offset.x < -40 || info.velocity.x < -250) {
+                handleNext();
+              } else if (info.offset.x > 40 || info.velocity.x > 250) {
+                handlePrev();
+              }
+            }}
           >
             <div className={styles.mobileServiceNum}>
               <span className={styles.mobileDotIndicator}>●</span>
@@ -203,16 +230,42 @@ export default function ServicesSection() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Dot nav */}
-        <div className={styles.mobileDots}>
-          {services.map((s, i) => (
-            <button
-              key={s.id}
-              className={`${styles.mobileDot} ${i === mobileIndex ? styles.mobileDotActive : ""}`}
-              onClick={() => setMobileIndex(i)}
-              aria-label={`View ${s.title}`}
-            />
-          ))}
+        {/* Mobile Navigation Controls */}
+        <div className={styles.mobileNavContainer}>
+          <button
+            type="button"
+            className={styles.mobileNavBtn}
+            onClick={handlePrev}
+            aria-label="Previous service"
+          >
+            <ChevronLeft size={18} />
+          </button>
+
+          <div className={styles.mobileDots}>
+            {services.map((s, i) => (
+              <button
+                key={s.id}
+                type="button"
+                className={styles.mobileDotButton}
+                onClick={() => setMobileIndex(i)}
+                aria-label={`View ${s.id} - ${s.title}`}
+                aria-current={i === mobileIndex ? "true" : undefined}
+              >
+                <span
+                  className={`${styles.mobileDot} ${i === mobileIndex ? styles.mobileDotActive : ""}`}
+                />
+              </button>
+            ))}
+          </div>
+
+          <button
+            type="button"
+            className={styles.mobileNavBtn}
+            onClick={handleNext}
+            aria-label="Next service"
+          >
+            <ChevronRight size={18} />
+          </button>
         </div>
       </div>
     </section>

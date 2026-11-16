@@ -7,7 +7,7 @@ import { useDictionary } from "@/i18n/DictionaryContext";
 export default function WhoWeAreSection() {
   const dict = useDictionary();
   const stats = dict.whoWeAre.stats || [
-    { label: "5 Service Areas", sub: "From web to agentic AI" },
+    { label: "6 Service Areas", sub: "From web to brand growth" },
     { label: "End-to-End", sub: "Discovery through deployment" },
     { label: "Custom Built", sub: "No templates. No shortcuts." },
   ];

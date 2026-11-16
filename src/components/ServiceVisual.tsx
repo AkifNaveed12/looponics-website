@@ -2,7 +2,7 @@
 
 import { motion, type Transition } from "motion/react";
 
-type VisualType = "web" | "mobile" | "saas" | "automation" | "agents";
+type VisualType = "web" | "mobile" | "saas" | "automation" | "agents" | "bizdev";
 
 interface ServiceVisualProps {
   type: VisualType;
@@ -304,6 +304,92 @@ function AgentsVisual() {
   );
 }
 
+/* ─── 6. BizDev: brand identity framing, design system guides, and market growth trajectory ─── */
+function BizDevVisual() {
+  return (
+    <motion.svg
+      viewBox="0 0 320 320"
+      width="320"
+      height="320"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      animate={{ y: [0, -10, 0] }}
+      transition={floatTransition}
+      initial={{ scale: 0.95, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: false }}
+    >
+      <defs>
+        <radialGradient id="bizdev-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#0066FF" stopOpacity="0.18" />
+          <stop offset="100%" stopColor="#0066FF" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id="bizdev-bar-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#0066FF" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="#0066FF" stopOpacity="0.2" />
+        </linearGradient>
+      </defs>
+
+      {/* Brand framing & design system layout guides */}
+      <rect x="44" y="44" width="232" height="232" rx="16" stroke="#e4e4e7" strokeWidth="1" strokeDasharray="4 6" />
+      <circle cx="160" cy="160" r="105" stroke="#e4e4e7" strokeWidth="1" strokeDasharray="2 6" />
+
+      {/* Precision corner crop / alignment marks (design system indicators) */}
+      <path d="M 36 52 L 52 52 M 52 36 L 52 52" stroke="#b0b0b8" strokeWidth="1.5" />
+      <path d="M 284 52 L 268 52 M 268 36 L 268 52" stroke="#b0b0b8" strokeWidth="1.5" />
+      <path d="M 36 268 L 52 268 M 52 284 L 52 268" stroke="#b0b0b8" strokeWidth="1.5" />
+      <path d="M 284 268 L 268 268 M 268 284 L 268 268" stroke="#b0b0b8" strokeWidth="1.5" />
+
+      {/* Central glow aura */}
+      <circle cx="160" cy="160" r="75" fill="url(#bizdev-glow)" />
+
+      {/* Growth Chart / Ascending Volume Bars (Business & Social Growth) */}
+      <rect x="72" y="200" width="16" height="34" rx="3" fill="#d1d1d6" opacity="0.6" />
+      <rect x="98" y="180" width="16" height="54" rx="3" fill="#b0b0b8" opacity="0.7" />
+      <rect x="124" y="156" width="16" height="78" rx="3" fill="#0066FF" opacity="0.3" stroke="#0066FF" strokeWidth="1" />
+      <rect x="150" y="132" width="16" height="102" rx="3" fill="#0066FF" opacity="0.5" stroke="#0066FF" strokeWidth="1" />
+      <rect x="176" y="104" width="16" height="130" rx="3" fill="url(#bizdev-bar-grad)" stroke="#0066FF" strokeWidth="1" />
+      <rect x="202" y="76" width="16" height="158" rx="3" fill="#0066FF" opacity="0.85" />
+
+      {/* Baseline axis */}
+      <line x1="60" y1="234" x2="260" y2="234" stroke="#d1d1d6" strokeWidth="1.5" />
+
+      {/* Upward Growth Trendline with nodes */}
+      <path
+        d="M 80 200 Q 130 170, 158 132 T 210 76"
+        stroke="#FF4D00"
+        strokeWidth="2"
+        fill="none"
+      />
+      {/* Trendline nodes */}
+      <circle cx="80" cy="200" r="3.5" fill="#FF4D00" />
+      <circle cx="132" cy="156" r="3.5" fill="#FF4D00" />
+      <circle cx="158" cy="132" r="4" fill="#FF4D00" />
+      <circle cx="210" cy="76" r="6" fill="#FF4D00" />
+      <circle cx="210" cy="76" r="10" fill="#FF4D00" opacity="0.25" />
+
+      {/* Brand Identity Emblem: Layered diamond / brand compass */}
+      <g transform="translate(160, 92)">
+        <polygon points="0,-16 16,0 0,16 -16,0" fill="#fff" stroke="#0066FF" strokeWidth="1.5" opacity="0.9" />
+        <polygon points="0,-8 8,0 0,8 -8,0" fill="#0066FF" opacity="0.8" />
+        <circle cx="0" cy="0" r="2" fill="#fff" />
+      </g>
+
+      {/* Brand Presence / Social Reach Satellites */}
+      <circle cx="248" cy="116" r="7" fill="#f4f4f5" stroke="#0066FF" strokeWidth="1.2" />
+      <circle cx="248" cy="116" r="3" fill="#0066FF" />
+      <line x1="218" y1="84" x2="242" y2="110" stroke="#0066FF" strokeWidth="1" strokeDasharray="3 3" opacity="0.6" />
+
+      <circle cx="254" cy="180" r="5" fill="#d1d1d6" />
+      <line x1="218" y1="180" x2="249" y2="180" stroke="#e4e4e7" strokeWidth="1" strokeDasharray="2 3" />
+
+      <circle cx="70" cy="120" r="6" fill="#f4f4f5" stroke="#b0b0b8" strokeWidth="1.2" />
+      <circle cx="70" cy="120" r="2.5" fill="#b0b0b8" />
+      <line x1="76" y1="124" x2="114" y2="152" stroke="#e4e4e7" strokeWidth="1" strokeDasharray="3 3" />
+    </motion.svg>
+  );
+}
+
 /* ─── Main export ─── */
 export default function ServiceVisual({ type }: ServiceVisualProps) {
   switch (type) {
@@ -317,6 +403,8 @@ export default function ServiceVisual({ type }: ServiceVisualProps) {
       return <AutomationVisual />;
     case "agents":
       return <AgentsVisual />;
+    case "bizdev":
+      return <BizDevVisual />;
     default:
       return null;
   }
